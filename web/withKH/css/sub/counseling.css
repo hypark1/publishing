@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+
+.counseling_wrapper{}
+.counseling_wrapper .sub_counseling_table{}
+
+.sub_counseling_table .sub_com_table table th:last-child{padding-right:0;}
+
+.sub_counseling_listno{width:100%;padding: 10% 0;border-bottom: 1px solid #e6e9ec;}
+.sub_counseling_listno img{width:31.7%;}
+.sub_counseling_list{width:100%;}
+.sub_counseling_list ul{width:100%;}
+.sub_counseling_list ul li{width:100%;border-bottom: 1px solid #e6e9ec;}
+.sub_counseling_list ul li .sub_counseling_list_title{float: left;width: 70%;text-align: left;padding: 4% 1% 4% 3%;font-weight: 500;padding-left: 3%;}
+.sub_counseling_list ul li .sub_counseling_list_state{float:left;width:26%;}
+.sub_counseling_list ul li .sub_counseling_list_state .state{display: block;width: 74%;padding-bottom: 30%;margin: 17% auto;border: 1px solid;border-radius: 3em;}
+.sub_counseling_list ul li .sub_counseling_list_state .state1{border-color:#e6e9ec;background:url(../../images/sub/counseling/counseling_state1.jpg) no-repeat;background-position: center;background-size: contain;}
+.sub_counseling_list ul li .sub_counseling_list_state .state2{border-color:#3b48c9;background:url(../../images/sub/images/sub/counseling/counseling_state2.jpg) no-repeat;background-position: center;background-size: contain;}
+.sub_counseling_list ul li .sub_counseling_list_state .state3{border-color:#3b48c9;background:#3b48c9 url(../../images/sub/counseling/counseling_state3.jpg) no-repeat;background-position: center;background-size: contain;}
+
+.sub_counseling_list .sub_counseling_list_detail{display:none;border-top: 1px solid #e6e9ec;text-align: left;background: #fafbfc;}
+.sub_counseling_list .sub_counseling_list_detail>div:last-child{border-bottom:0;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_txt{display: inline-block;font-weight: 500;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_top{padding: 5%;border-bottom: 1px solid #e6e9ec;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_top .sub_counseling_list_detail_txt:nth-child(2),
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_bot2 .sub_counseling_list_detail_txt:nth-child(2),
+.counselingForm_wrapper .sub_modifybox_table .sub_counselingForm_txt2{color: #9797a7;margin-top: 1%;font-weight: 400;line-height: 120%;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_bot{padding: 5%;border-bottom: 1px solid #e6e9ec;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_bot1{float:left;width:16%;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_bot1 span{display: inline-block;width: 22%;padding-bottom: 23%;margin-right: 3%;vertical-align: top;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_a span{background:url(../../images/sub/counseling/counseling_list_detail_a.png) no-repeat;background-position: center;background-size: contain;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_a .sub_counseling_list_detail_txt{color:#3b48c9;vertical-align: top;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_q span{background:url(../../images/sub/counseling/counseling_list_detail_q.png) no-repeat;background-position: center;background-size: contain;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_q .sub_counseling_list_detail_txt{color:#0c0451;vertical-align: top;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_bot2{float:right;width:84%;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_bot2 .sub_counseling_list_detail_day{margin-top: 3%;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_btn{margin-top: 3%;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_btn a{margin-right: 1.5%;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_btn .sub_counseling_list_detail_modify,
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_btn .sub_counseling_list_detail_add{background:#3b48c9;}
+.sub_counseling_list .sub_counseling_list_detail .sub_counseling_list_detail_btn .sub_counseling_list_detail_delete{background:#0c0451;}
+
+
+/* 1:1상담신청 */
+.counselingForm_wrapper .sub_modifybox_table{padding: 0px 3%;}
+.counselingForm_wrapper .sub_modifybox{border-bottom:0;margin-bottom:0;}
+.counselingForm_wrapper .sub_modifybox_table textarea{width: 94%;border: 0;}
+
+.counselingForm_wrapper .sub_modifybox_table .sub_counselingForm_txt1{font-weight:500;}
+.issuanceForm_btn{text-align:center;}
+.issuanceForm_btn .confirm{margin-right: 1%;}
+.issuanceForm_btn .cancel{}
+
+

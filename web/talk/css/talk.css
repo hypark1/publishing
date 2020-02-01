@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+
+.all_wrap{width: 100%;}
+.all_wrap .top_wrap{width: 100%; height:60px; background: url('../images/talk/talk_topbg.jpg'); background-repeat: no-repeat; background-size: cover; overflow:hidden;}
+.all_wrap .top_wrap .top_logo{width:1024px; height:60px; margin:0 auto; text-align:center;}
+.all_wrap .top_wrap .top_logo img{cursor:pointer;}
+.all_wrap .title_wrap{width:100%; height:958px; background: url('../images/talk/talk_titlebg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: bottom; overflow:hidden;}
+.all_wrap .title_wrap .title_text{width:1024px; height:958px; margin:0 auto;}
+.all_wrap .title_wrap .title_text img{margin-left: -457px;}
+.all_wrap .middle_wrap{width:100%; height:1760px; background: url('../images/talk/talk_contentsbg.jpg'); background-repeat: no-repeat; background-size: cover; overflow:hidden;}
+.all_wrap .middle_wrap .contents_wrap{width:1024px; height:808px; margin:0 auto;}
+.all_wrap .middle_wrap .contents_wrap img{margin-left: -457px;}
+.all_wrap .middle_wrap .appli_wrap{width:1024px; height:179px; margin:0 auto; position:relative;}
+.all_wrap .middle_wrap .appli_wrap img{}
+.all_wrap .middle_wrap .appli_wrap .appli_img01{position:absolute; bottom:-23px; left:-104px; width:277px; height:260px; background-image:url('../images/talk/talk_appli_img01.png');}
+.all_wrap .middle_wrap .appli_wrap .appli_img02{position:absolute; bottom:28px; right:-11px; width:26px; height:16px; background-image:url('../images/talk/talk_appli_img02.png');}
+.all_wrap .middle_wrap .appli_wrap .form_box{width:438px; height:115px; position: absolute; top: 41px; right: 53px;}
+.all_wrap .middle_wrap .appli_wrap .form_box ul{float: left; width: 268px; height: 73px;}
+.all_wrap .middle_wrap .appli_wrap .form_box ul li{float: left; width: 268px; height: 33px; margin-bottom: 7px;}
+.all_wrap .middle_wrap .appli_wrap .form_box input{width: 258px; height: 23px; border: 0; font-size: 17px; font-family: "NanumSquareRoundEB"; color: #240d00; padding: 5px; line-height: 23px; letter-spacing: -0.5px; text-align: center;}
+.all_wrap .middle_wrap .appli_wrap .form_box .submit_box{float: right; width:160px; height:73px; cursor:pointer;}
+.all_wrap .middle_wrap .appli_wrap .form_box .popup_btn{float: left; margin-top: 28px; margin-left: 177px;}
+.all_wrap .middle_wrap .appli_wrap .form_box .popup_btn input{cursor:pointer;}
+.all_wrap .middle_wrap .appli_wrap .form_box .popup_btn input[type="checkbox"]{-webkit-appearance: button; width: 15px; height: 15px; border-radius: 3px; background-color: #fff; border: 1px solid #dbdbdb; background-image:url('../images/talk/cb_on.png'); vertical-align: sub;}
+.all_wrap .middle_wrap .appli_wrap .form_box .popup_btn input[type="checkbox"]:checked{-webkit-appearance: button; width: 15px; height: 15px; border-radius: 3px; background-color: #fff; border: 1px solid #dbdbdb; background-image:url('../images/talk/cb_off.png');}
+.all_wrap .middle_wrap .ex_wrap{width:1024px; height:602px; margin:68px auto 0;}
+.all_wrap .middle_wrap .ex_wrap img{}
+.all_wrap .lucky_wrap{width:100%; height:857px; background: url('../images/talk/talk_luckybg.jpg'); background-repeat: no-repeat; background-size: cover; overflow:hidden;}
+.all_wrap .lucky_wrap .lucky_text{width:1024px; height:857px; margin:0 auto; position:relative;}
+.all_wrap .lucky_wrap .lucky_text .text_img{position:absolute; bottom:0; left: -448px;}
+.all_wrap .lucky_wrap .lucky_text .lucky_top{position: absolute; top: 0px; left: 455px; width:137px; height:69px; background-image:url('../images/talk/talk_lucky_top.jpg');}
+.all_wrap .lucky_wrap .lucky_text .lucky_img01{position: absolute; top: 90px; left: 721px; width:125px; height:125px; background-image:url('../images/talk/talk_lucky_img01.jpg');}
+.all_wrap .lucky_wrap .lucky_text .lucky_img02{position: absolute; top: 197px; left: 174px; width:79px; height:79px; background-image:url('../images/talk/talk_lucky_img02.jpg');}
+.all_wrap .talkmap_wrap{width:100%; height:500px; }
+.all_wrap .footer_wrap{width:100%; height:125px; background: url('../images/talk/talk_botbg.jpg'); background-repeat: no-repeat; background-size: cover; overflow:hidden;}
+.all_wrap .footer_wrap .footer_text{width:1024px; height:125px; margin:0 auto; background: url('../images/talk/talk_bot.jpg');}
+.all_wrap .footer_wrap .footer_text img{}
+
+/*팝업창*/
+.popup_talk_wrap{position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 999; display:none;}
+.popup_talk_wrap .popup_talk_bg{position:absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);}
+.popup_talk_wrap .popup_talk_bg .popup_talk_box{position: absolute; left: 32%; top: 27%;width:650px; height:500px; background: url('../images/talk/talk_popupbg.jpg');}
+.popup_talk_wrap .popup_talk_bg .popup_talk_box .popup_cont{float: left; width: 572px; height: 182px; border: 1px solid #e5e5e5; margin: 203px 30px 0; padding: 8px;}
+.popup_talk_wrap .popup_talk_bg .popup_talk_box .popup_cont p{font-size:14px; color:#606060; letter-spacing:-1px; font-family: "NanumSquareRoundR";}
+.popup_talk_wrap .popup_talk_bg .popup_talk_box .popup_close{float: left; margin: 25px 288px 0; width: 74px; height: 40px; cursor: pointer;}

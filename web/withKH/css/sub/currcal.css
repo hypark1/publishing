@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+.currcal_wrapper{}
+
+.sub_currcal_visual{width:100%;padding-top: 8%;background:#fff;text-align:center;}
+.sub_currcal_visual .sub_currcal_visual_month{font-family: TahomaB;color:#475ffe;}
+.sub_currcal_visual .sub_currcal_visual_select{}
+.sub_currcal_visual .sub_currcal_visual_select p{display: inline;}
+.sub_currcal_visual .sub_currcal_visual_select img{width: 5.4%;margin-left: 1.2%;}
+.sub_currcal_visual>img{width:100%;}
+
+.sub_currcal_calendar{width:100%;}
+.sub_currcal_calendar .sub_currcal_calendar_top,
+.sub_currcal_calendar .sub_currcal_calendar_mid{padding:0 5%;}
+.sub_currcal_calendar .sub_currcal_calendar_top ul li,
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li{float:left;width:14.285%;text-align: center;}
+.sub_currcal_calendar .sub_currcal_calendar_top ul li p,
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li p{display: inline-block;}
+.sub_currcal_calendar .sub_currcal_calendar_top{background:#fff;border: solid #e6e9ec;border-width: 1px 0;}
+.sub_currcal_calendar .sub_currcal_calendar_top ul li{margin:4% 0;}
+.sub_currcal_calendar .sub_currcal_calendar_mid{border-bottom:1px solid #e6e9ec;}
+.sub_currcal_calendar .sub_currcal_calendar_mid ul{padding: 4% 0 2.5%;}
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li{position:relative;margin-bottom: 1.5%;}
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li p{font-family: 'RobotoL';border-radius: 50%;width: 51.4%;padding: 10.5% 0;margin: 3%;}
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li .sub_currcal_cirbox{position: absolute;width: 100%;margin-top: -10%;}
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li .sub_currcal_cirbox span{display: inline-block;width: 10%;padding-bottom: 10%;border-radius: 50%;margin-left: 4%;}
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li .sub_currcal_cirbox .sub_currcal_red{background:#ff123d;}
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li .sub_currcal_cirbox .sub_currcal_blue{background:#5957ff;}
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li .sub_currcal_cirbox .sub_currcal_black{background:#000;}
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li p.today{background: #3b48c9;font-family: 'RobotoR';color:#fff;}
+.sub_currcal_calendar .sun{color:#ff123d;}
+.sub_currcal_calendar .sat{color:#3b48c9;}
+.sub_currcal_calendar .thisno{color:#bfbfbf;}
+
+.sub_currcal_list_wrap{width:90%;padding:3% 5%;background:#fff;}
+.sub_currcal_list_wrap .sub_com_tap ul li{width:33.333%;}
+.sub_currcal_list_wrap .sub_currcal_list{padding: 6% 3% 0;text-align: center;}
+.sub_currcal_list_wrap .sub_currcal_list ul{}
+.sub_currcal_list_wrap .sub_currcal_list ul li{margin-bottom:6%;}
+.sub_currcal_list_wrap .sub_currcal_list ul li .sub_currcal_list_circle{float:left;width: 1.6%;margin-top: 1.7%;padding-bottom: 1.6%;border-radius: 50%;vertical-align: top;}
+.sub_currcal_list_wrap .sub_currcal_list ul li .sub_currcal_list_red{background:#ff123d;}
+.sub_currcal_list_wrap .sub_currcal_list ul li .sub_currcal_list_blue{background:#5957ff;}
+.sub_currcal_list_wrap .sub_currcal_list ul li .sub_currcal_list_black{background:#000;}
+.sub_currcal_list_wrap .sub_currcal_list ul li p{float:left;vertical-align: top;line-height: 130%;}
+.sub_currcal_list_wrap .sub_currcal_list ul li .sub_currcal_list_day{width:23%;font-family: 'RobotoR';color:#9797a7;}
+.sub_currcal_list_wrap .sub_currcal_list ul li .sub_currcal_list_txt{width:75.4%;text-align:left;}
+
+

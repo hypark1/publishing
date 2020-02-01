@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+.sub_sitemap{width:1080px;margin:0 auto;}
+.sub_sitemap .sitemap_wrap{width:100%;}
+.sub_sitemap .sitemap_wrap .sitemap_box{float:left;width:260px;height:310px;margin-right:10px;border:1px solid #d7d7d7;text-align:center;}
+.sub_sitemap .sitemap_wrap .sitemap_box:last-child{margin-right:0;}
+.sub_sitemap .sitemap_wrap .sitemap_box .sitemap_tit{margin:45px 0 22px;font-size:28px;color:#308a41;font-weight:500;letter-spacing: -2.5px;}
+.sub_sitemap .sitemap_wrap .sitemap_box ul{}
+.sub_sitemap .sitemap_wrap .sitemap_box ul li{margin:11px 0;}
+.sub_sitemap .sitemap_wrap .sitemap_box ul li a{font-size:18px;}
+
+.sub_sitemap .sitemap_btn{text-align:center;}
+.sub_sitemap .sitemap_btn a{display: block;width: 120px;padding: 11px 0;margin: 30px auto 0;font-weight: 400;color: #fff;background: url(../images/sub/sitemap_btn.png) no-repeat;}

@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+.eval_wrapper{width:100%;}
+
+.eval_wrapper .sub_eval_visual{padding-top: 8%;text-align: center;background:#fff;}
+.eval_wrapper .sub_eval_visual .sub_eval_visual_txt{font-weight: 500;}
+.eval_wrapper .sub_eval_visual .sub_eval_visual_num{font-family:TahomaB;}
+.eval_wrapper .sub_eval_visual>img{width:100%;}
+.eval_wrapper .sub_eval_visual_box{}
+.eval_wrapper .sub_eval_visual_box ul{width:100%;}
+.eval_wrapper .sub_eval_visual_box ul li{float:left;width:50%;text-align:center;}
+.eval_wrapper .sub_eval_visual_box ul li:first-child{background: url(../../images/sub/line_gray.jpg) repeat-y;background-position: 100%;}
+.eval_wrapper .sub_eval_table{border-bottom: 0;margin-bottom:0;}
+.eval_wrapper .sub_eval_table .sub_com_tap{margin-bottom: 4%;}
+.eval_wrapper .sub_eval_table .sub_com_tap ul li{width:50%;}
+

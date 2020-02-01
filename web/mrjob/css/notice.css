@@ -1,0 +1,79 @@
+@CHARSET "UTF-8";
+
+/* 공지사항 */
+.sub_notice{width:1080px;margin:0 auto;}
+
+/* 공지사항 뷰 */
+.sub_noticeView,
+.sub_downcenterView,
+.sub_counselingView{width:1080px;margin:0 auto;}
+.noticeView_wrap{width:100%;}
+.noticeVF_title{width:1000px;padding:17px 40px;border:solid #4aad4a;border-width:2px 0 1px 0;}
+.noticeVF_title_txt1{float:left;}
+.noticeVF_title_txt2{float:right;font-size:14px;}
+.noticeVF_title_txt2 span{display: inline-block;font-size: 13px;margin: -4px 7px 0;letter-spacing: -1px;}
+.noticeView_wrap .noticeView_file{width:1000px;padding:17px 40px;border-bottom:1px solid #d7d7d7;background:#fbfbfb;}
+.noticeView_wrap .noticeView_file_txt1{float:left;margin-right: 37px;}
+.noticeView_wrap .noticeView_file_txt2{float:left;color:#8b8b8b;}
+.noticeView_wrap .noticeView_content{padding:40px;border-bottom: 1px solid #d7d7d7;text-align:center;line-height: 150%;}
+.noticeView_wrap .noticeView_content img{max-width:100%;margin-bottom:25px;}
+.noticeView_btn_wrap{text-align: right;margin: 30px 0 20px;}
+.noticeView_btn_wrap .notice_bot_btn{display: inline-block;margin-left: 2px;}
+
+/* 공지사항 폼 */
+.sub_noticeForm,
+.sub_downcenterForm,
+.sub_counselingForm{width:1080px;margin:0 auto;}
+
+.noticeForm_wrap{width:100%;}
+.noticeForm_wrap .table_com table td{padding:7px 20px;text-align: left;}
+.noticeForm_wrap .table_com table td .file_input{display:inline-block;}
+.noticeForm_wrap .table_com table td .file_btn{display:inline-block;}
+.noticeForm_wrap .table_com table td .file_btn a{display:block;width:100px;padding: 11px 0;margin-left:10px;font-weight: 400;background:url(../images/sub/notice/noticeForm_file_btn.png) no-repeat;background-size: contain;color:#fff;text-align:center;}
+
+/* 이전다음글 */
+.noticeView_prevnext_wrap{width:100%;margin:30px 0;border:solid #4aad4a;border-width:1px 0;}
+.noticeView_prevnext_wrap .noticeView_prevnext{padding:0 33px;}
+.noticeView_prevnext_wrap .noticeView_next{border-bottom:1px solid #d7d7d7;}
+.noticeView_prevnext_wrap .noticeView_prev{}
+.noticeView_prevnext_wrap .noticeView_prevnext ul{width:100%;}
+.noticeView_prevnext_wrap .noticeView_prevnext ul li{float:left;padding: 17px 0;}
+.noticeView_prevnext_wrap .noticeView_prevnext ul li .notiveView_arrow{display:inline-block;width:9px;height:8px;margin: -2px 11px 0;}
+.noticeView_prevnext_wrap .noticeView_prevnext ul li .notiveView_arrow_next{background:url(../images/sub/notice/notiveView_arrow_next.png) no-repeat;}
+.noticeView_prevnext_wrap .noticeView_prevnext ul li .notiveView_arrow_prev{background:url(../images/sub/notice/notiveView_arrow_prev.png) no-repeat;}
+.noticeView_prevnext_wrap .noticeView_prevnext ul li p{max-width: 750px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.noticeView_prevnext_wrap .noticeView_prevnext ul .noticeView_prevnext_bar{margin:0 40px 0 25px;}
+.noticeView_prevnext_wrap .noticeView_prevnext ul .noticeView_prevnext_date{float:right;width: 75px;letter-spacing: -1px;text-align: center;}
+.noticeView_listbtn{width: 80px;margin: 0 auto;}
+.noticeView_listbtn .notice_bot_btn{background:url(../images/sub/notice/notice_btn2.png) no-repeat;background-size: contain;}
+
+/* 자료실 */
+.sub_downcenter{width:1080px;margin:0 auto;}
+
+/* 1:1상담 */
+.sub_counseling{width:1080px;margin:0 auto;}
+
+.sub_counselingForm .table_com1 table td input[type=password]{text-align: center;margin-right: 7px;}
+
+.sub_counselingConfirm{width:1080px;margin:0 auto;}
+.sub_counselingConfirm .counselingConfirm_wrap{padding:50px 0;background:#fcfcfc;border: solid #4aad4a;border-width: 2px 0 1px 0;text-align:center;}
+.sub_counselingConfirm .counselingConfirm_wrap .counselingConfirm_input{margin-top: 25px;}
+.sub_counselingConfirm .counselingConfirm_wrap .counselingConfirm_input label{margin-right:5px;}
+.sub_counselingConfirm .counselingConfirm_wrap .counselingConfirm_input input[type=password]{text-align: center;} 
+
+.counselingView_content{width:100%;}
+.counselingView_content .counselingView_txt{padding: 40px;}
+.counselingView_content .counselingView_re{padding:30px 40px;background:#fbfbfb;border:solid #d7d7d7;border-width:1px 0;}
+.counselingView_content .counselingView_re .counselingView_re_icon{float:left;}
+.counselingView_content .counselingView_re .counselingView_re_icon span{display:block;width:38px;height:14px;background:url(../images/sub/notice/counselingView_re.png) no-repeat;background-size: contain;}
+.counselingView_content .counselingView_re .counselingView_re_txt{float:left;}
+.counselingView_content .counselingView_re .counselingView_re_txt p{width:875px;margin-left: 10px;}
+.counselingView_content .counselingView_re .counselingView_re_btn{float:right;}
+.counselingView_content .counselingView_re .counselingView_re_btn ul li{display:inline-block;}
+.counselingView_content .counselingView_re .counselingView_re_btn ul li span{display: inline-block;margin: -2px 4px 0;font-size: 13px;color: #c7c7c7;}
+.sub_counselingView .noticeView_btn_wrap .counselingView_bot_btn{background: url(../images/sub/notice/notice_btn4.png) no-repeat;background-size: contain;}
+.sub_counselingView .noticeView_btn_wrap .counselingView_bot_btn a{width: 110px;}
+
+.noticeView_wrap .noticeView_agree{text-align: left;}
+.noticeView_agree h4{font-size:20px;}
+.noticeView_agree p{font-size:18px;}

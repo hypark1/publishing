@@ -1,0 +1,226 @@
+@CHARSET "UTF-8";
+
+html, body{overflow: hidden;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: middle;
+	font-family:'Jalnan', NanumGothic, Arial, Helvetica, sans-serif, "굴림체" ;
+	font-size:15px;
+	color:#fff;
+	letter-spacing: -1px;
+	}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+fieldset, img, abbr,acronym { border:0 none; } 
+ol, ul,li { list-style:none; margin: 0; padding: 0;}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	border:0 none;
+	}
+caption{display:none;}
+th, td {
+	text-align:center;
+	font-weight: normal;
+}
+
+address, trong, em, cite {
+	font-weight:normal;
+	font-style:normal;
+	}
+	
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+
+.cf:after, .cf:before {
+    content: "";
+    display: block;
+    clear: both;
+	visibility: hidden; 
+	line-height: 1%; 
+	height: 0; 
+}
+
+a {color: inherit; text-decoration: none; outline: none}
+a:hover, a:active {text-decoration: none;}
+a[href^="tel"]{color:inherit;text-decoration:none;}
+
+hr {display:none;}
+
+button{appearance: none;
+    background: none;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+	cursor:pointer;}
+
+label{font-size: 16px;color: #fff;cursor:pointer;}
+
+/* input 기본 스타일 초기화 */
+input[type=text], input[type=tel]{
+padding: 12px 15px;
+font-size: 16px;
+font-family: inherit;
+color: #fff;
+letter-spacing: -0.5px;
+background:url(../images/talk2019/section_form_input.jpg) no-repeat;
+border: 0;
+border-radius: 0;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+/* input 기본 스타일 초기화 */
+input[type=radio]{
+	width:20px;height:20px;
+	background:url(../images/talk2019/section_form_radio_off.jpg) no-repeat;
+	border: 0;
+	border-radius: 0;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input[type=radio]:checked{
+	width:20px;height:20px;
+	background:url(../images/talk2019/section_form_radio_on.jpg) no-repeat;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear { display: none; }
+
+/* input type number 에서 화살표 제거 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+textarea{
+margin: 0;
+padding:15px;
+font-size: 16px;
+font-family: inherit;
+color:#fff;
+letter-spacing: -0.5px;
+line-height: 125%;
+background:url(../images/talk2019/section_form_textarea.jpg) no-repeat;
+border: 0;
+border-radius: 0;
+resize:none;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+
+select:focus,input:focus,button:focus,textarea:focus {
+  outline: none;
+}
+
+::selection {background:#82e6ff;color:#fff;}
+
+/*스크롤바*/
+
+/* For the "inset" look only */
+html,body {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+	display: none; 
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+	background: rgba(0,0,0,0.1);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.2); 
+
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0.5);
+}
+
+
+
+
+@font-face {
+font-family: 'Jalnan';
+src: url('font/yg-jalnan.eot'),
+     url('font/yg-jalnan.woff') format('woff'),
+     url('font/yg-jalnan.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+@font-face {
+font-family: 'NSR_EB';
+src: url('font/NanumSquareRoundEB.eot'),
+     url('font/NanumSquareRoundEB.woff') format('woff'),
+     url('font/NanumSquareRoundEB.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+@font-face {
+font-family: 'NSR_R';
+src: url('font/NanumSquareRoundR.eot'),
+     url('font/NanumSquareRoundR.woff') format('woff'),
+     url('font/NanumSquareRoundR.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+

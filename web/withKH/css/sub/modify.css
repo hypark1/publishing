@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+.modify_wrapper{}
+
+.sub_modifybox{}
+
+.sub_modifybox .sub_modifybox_table table .certificationCont td{text-align:center;border: 0;padding-top: 4%;}
+.sub_modifybox .sub_modifybox_table table .certificationCont td p{color: #9797a7;font-size: 0.95em;letter-spacing: -2px;}
+.sub_modifybox .sub_modifybox_table table .certificationCont td img{width: 19%;margin-top: 2.5%;}
+
+.sub_modify_bot_btn{text-align: center;padding: 2% 0 6%;background: #fff;}
+.sub_modify_bot_btn img{width: 34.8%;}

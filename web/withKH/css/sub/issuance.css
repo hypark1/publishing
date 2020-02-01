@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+/* 행정문서발급 */
+.issuance_wrapper{}
+
+.sub_issuance_visual{width:100%;padding-top: 8%;background:#fff;text-align:center;}
+.issuance_wrapper .sub_issuance_visual>img{width:100%;}
+.issuance_wrapper .sub_issuance_visual_box{padding:4% 0;}
+.issuance_wrapper .sub_issuance_visual_box ul{width:100%;text-align: center;margin-bottom: 2%;}
+.issuance_wrapper .sub_issuance_visual_box ul li{display: inline-block;}
+.issuance_wrapper .sub_issuance_visual_box ul .issuance_visual_arrow{width: 6%;margin: 0 4%;}
+.issuance_wrapper .sub_issuance_visual_box ul .issuance_visual_arrow img{width:100%;}
+.issuance_wrapper .sub_issuance_visual_box .sub_issuance_visual_title{margin-bottom: 2%;}
+.issuance_wrapper .sub_issuance_visual_box>img{width:100%;}
+.issuance_wrapper .sub_issuance_table{}
+.sub_issuance_table table td:first-child{padding:0;text-align:center;}
+.sub_issuance_table table td:nth-child(1) p{font-family:'RobotoR';color:#9797a7;}
+
+
+/* 행정문서발급 신청 */
+.issuance_wrapper{}
+
+.issuance_wrapper .sub_modifybox{border-bottom:0;margin-bottom:0;}
+.issuance_wrapper .sub_modifybox label{margin: 0 10% 0 2%;}
+.sub_modifybox .sub_modifybox_table table .modify_calbtn{padding: 3.4% 4%;color: #999;}
+.sub_modifybox .sub_modifybox_table table .modify_calbtn a{font-size:1em;}
+.issuance_wrapper .issuanceForm_btn{width:57.5%;margin:6% auto;}
+.issuance_wrapper .issuanceForm_btn img{width:100%;}
+

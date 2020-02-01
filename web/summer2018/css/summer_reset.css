@@ -1,0 +1,139 @@
+
+@charset "utf-8";
+
+/* ���(element) ���� �ʱ�ȭ  */
+html, body,
+div, span,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, address, pre, cite,
+form, fieldset, input, textarea, select,
+table, th, td {
+	 background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: middle;
+	font-family:'CoreGothic4';
+	font-size:15px;
+	color:#242424;
+	letter-spacing: -1.5px;
+	}
+
+/* �׵θ� ���ֱ� */
+fieldset, img, abbr,acronym { border:0 none; } 
+
+/* ��� */
+ol, ul,li { list-style:none; margin: 0; padding: 0;}
+
+/* ���̺� - ��ũ���� 'cellspacing="0"' ���� �Բ� �ʿ� */
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	border:0 none;
+	}
+caption{display:none;}
+th, td {
+	text-align:center;
+	font-weight: normal;
+}
+
+/* �ؽ�Ʈ ���� ��� �ʱ�ȭ */
+address, trong, em, cite {
+	font-weight:normal;
+	font-style:normal;
+	}
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+
+/* �ο빮 */
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+	visibility: hidden; 
+	line-height: 1%; 
+	height: 0; 
+}
+
+
+/* ����*/
+hr { display:none; }
+
+@font-face{
+	font-family:'CoreGothic1';
+	font-style:normal;
+	font-weight:normal;
+	src:url('font/CoreGothic1.eot');
+	src:url('font/CoreGothic1.eot?#iefix') format('embedded-opentype'),
+	url('font/CoreGothic1.woff') format('woff'),
+	url('font/CoreGothic1.ttf') format('truetype');
+}
+@font-face{
+	font-family:'CoreGothic2';
+	font-style:normal;
+	font-weight:normal;
+	src:url('font/CoreGothic2.eot');
+	src:url('font/CoreGothic2.eot?#iefix') format('embedded-opentype'),
+	url('font/CoreGothic2.woff') format('woff'),
+	url('font/CoreGothic2.ttf') format('truetype');
+}
+@font-face{
+	font-family:'CoreGothic3';
+	font-style:normal;
+	font-weight:normal;
+	src:url('/font/CoreGothic3.eot');
+	src:url('/font/CoreGothic3.eot?#iefix') format('embedded-opentype'),
+	url('/font/CoreGothic3.woff') format('woff'),
+	url('/font/CoreGothic3.ttf') format('truetype');
+}
+@font-face{
+	font-family:'CoreGothic4';
+	font-style:normal;
+	font-weight:normal;
+	src:url('font/CoreGothic4.eot');
+	src:url('font/CoreGothic4.eot?#iefix') format('embedded-opentype'),
+	url('font/CoreGothic4.woff') format('woff'),
+	url('font/CoreGothic4.ttf') format('truetype');
+}
+
+@font-face{
+	font-family:'CoreGothic5';
+	font-style:normal;
+	font-weight:normal;
+	src:url('/font/CoreGothic5.eot');
+	src:url('/font/CoreGothic5.eot?#iefix') format('embedded-opentype'),
+	url('/font/CoreGothic5.woff') format('woff'),
+	url('/font/CoreGothic5.ttf') format('truetype');
+}
+
+@font-face{
+	font-family:'CoreGothic6';
+	font-style:normal;
+	font-weight:normal;
+	src:url('/font/CoreGothic6.eot');
+	src:url('/font/CoreGothic6.eot?#iefix') format('embedded-opentype'),
+	url('/font/CoreGothic6.woff') format('woff'),
+	url('/font/CoreGothic6.ttf') format('truetype');
+}
+@font-face{
+	font-family:'CoreGothic7';
+	font-style:normal;
+	font-weight:normal;
+	src:url('font/CoreGothic7.eot');
+	src:url('font/CoreGothic7.eot?#iefix') format('embedded-opentype'),
+	url(font/CoreGothic7.woff') format('woff'),
+	url(font/CoreGothic7.ttf') format('truetype');
+}
+@font-face{
+	font-family:'CoreGothic9';
+	font-style:normal;
+	font-weight:normal;
+	src:url('font/CoreGothic7.eot');
+	src:url('font/CoreGothic7.eot?#iefix') format('embedded-opentype'),
+	url('font/CoreGothic7.woff') format('woff'),
+	url('font/CoreGothic7.ttf') format('truetype');
+}

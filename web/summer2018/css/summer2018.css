@@ -1,0 +1,155 @@
+﻿@CHARSET "UTF-8";
+
+#summer_wrap{width:100%;overflow: hidden;}
+
+#section_top_wrap{width:100%;height:1227px;background:url(../images/section_top_bg.jpg) no-repeat;background-position:center;background-size:100% 1227px;}
+#section_top_wrap .header_logo_wrap{width:1080px;margin:0 auto;}
+#section_top_wrap .header_logo_box{width:115px;height:37px;margin:0 auto;padding-top:65px;}
+#section_top_wrap .section_top_txt{width:1080px;height:441px;margin:0 auto;background:url(../images/section_top_txt.png) no-repeat;background-position:50%;}
+
+#section_subject_wrap{width:100%;height:795px;background:url(../images/section_subject_bg.jpg) no-repeat;background-position:center;background-size:100% 795px;}
+#section_subject_wrap .section_subject_txt1{width:1080px;height:235px;margin:0 auto;background:url(../images/section_subject_txt1.png) no-repeat;background-position:50%;}
+#section_subject_wrap .section_subject_txt2{position:relative;width:1080px;height:560px;margin:0 auto;}
+#section_subject_wrap .section_subject_txt2>div{position:absolute;top:0;left:-255px;width:1590px;height:560px;background:url(../images/section_subject_txt2.png) no-repeat;}
+
+#section_subject_wrap .subject_hover_wrap{width:974px;height:88px;margin:316px 0 0 312px;}
+#section_subject_wrap .subject_hover_wrap ul li{float:left;width:88px;height:88px;margin-right:131px;cursor:pointer;}
+#section_subject_wrap .subject_hover_wrap ul li.subject_hover2{margin-right:132px;}
+#section_subject_wrap .subject_hover_wrap ul li.subject_hover3{margin-right:132px;}
+#section_subject_wrap .subject_hover_wrap ul li.subject_hover4{margin-right:132px;}
+#section_subject_wrap .subject_hover_wrap ul li.subject_hover5{margin-right:0;}
+#section_subject_wrap .subject_hover_wrap ul li:hover{background:url(../images/section_subject_hover.png) no-repeat;}
+
+#section_calendar_wrap{width:100%;height:635px;background:url(../images/section_calendar_bg.jpg) no-repeat;background-position:center;background-size:100% 635px;}
+#section_calendar_wrap .section_calendar_txt{width:1080px;height:113px;margin:0 auto;background:url(../images/section_calendar_txt.png) no-repeat;background-position:50%;}
+#section_calendar_wrap .section_calendar_table{position:relative;width:1080px;height:522px;margin:0 auto;}
+#section_calendar_wrap .section_calendar_table>div{position:absolute;top:0;left:-255px;width:1590px;height:522px;background:url(../images/section_calendar_table.png) no-repeat;}
+
+#section_present_wrap{position:relative;width:100%;height:829px;background:url(../images/section_present_bg.jpg) no-repeat;background-position:center;background-size:100% 829px;}
+#section_present_wrap .section_present_txt1{width:1080px;height:118px;margin:0 auto;background:url(../images/section_present_txt1.png) no-repeat;background-position:50%;}
+#section_present_wrap .section_present_txt2{position:relative;width:1080px;height:711px;margin:0 auto;}
+#section_present_wrap .section_present_txt2>div{position:absolute;top:0;left:-255px;width:1590px;height:711px;background:url(../images/section_present_txt2.png) no-repeat;}
+#section_present_wrap .section_present_bot{position:absolute;left:0;bottom:0;width:100%;height:141px;background:url(../images/section_present_bot.png) no-repeat;background-position:center;background-size:100% 141px;}
+
+#section_counsel_wrap{width:100%;height:1089px;background:url(../images/section_counsel_bg.jpg) no-repeat;background-position:center;background-size:100% 1089px;}
+#section_counsel_wrap .section_counsel_txt{width:1080px;height:127px;margin:0 auto;background:url(../images/section_counsel_txt.png) no-repeat;background-position:50%;}
+#section_counsel_wrap .section_counsel_box{position:relative;width:1080px;height:962px;margin:0 auto;}
+#section_counsel_wrap .section_counsel_box>div{position:absolute;top:0;left:-255px;width:1590px;height:962px;background:url(../images/section_counsel_box.png) no-repeat;}
+
+#section_counsel_wrap .section_counsel_box .counsel_check_wrap{width:1000px;height:260px;margin-left:304px;}
+#section_counsel_wrap .section_counsel_box .counsel_check_wrap ul li{float:left;width:180px;height:260px;margin-right:20px;cursor:pointer;}
+#section_counsel_wrap .section_counsel_box .counsel_check_wrap ul li.counsel_check5{margin-right:0;}
+
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap{width:1080px;margin: 0 auto;}
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap p.counsel_title{font-size:30px;text-align: center;margin:35px 0 14px;letter-spacing:-3px;}
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_box{width:980px;height:338px;margin:0 auto;background:#f9f9f9;border-top:1px solid #8e8e8e;}
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table{margin-top: 44px;}
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table th{text-align:right;padding:12px 0; vertical-align:top;}
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table td{text-align:left;padding-left:10px;}
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table span.interest_text{display:inline-block;width:577px;height:31px;padding-left:8px;background:#fff;line-height:31px;}
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table input[type="text"]{width:305px;height:31px;background:#fff;line-height:31px;outline-style:none;-webkit-appearance:none;}
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table td .mobile{width:92px;}
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table td #userAgreement{width: 585px; font-size: 13px;}
+#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table td .requiretxt{font-size:11px;}
+#section_counsel_wrap .section_counsel_box .counsel_form_btn{width:468px;height:101px;margin:101px auto 0;}
+
+	
+#section_footer_wrap{width:100%;height:130px;background:url(../images/section_footer_bg.jpg) no-repeat;background-position:center;background-size:100% 130px;}
+#section_footer_wrap .section_footer_txt{width:1080px;height:130px;margin:0 auto;background:url(../images/section_footer_txt.png) no-repeat;background-position:50%;}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+
+	#section_top_wrap{height: 0;padding-bottom: 95%;background-size: cover;}
+	#section_top_wrap .header_logo_wrap{width: 100%;}
+	#section_top_wrap .header_logo_box{width: 94px;padding-top: 30px;}
+	#section_top_wrap .header_logo_box img{width:100%;}
+	
+	#section_top_wrap .section_top_txt{width: 100%;height: 0;padding-bottom: 30%;background-size: contain;}
+	#section_subject_wrap{height: 0;padding-bottom: 73%;background-size: cover;}
+	#section_subject_wrap .section_subject_txt1{width: 100%;height:0;padding-bottom: 20%;background-size: contain;}
+	#section_subject_wrap .section_subject_txt2{width: 100%;height:auto;}
+	#section_subject_wrap .section_subject_txt2>div{width: 148%;height:0;padding-bottom:52%;left: -24%;background-size: contain;}
+	#section_subject_wrap .subject_hover_wrap{display:none;}
+	
+	#section_calendar_wrap{height: 0;padding-bottom: 61%;background: url(../images/section_calendar_bg.jpg) no-repeat;background-size: cover;}
+	#section_calendar_wrap .section_calendar_txt{width: 100%;height:0;padding-bottom: 15%;background-size: contain;}
+	#section_calendar_wrap .section_calendar_table{width: 100%;height: 0;padding-bottom: 43%;}
+	#section_calendar_wrap .section_calendar_table>div{width: 147%;height: 0;padding-bottom: 48%;left: -23%;background-size: contain;}
+	
+	#section_present_wrap{height: 0;padding-bottom: 81%;}
+	#section_present_wrap .section_present_txt1{width: 100%;height: 0;padding-bottom: 15%;background-size: contain;}
+	#section_present_wrap .section_present_txt2{width: 100%;height: 0;padding-bottom: 70%;}
+	#section_present_wrap .section_present_txt2>div{width: 150%;height: 0;padding-bottom: 66%;left: -24%;background: url(../images/section_present_txt3.png) no-repeat;background-size: contain;}
+	#section_present_wrap .section_present_bot{display:none;}
+	
+	#section_counsel_wrap{height: 0;padding-bottom: 106%;}
+	#section_counsel_wrap .section_counsel_txt{width: 100%;height: 0;padding-bottom: 15%;background-size: contain;}
+	#section_counsel_wrap .section_counsel_box{width: 100%;height: 0;padding-bottom: 94%;}
+	#section_counsel_wrap .section_counsel_box>div{width: 150%;left: -25%;height: 0;padding-bottom: 92%;background-size: contain;}
+	#section_counsel_wrap .section_counsel_box .counsel_check_wrap{width: 100%;height: 0;padding-bottom: 17%;margin: 0;}
+	#section_counsel_wrap .section_counsel_box .counsel_check_wrap ul{margin-left:19%;}
+	#section_counsel_wrap .section_counsel_box .counsel_check_wrap ul li{width: 14.2%;height: 0;padding-bottom: 20.2%;margin-right: 1.6%;}
+	#section_counsel_wrap .section_counsel_box .counsel_check_wrap ul li.counsel_check2{margin-right:1.3%;}
+	#section_counsel_wrap .section_counsel_box .counsel_check_wrap ul li.counsel_check3{margin-right:1.4%;}
+	#section_counsel_wrap .section_counsel_box .counsel_check_wrap ul li.counsel_check4{margin-right:1.3%;}
+
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap{width: 67%;height: 0;padding-bottom: 30%;background: #fff;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap p.counsel_title{width: 100%;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_box{width: 100%;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table span.interest_text{width: 84%;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table td .mobile{padding: 1% 0;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table td #userAgreement{width:80%;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_btn{width: 38%;height: 0;padding-bottom: 12%;margin: 11% auto 0;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_btn img{width:100%;}
+
+	#section_footer_wrap{height: 0;padding-bottom: 10%;}
+	#section_footer_wrap .section_footer_txt{width: 100%;height: 0;padding-bottom: 15%;}
+
+}
+
+@media screen and (max-width:876px) {
+#section_counsel_wrap{padding-bottom:114%;}
+#section_counsel_wrap .section_counsel_box .counsel_form_btn{margin: 4% auto 0;}
+}
+
+@media screen and (max-width:768px) {
+	#section_top_wrap{padding-bottom:90%;}
+	#section_counsel_wrap{padding-bottom: 125%;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap{padding-bottom: 39%;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_btn{margin: 11% auto 0;}
+}
+
+
+
+@media screen and (max-width:414px) {
+#section_top_wrap{height: 0;padding-bottom: 140%;}
+	#section_counsel_wrap .section_counsel_box>div{left: -24%;}
+	#section_counsel_wrap{padding-bottom:152%;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap{width: 68%;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_box{height:305px;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap p.counsel_title{font-size: 20px;margin-top: 20px;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table{margin-top:25px;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table th{font-size: 13px;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table span.interest_text{width: 88%;font-size: 12px;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table input[type="text"]{width: 63%;font-size: 12px;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table td .mobile{width: 17%;font-size: 12px;padding: 2% 0;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table td #error_mobile{font-size:12px;}
+	#section_counsel_wrap .section_counsel_box .counsel_form_wrap .counsel_form_table td #userAgreement{width: 75%;font-size: 10px;}
+
+#section_counsel_wrap .section_counsel_box .counsel_form_btn{margin-top: 6%;}
+#section_footer_wrap{padding-bottom:14%;}
+#section_footer_wrap .section_footer_txt{padding-bottom: 24%;background-size: cover;}
+
+}
+
+@media screen and (max-width:375px) {
+	#section_counsel_wrap{padding-bottom:162%;}
+}
+
+@media screen and (max-width:320px) {
+	#section_counsel_wrap{padding-bottom:183%;}
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>KH정보교육원 토크콘서트</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/talk.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 <script type="text/javascript" src=" http://maps.google.com/maps/api/js?v=3.3&sensor=true"></script>
+	 <script type="text/javascript"> 
+	  function initialize() {
+	   var myLatlng = new google.maps.LatLng(37.493149, 127.007381);
+	   var myOptions = {
+		zoom: 15,
+		center: myLatlng,
+		
+	   }
+	   var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+	   var marker = new google.maps.Marker( {
+		position: myLatlng, 
+		map: map, 
+		title:"KH토크콘서트"
+	   });   
+	   var infowindow = new google.maps.InfoWindow( {
+		content: "흰물결아트센터"
+	   });
+	   infowindow.open(map,marker);
+	  }
+	  window.onload=function() {
+	   initialize();
+	  }
+
+
+		function popupClose(){
+			$(".popup_talk_wrap").css({'display':'none'});
+		}
+
+		function popupOpen(){
+			$(".popup_talk_wrap").css({'display':'block'});
+		}
+	
+
+	
+	</script>
+
+</head>
+
+
+
+
+<body>
+	<div class="all_wrap">
+		<div class="top_wrap">
+			<div class="top_logo">
+				<img src="images/talk/talk_toplogo.png">
+			</div>
+		</div>
+		<div class="title_wrap">
+			<div class="title_text">
+				<img src="images/talk/talk_title.png">
+			</div>
+		</div>
+		<div class="middle_wrap">
+			<div class="contents_wrap">
+				<img src="images/talk/talk_contents.png">
+			</div>
+			<div class="appli_wrap">
+				<img src="images/talk/talk_appli.jpg">
+				<div class="appli_img01"></div>
+				<div class="appli_img02"></div>
+				<div class="form_box">
+					<ul>
+						<li>
+							<input type="text" id="name" name="name" class="" maxlength="40" onclick="" placeholder="">
+						</li>
+						<li>
+							<input type="tel" id="tel" name="tel" class="" maxlength="15" onclick="" placeholder="">
+						</li>
+					</ul>
+					<div class="submit_box"></div>
+					<div class="popup_btn" onClick="popupOpen()">
+						<input type="checkbox" id="agree" name="agree" value="개인정보동의" onclick="">
+					</div>
+				</div>
+			</div>
+			<div class="ex_wrap">
+				<img src="images/talk/talk_ex.jpg">
+			</div>
+		</div>
+		<div class="lucky_wrap">
+			<div class="lucky_text">
+				<img src="images/talk/talk_lucky.png" class="text_img">
+				<div class="lucky_top"></div>
+				<div class="lucky_img01"></div>
+				<div class="lucky_img02"></div>
+			</div>
+		</div>
+		<div class="talkmap_wrap" id="map_canvas">
+
+		</div>
+		<!--<div class="map_wrap">
+			<img src="/resources/images/talk/talk_map.jpg">
+		</div>-->
+		<div class="footer_wrap">
+			<div class="footer_text"></div>
+		</div>
+	</div>
+
+	<!--팝업창-->
+	<div class="popup_talk_wrap">
+		<div class="popup_talk_bg">
+			<div class="popup_talk_box">
+				<div class="popup_cont">
+					<p>수집하는 개인정보 항목</p>
+				</div>
+				<div class="popup_close" onClick="popupClose()"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

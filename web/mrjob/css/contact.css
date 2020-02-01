@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+.sub_contact{width:1080px;margin:0 auto;}
+.sub_contact .sub_tap_wrap .sub_tap{width:135px;background:url(../images/sub/contact/contact_tap_off.png) no-repeat;cursor:pointer;}
+.sub_contact .sub_tap_wrap .on{background:url(../images/sub/contact/contact_tap_on.png) no-repeat;}
+
+.sub_contact .contact_map_wrap{width:100%;margin:35px 0 30px;border-top:2px solid #3a904a;}
+.sub_contact .contact_map_wrap .contact_map{width:100%;}
+.sub_contact .contact_map_wrap .contact_map_img{width:100%;height:415px;background:url(../images/sub/contact/contact_map.jpg) no-repeat;}
+.sub_contact .contact_map_wrap .contact_map_load{width:100%;height:415px;display:none;}
+
+.contact_table{border-top:2px solid #3a904a;border-bottom:1px solid #388e48;}
+.contact_table table th{color:#308a41;}
+.contact_table table tbody td{text-align:left;}
+.contact_table table td p{color:#8b8b8b;margin:4px 0 10px 10px;}
+.contact_table table td .contact_dot{float:left;margin: 6px 4px 0 0;width:5px;height:5px;background:url(../images/sub/contact/contact_dot.png) no-repeat;}
+
+.contact_table table tr:last-child th{border-bottom: 0;}
+.contact_table table tr:last-child td{border-bottom: 0;}

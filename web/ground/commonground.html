@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="홈페이지내용설명">
+<meta name="keywords" content="홈페이지검색어">
+<title>COMMON GROUND</title>
+
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>	
+<script type="text/javascript" src="js/respond.min.js"></script>
+<script type="text/javscript" src="js/PIE.js"></script>
+
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/header_js.js"></script>
+
+
+<script>
+$(function(){
+	$("#navi li, #submenuwrap").hover(function(){
+	$("#submenuwrap").stop().slideToggle(300);
+	});
+});
+
+</script>
+
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/navslide.css" rel="stylesheet">
+
+<style>
+
+@font-face {
+    font-family:'210AppGulim';
+    src: url('font/210AppGulim.eot'); 
+    src: local('※'),url('font/210AppGulim.eot?#iefix') format('embedded-opentype'),
+         url('font/210AppGulim.woff') format('woff'); 
+         url('font/210AppGulim.ttf') format('truetype');
+	font-style:normal;
+	font-weight:normal;
+}
+
+
+body {
+  margin-top: 171px;
+  overflow-x: hidden;
+  height:100%;
+}
+
+
+#wrap{width:100%; height:auto; background-color:#252525;}
+
+header{width:100%; height:171px; float:left; background-color:white; position:relative;
+
+  z-index: 99;  position:fixed; top:0;
+  transition: all 0.5s ease-in-out;
+  opacity:1;
+
+}
+.nav-up {top:-115px; opacity:1;}
+#header #logo{width:100%; height:51px; float:left; text-align:center; position:absolute; top:40px;}
+#header #logo a{cursor:pointer;}
+#header #subnavi{width:320px; height:20px; position:absolute; right:0px; top:40px;}
+#header #subnavi li{display:block; float:left; width:8%; margin-right:20px;}
+#header #subnavi li:nth-child(1){width:15%;}
+#header #subnavi li:nth-child(2){width:20%; margin-right:15px;}
+#header #subnavi li:nth-child(3) a{font-size:15px; color:#295396;}
+#header #subnavi li:nth-child(4) a{font-size:15px; color:#8b5b4f;}
+#header #subnavi li:nth-child(5) a{font-size:15px; color:#e42c27;}
+#header #subnavi li a{font-size:10px; color:#636363; cursor:pointer; }
+#header #subnavi li a:hover{color:black; }
+#header #subnavi li:nth-child(3) a:hover{color:#1d3b6b;}
+#header #subnavi li:nth-child(4) a:hover{color:#512f30;}
+#header #subnavi li:nth-child(5) a:hover{color:#ac161a;}
+
+#header #navwrap{width:100%; height:56px; float:left; position:absolute; bottom:0; background-color:white;}
+#header #navwrap #navi{width:1025px; height:56px; margin:0 auto;}
+#header #navwrap #navi li{width:17.4%; display:block; float:left; text-align:center;}
+#header #navwrap #navi li:nth-child(5){width:13%;}
+#header #navwrap #navi li a{font-size:18px; font-weight:bold; color:#404040; line-height:56px;
+padding-bottom:5px;cursor:pointer; transition:all .2s;}
+#header #navwrap #navi li a:hover{color:black; }
+
+#header #navwrap #submenuwrap{width:100%; position:absolute; background-color:#eeeceb; left:0; 
+top:56px; height:190px; border-bottom:solid 1px #404040; padding-top:10px; display:none;}
+#header #navwrap #submenuwrap #submenu{width:1025px;; margin:0 auto;}
+#header #navwrap #submenu ul{float:left;}
+#header #navwrap #submenu #sub1 li{width:178.34px;}
+#header #navwrap #submenu #sub2 li{width:178.34px;}
+#header #navwrap #submenu #sub3 li{width:178.34px;}
+#header #navwrap #submenu #sub4 li{width:178.34px;}
+#header #navwrap #submenu #sub5 li{width:133.25px;}
+#header #navwrap #submenu #sub6 li{width:178.34px;}
+#header #navwrap #submenu ul li{text-align:center; height:30px; font-size:12px;}
+#header #navwrap #submenu ul li a{color:#404040;cursor:pointer; font-family:"맑은 고딕"}
+#header #navwrap #submenu ul li a:hover{color:black; font-weight:bold;font-family:"맑은 고딕"}
+
+#btn{position:absolute; left:20px; top:20px;}
+
+#submainwrap{width:100%; height:auto; float:left;}
+#submainwrap #submain img{width:100%;}
+
+#sectionallwrap{width:100%; height:auto; float:left; }
+#sectionallwrap #sectionwrap{width:71.927%; height:auto;margin:0 auto;}
+#sectionallwrap #sectionwrap #section1{float:left; width:100%; height:auto; margin-bottom:5.4667%;}
+#sectionallwrap #sectionwrap #section1 #subtitle1{float:left; width:100%; height:auto;}
+#sectionallwrap #sectionwrap #section1 #subtitle1 #titletext1{float:left; width:100%; text-align:center; font-size:40px; font-weight:bold; font-family:"맑은 고딕"; margin:4% 0 1.5% 0;}
+#sectionallwrap #sectionwrap #section1 #subtitle1 #titletext2{float:left; width:100%; text-align:center; font-size:22px; line-height:30px;font-family:"맑은 고딕";margin-bottom:4%}
+#sectionallwrap #sectionwrap #section1 #contents1{float:left; width:100%; height:auto;}
+#sectionallwrap #sectionwrap #section1 #contents1 #contentsimg1{float:right; width:37.7263%; padding-bottom:25.05%; 
+background-image:url(images/sub_08.png); background-repeat:no-repeat; background-size:cover; background-position:center;}
+#sectionallwrap #sectionwrap #section1 #contents1 #contentstext1{position:relative;left; width:62.2737%; padding-bottom:25.05%; background:#f1ecea;}
+#sectionallwrap #sectionwrap #section1 #contents1 #contentstext1 #maintext1{font-size:24px; position:absolute; top:28%; left:8.72093023%;
+font-weight:bold; color:black; font-family:"맑은 고딕";}
+#sectionallwrap #sectionwrap #section1 #contents1 #contentstext1 #subtext1{position:absolute; font-size:14px; 
+color:black; font-family:"맑은 고딕"; left:8.72093023%; top:45%; line-height:24px;}
+
+#sectionallwrap #sectionwrap #section1 #contents2{float:left; width:100%; height:auto;}
+#sectionallwrap #sectionwrap #section1 #contents2 #contentsimg2{float:left; width:37.7263%; padding-bottom:25.05%;
+background-image:url(images/sub_09.png); background-repeat:no-repeat; background-size:cover; background-position:center;}
+#sectionallwrap #sectionwrap #section1 #contents2 #contentstext2{position:relative; float:left; width:62.2737%; padding-bottom:25.05%; background:#ffffff;}
+
+#sectionallwrap #sectionwrap #section1 #contents2 #contentstext2 #maintext2{font-size:24px; position:absolute; top:28%; right:8.72093023%;
+font-weight:bold; color:black; font-family:"맑은 고딕"; text-align:right;}
+#sectionallwrap #sectionwrap #section1 #contents2 #contentstext2 #subtext2{position:absolute;  font-size:14px; 
+color:black; font-family:"맑은 고딕"; right:8.72093023%; top:45%; line-height:24px; text-align:right;}
+
+#sectionallwrap #sectionwrap #section1 #contents3{float:left; width:100%; height:auto;}
+#sectionallwrap #sectionwrap #section1 #contents3 #contentsimg3{float:right; width:37.7263%; padding-bottom:25.05%;
+background-image:url(images/sub_12.png); background-repeat:no-repeat; background-size:cover; background-position:center;}
+#sectionallwrap #sectionwrap #section1 #contents3 #contentstext3{position:relative; float:left; width:62.2737%; padding-bottom:25.05%; background:#f1ecea;}
+
+#sectionallwrap #sectionwrap #section1 #contents3 #contentstext3 #maintext3{font-size:24px; position:absolute; top:28%; left:8.72093023%;
+font-weight:bold; color:black; font-family:"맑은 고딕";}
+#sectionallwrap #sectionwrap #section1 #contents3 #contentstext3 #subtext3{position:absolute; font-size:14px; 
+color:black; font-family:"맑은 고딕"; left:8.72093023%; top:45%; line-height:24px;}
+
+#sectionallwrap #sectionwrap #section1 #contents4{float:left; width:100%; height:auto;}
+#sectionallwrap #sectionwrap #section1 #contents4 #contentsimg4{float:left; width:37.7263%; padding-bottom:25.05%; 
+background-image:url(images/sub_13.png); background-repeat:no-repeat; background-size:cover; background-position:center;}
+#sectionallwrap #sectionwrap #section1 #contents4 #contentstext4{position:relative; float:left; width:62.2737%; padding-bottom:25.05%; background:#ffffff;}
+#sectionallwrap #sectionwrap #section1 #contents4 #contentstext4 #maintext4{font-size:24px; position:absolute; top:28%; right:8.72093023%;
+font-weight:bold; color:black; font-family:"맑은 고딕"; text-align:right;}
+#sectionallwrap #sectionwrap #section1 #contents4 #contentstext4 #subtext4{position:absolute; font-size:14px; 
+color:black; font-family:"맑은 고딕"; right:8.72093023%; top:45%; line-height:24px; text-align:right;}
+
+
+
+#sectionallwrap #sectionwrap #section2{float:left; width:100%; height:auto; }
+#sectionallwrap #sectionwrap #section2 #subtitle2{float:left; width:100%; height:auto; }
+#sectionallwrap #sectionwrap #section2 #subtitle2 #titletext{width:100%; padding:3.2% 0 3.2% 0;text-align:center; font-size:40px; font-family:"맑은 고딕"; font-weight:bold; color:black;}
+#sectionallwrap #sectionwrap #section2 #videoboxwrap{float:left; width:100%; height:auto; margin-bottom:7%;}
+#sectionallwrap #sectionwrap #section2 #videobox{position:relative; width:92.3244%; padding-bottom:56.2352941%; margin:0 auto; }
+#sectionallwrap #sectionwrap #section2 #videobox iframe{margin:0; padding:0; width:100%; height:100%; position:absolute; top:0; left:0;}
+
+#footerwrap{float:left; width:100%; height:auto;background:#252525; font-family:"맑은 고딕";}
+#footerwrap #footer{width:64.375%; margin:0 auto; padding-bottom:20%;}
+#footerwrap #footer #footer-topwrap{float:left; width:100%; height:auto; border-bottom:1px solid gray;}
+#footerwrap #footer #footer-topwrap #footer-top{float:left; width:30%; margin:3% 0 2% 0; height:auto;}
+#footerwrap #footer #footer-topwrap #footer-top #footerlogo{float:left; width:100%; padding-bottom:27%; background-image:url(images/logo_footer.jpg);
+background-position:center; background-size:cover; background-repeat:no-repeat;margin-bottom:2%;}
+#footerwrap #footer #footer-topwrap #footer-top #footertext1{font-size:12px; color:#848484; font-weight:bold;}
+#footerwrap #footer #footer-bottom{float:left; width:100%; height:auto; padding-top:2%;}
+#footerwrap #footer #footer-bottom #footertext2{float:left; width:50%; padding-bottom:2%;
+font-size:12px; font-weight:bold; color:#848484; line-height:18px;}
+#footerwrap #footer #footer-bottom span{font-size:12px; line-height:22px; color:#dfdede;}
+#footerwrap #footer #footer-bottom #footertext3wrap{float:left; width:50%; height:auto;}
+#footerwrap #footer #footer-bottom #footertext3wrap #logokolon{float:left; width:50%; padding:2%; background-image:url(images/logo_kolon.jpg);
+background-position:center; background-size:cover; background-repeat:no-repeat; margin-bottom:2%;}
+#footerwrap #footer #footer-bottom #footertext3wrap #footertext3{float:left; width:100%; padding-bottom:6%; 
+font-size:12px; font-weight:bold; color:#848484; line-height:22px;}
+
+
+@media screen and (max-width:767px){
+
+	body {margin-top:60.8px;}
+	header{height:60.8px;}
+	#subnavi{display:none;}
+	#navwrap{display:none;}
+	#header #logo{top:15px;}
+	#header #logo img{width:109.8px; height:30.6px;}
+    .menu-container{ display:block;}
+	#btn{top:15px;}
+    #navi{ display:none;}	
+#sectionallwrap #sectionwrap{width:100%;}
+#sectionallwrap #sectionwrap #section1 #subtitle1 #titletext1{font-size:22px; margin-bottom:3%;}
+#sectionallwrap #sectionwrap #section1 #subtitle1 #titletext2{display:none;}
+
+#sectionallwrap #sectionwrap #section1 #contents1 #contentsimg1{width:80%; padding-bottom:30%; margin:0 10%;}
+#sectionallwrap #sectionwrap #section1 #contents1 #contentstext1{width:65%; margin:0 10%; padding-bottom:45%; background:rgba(255,255,255,0); text-align:center;}
+#sectionallwrap #sectionwrap #section1 #contents1 #contentstext1 #maintext1{font-size:15px; top:69%; left:25%; line-height:20px; text-align:center;}
+
+#sectionallwrap #sectionwrap #section1 #contents2 #contentsimg2{width:80%; padding-bottom:30%; margin:0 10%;}
+#sectionallwrap #sectionwrap #section1 #contents2 #contentstext2{width:72%; margin:0 10%; padding-bottom:14%; background:rgba(255,255,255,0);text-align:center;}
+#sectionallwrap #sectionwrap #section1 #contents2 #contentstext2 #maintext2{font-size:15px; top:3%; left:22%; line-height:20px;text-align:center;}
+
+#sectionallwrap #sectionwrap #section1 #contents3 #contentsimg3{width:80%; padding-bottom:30%; margin:0 10%;}
+#sectionallwrap #sectionwrap #section1 #contents3 #contentstext3{width:72%; margin:0 10%; padding-bottom:14%; background:rgba(255,255,255,0); text-align:center;}
+#sectionallwrap #sectionwrap #section1 #contents3 #contentstext3 #maintext3{font-size:15px; top:3%; left:13%; line-height:20px;}
+
+#sectionallwrap #sectionwrap #section1 #contents4 #contentsimg4{width:80%; padding-bottom:30%; margin:0 10%;}
+#sectionallwrap #sectionwrap #section1 #contents4 #contentstext4{width:80%; margin:0 10%; padding-bottom:14%; background:rgba(255,255,255,0); text-align:center;}
+#sectionallwrap #sectionwrap #section1 #contents4 #contentstext4 #maintext4{font-size:15px; top:3%; left:10%; line-height:20px;text-align:center;}
+
+#sectionallwrap #sectionwrap #section1 .subtext{display:none;}
+
+#sectionallwrap #sectionwrap #section2 #subtitle2 #titletext{font-size:22px;}
+
+#footerwrap #footer{width:95%; padding-top:3%;}
+#footerwrap #footer #footer-bottom #footertext3wrap{display:none;}
+#footerwrap #footer #footer-topwrap #footer-top{float:none; margin:0 auto; width:60%; text-align:center;}
+#footerwrap #footer #footer-bottom #footertext2{float:none; margin:0 auto; width:90%; text-align:center;}
+
+	}
+	
+	
+@media screen and (min-width:768px) and (max-width:1024px){
+
+	body {margin-top:70.8px;}
+	header{height:70.8px;}
+	#subnavi{display:none;}
+	#navwrap{display:none;}
+	#header #logo{top:15px;}
+	#header #logo img{width:146.4px; height:40.8px;}
+    .menu-container{ display:block;}	
+    #navi{ display:none;}	
+#sectionallwrap #sectionwrap{width:100%;}
+#sectionallwrap #sectionwrap #section1 #subtitle1 #titletext2{font-size:16px; line-height:20px;}
+#sectionallwrap #sectionwrap #section1 #contents1 #contentstext1 #maintext1{font-size:18px;left:2%; top:15%;}
+#sectionallwrap #sectionwrap #section1 #contents1 #contentstext1 #subtext1{width:90%;font-size:11px; line-height:16px; left:2%; top:40%;}
+
+#sectionallwrap #sectionwrap #section1 #contents2 #contentstext2 #maintext2{font-size:18px;right:2%; top:15%;}
+#sectionallwrap #sectionwrap #section1 #contents2 #contentstext2 #subtext2{width:90%;font-size:11px; line-height:16px; right:2%; top:40%;}
+
+#sectionallwrap #sectionwrap #section1 #contents3 #contentstext3 #maintext3{font-size:18px;left:2%; top:15%;}
+#sectionallwrap #sectionwrap #section1 #contents3 #contentstext3 #subtext3{width:90%;font-size:11px; line-height:16px; left:2%; top:40%;}
+
+#sectionallwrap #sectionwrap #section1 #contents4 #contentstext4 #maintext4{font-size:18px;right:2%; top:15%;}
+#sectionallwrap #sectionwrap #section1 #contents4 #contentstext4 #subtext4{width:90%;font-size:11px; line-height:16px; right:2%; top:40%;}
+
+#footerwrap #footer{width:95%;}
+
+}
+
+
+
+
+
+@media screen and (min-width:1025px){
+.menu-container{ display:none;}		
+#navi{ display:block;}
+
+	}
+	
+	
+</style>
+
+</head>
+<body>
+<div id="wrap">
+
+<header id="header">
+<div id="logo">
+	<a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+</div>
+
+<nav class="menu-container">
+<div class="menu-btn" id="btn"><i class="fa fa-bars fa-lg"></i></div>
+<div class="menu-slide">
+<ul class="menu-list">
+<li class="menu-item"><a href="#">로그인</a></li>
+<li class="menu-item"><a href="commonground.html">커먼그라운드</a></li>
+<li class="menu-item"><a href="access.html">매장안내</a></li>
+<li class="menu-item"><a href="4xr.html">팝업스토어</a></li>
+<li class="menu-item"><a href="restaurant.html">푸드마켓</a></li>
+<li class="menu-item"><a href="event.html">이벤트</a></li>
+<li class="menu-item"><a href="notice.html">커뮤니티</a></li>
+</ul>
+</div>
+</nav>
+
+
+
+<ul id="subnavi">
+<li><a href="#">로그인</a></li>
+<li><a href="#">회원가입</a></li>
+<li><a href="https://www.facebook.com/commonground.1st" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+<li><a href="https://www.instagram.com/commonground.1st" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UCWef7APCP5XdzmXd4GD0tZA" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+</ul>
+
+<div id="navwrap">
+	
+<ul id="navi">
+<li><a href="commonground.html">커먼그라운드</a></li>
+<li><a href="floorinfo.html">매장안내</a></li>
+<li><a href="4xr.html">팝업스토어</a></li>
+<li><a href="restaurant.html">푸드마켓</a></li>
+<li><a href="event.html">이벤트</a></li>
+<li><a href="notice.html">커뮤니티</a></li>
+</ul>
+
+<div id="submenuwrap">
+    <div id="submenu">
+
+    <ul id="sub1">
+    <li><a href="commonground.html">커먼그라운드 소개</a></li>
+    </ul>
+    
+    <ul id="sub2">
+    <li><a href="floorinfo.html">층별 안내</a></li>
+    <li><a href="category.html">카테고리별 안내</a></li>
+    <li><a href="access.html">오시는 길</a></li>
+    </ul>
+    
+        <ul id="sub3">
+    <li><a href="4xr.html">4XR</a></li>
+    <li><a href="evisu.html">EVISU</a></li>
+    <li><a href="mixxj.html">MIXXJ</a></li>
+    <li><a href="okcat.html">OKCAT</a></li>
+    <li><a href="promiz.html">PROMIZ</a></li>
+    <li><a href="kumhong.html">금홍팬시</a></li>
+    </ul>
+    
+        <ul id="sub4">
+    <li><a href="restaurant.html">RESTAURANT</a></li>
+    <li><a href="cafe.html">CAFE</a></li>
+    <li><a href="foodtruck.html">FOOD TRUCK</a></li>
+    </ul>
+    
+        <ul id="sub5">
+    <li><a href="event.html">진행중인 이벤트</a></li>
+    <li><a href="event_off.html">마감된 이벤트</a></li>
+    </ul>
+    
+    <ul id="sub6">
+    <li><a href="notice.html">공지사항</a></li>
+    <li><a href="news.html">뉴스</a></li>
+    <li><a href="sns.html">SNS</a></li>
+    <li><a href="exhibition.html">전시</a></li>
+    <li><a href="support.html">대학생 서포터즈</a></li>
+    </ul>
+
+</div>
+</div>
+
+
+</header>
+
+<div id="submainwrap">
+<div id="submain">
+<img src="images/submain_01.jpg">
+</div>
+
+</div>
+
+<!--메인갤러리 상단-->
+
+
+
+<div id="sectionallwrap">
+
+<div id="sectionwrap">
+	<div id="section1">
+		<div id="subtitle1">
+			<p id="titletext1">
+				COMMON GROUND
+<p id="titletext2">국내 최초, 세계 최대의 POP-UP 컨테이너 쇼핑몰<br>
+COMMON GROUND는 국내 최초이자 전세계 최대의 팝업 컨테이너 쇼핑몰입니다.</p>
+			</p>
+		</div>
+		<div id="contents1">
+			<div id="contentsimg1"></div>
+			<div id="contentstext1">
+				<p id="maintext1">	BRAND ESSENCE : CREATIVE CONNECTION</p>
+				<p id="subtext1" class="subtext">
+COMMON GROUND는 단순한 쇼핑 공간이 아닌, <br>
+사람과 사람, 브랜드와 브랜드  그리고 사람과 브랜드간의 소통 뿐 아니라 더 나아가 <br>
+이들과 지역 커뮤니티까지 함께 이어주는 Creative Connection을 표방합니다.<br>
+함께 소통하고 나누면서 서로 간의 생각을 공유하여 크리에이티브를 만들어가는 우리 모두의 공간입니다.
+				</p>
+			</div>
+		</div>
+		<div id="contents2">
+			<div id="contentsimg2"></div>
+			<div id="contentstext2">
+				<p id="maintext2">	온라인과 유명거리의 멋진, 맛집을 한 곳에!</p>
+				<p id="subtext2" class="subtext">
+온라인과 스트리트에서 화제가 되는 패션샵들, 신진디자이너들의 감성을 담은 패션&라이프스타일과<br>
+대형 프랜차이즈가 아닌 작지만 강하고 트랜디한 브랜드를 만날 수 있습니다.<br>
+아울러 유명거리에 떠오르는 맛집들을 탁 트인 야외 테라스에서 즐길 수 있습니다.<br>
+해외에서 만날 수 있었던 푸드트럭이 자리잡아 이색적인 정취의 식도락을  만끽하실 수 있습니다.
+				</p>
+			</div>
+		</div>
+		<div id="contents3">
+			<div id="contentsimg3"></div>
+			<div id="contentstext3">
+				<p id="maintext3">	모두 함께 참여하고 만들어가는 PLAY GROUND</p>
+				<p id="subtext3" class="subtext">
+Market Ground에 각기 다른 주제로 개최되는 주말 마켓으로 풍성하고 다양한 쇼핑의 경험을 제공합니다.<br>
+디자이너와 장인들의 마켓도 열리면서 모두가 판매자가 되고 예술가가 되어 함께 마켓을 만들어 갑니다. <br>
+살기 좋은 지역사회를 만들어가기 위한 게릴라 가드닝을 비롯한 프로그램을 구성하여 <br>
+지역사회와 COMMON GROUND가 같이 성장하는 지역상생 사업모델을 구현합니다.
+				</p>
+			</div>
+		</div>
+		<div id="contents4">
+			<div id="contentsimg4"></div>
+			<div id="contentstext4">
+				<p id="maintext4">	다양한 문화와 축제로 즐거운 CULTURE PLATFORM</p>
+				<p id="subtext4" class="subtext">
+과거 동네에 장터가 들어서면 사는 사람과 파는 사람 모두 즐거운 축제의 장이 되듯<br>
+살 거리 뿐 아니라 볼거리, 즐길 거리로 가득한 축제의 장을 펼칩니다.<br>
+이러한 마켓과 축제의 흥취를 젊은 감각으로 재해석하여,<br>
+TOY REPUBLIC과 함께 크리에이티브한 전시와 퍼포먼스 등의 다양한 Culture Experience를 선사합니다.
+				</p>
+			</div>
+		</div>
+		
+
+	</div>
+	<div id="section2">
+		<div id="subtitle2">
+			<p id="titletext">CREATIVE CONNECTION</p>
+		</div>
+		<div id="videoboxwrap">
+			<div id="videobox">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/1IdzlBO3tDk" frameborder="0" allowfullscreen controls></iframe>
+			</div>
+		</div>
+		
+	</div>
+</div>
+</div>
+
+
+<div id="footerwrap">
+	<footer id="footer">
+		<div id="footer-topwrap">
+		<div id="footer-top">
+			<div id="footerlogo"></div>
+			<p id="footertext1">서울특별시 광진구 아차산로 200(구. 광진구 자양동 17-1)</p>
+		</div>
+		</div>
+		<div id="footer-bottom">
+			<p id="footertext2">
+				<span>문의 전화</span><br>
+콜센터 :1588-7667 / AM10:00 - PM6:00 토,일,공휴일 휴무<br>
+고객센터: 02-467-2747 / AM10:00 - PM7:00 월요일~금요일<br>
+eKolon 온라인 멤버쉽 고객센터: 1588-7667<br><br>
+<span>입점 및 기타 관련문의</span><br>
+Email: commonground@kolon.com<br>
+			</p>
+			<div id="footertext3wrap">
+				<div id="logokolon"></div>
+				<div id="footertext3">
+					코오롱인더스트리(주) FnC부문 커먼그라운드  |  대표이사: 박동문  |  전화: 02-3677-3114<br>
+법인 등록번호 321-85-00020  |   주소: 경기도 과천시 코오롱로 11<br>
+개인정보관리 책임자: 경영전략본부 오원선 전무  |   개인정보관리 담당자: 정보보안TF 김정혁 과장<br>
+<span>개인정보취급방침</span>  |  
+<span>이용약관</span>  |  
+<span>개인정보처리방침</span>  |  
+<span>채용안내</span><br>
+				</div>
+				</div>
+		</div>
+		
+	</footer>
+</div>
+
+
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+.aboutkh_wrapper{width: 100%;}
+
+.about_main_wrap{position:relative;width: 100%;background:url(../images/aboutKH/aboutKH_main_bg.jpg) no-repeat;background-size: cover;}
+.sub_wrapper .about_main_wrap .sub_box{background:none;}
+.sub_wrapper .about_main_wrap .sub_top .sub_title{color:#fff;}
+.about_main_wrap .about_main{width: 88%;padding: 11% 6%;text-align:center;}
+.about_main_wrap .about_main .about_main_logo{width:20%;margin:14% auto 10%;}
+.about_main_wrap .about_main .about_main_logo img{width:100%;}
+.about_main_wrap .about_main .about_main_txt{width:100%;}
+.about_main_wrap .about_main .about_main_txt img{width:100%;}
+.about_main_wrap .about_main .about_main_bar{width:12%;margin:12% auto;}
+.about_main_wrap .about_main .about_main_bar img{width:100%;}
+.about_main_wrap .about_main .about_main_icon{width:100%;}
+.about_main_wrap .about_main .about_main_icon img{width:100%;}
+.about_main_wrap .about_main .about_main_scroll{width:8%;margin:20% auto 0;}
+.about_main_wrap .about_main .about_main_scroll img{width:100%;}
+
+.about_content{}
+.about_content .about_things{width: 88%;padding: 4% 6%;background: #fff;}
+.about_content .about_things .about_things_title{width:40%;margin:0 auto 5%;}
+.about_content .about_things .about_things_title img{width:100%;}
+.about_content .about_things .about_things_box{width:100%;margin-top: 8%;}
+.about_content .about_things .about_things_box img{width:100%;}
+.about_content .about_things .about_things_box .about_things_box_txt1{width:100%;margin: 4% 0 1.5%;font-weight: 700;color: #000;}
+.about_content .about_things .about_things_box .about_things_box_txt2{width:100%;margin-bottom:2%;line-height: 140%;}
+.about_content .about_banner{width: 100%;padding: 4% 0;}
+.about_content .about_banner .about_banner_title{width:88%;margin:0 auto 5%;}
+.about_content .about_banner .about_banner_title img{width:100%;}
+.about_content .about_banner .about_banner_list{overflow-x: auto;overflow-y: hidden;}
+.about_content .about_banner .about_banner_list ul{margin-left: 6%;padding-bottom: 2%;}
+.about_content .about_banner .about_banner_list li{float: left;padding-right: 1%;}
+.about_content .about_banner .about_banner_list li img{width: 100%;}
+.about_content .about_banner .about_banner_list li .about_banner_list_txt{padding-top: 4%;line-height: 130%;}

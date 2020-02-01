@@ -1,0 +1,568 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>KH 정보교육원 RAD</title>
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/collaborate.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/resub.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="topwrap">
+			<div class="top cf">
+				<div class="left">
+					<h1 class="hid">KH정보교육원 RAD페이지</h1>
+					<a href="remain.html">
+						<img alt="KH정보교육원 RAD 로고 이미지" src="images/rad/main/header_logo.png">
+					</a>
+				</div>
+				<div class="right">
+					<ul class="cf regular">
+						<li><a href="jojicdo.html">KH조직도</a></li>
+						<li>|</li>
+						<li><a href="gonggam.html" class="top_new">KH 共感</a></li>
+						<li>|</li>
+						<li><a href="" class="top_new">KH 메일</a></li>
+						<li>|</li>
+						<li><a href="login.html">로그아웃</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> <!--class="topwrap"-->
+		<nav id="nav">
+			<div class="menubar cf">
+				<div class="menu_list">
+					<div class="menubtn">
+						<div class="menuicon">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
+					<ul class="cf">
+						<li class="rightline">
+							<p>공지사항<span class="underline"></span></p> 
+							<ul class="cf submenu">
+								<li><a href="">운영공지</a></li>
+								<li><a href="">학사공지</a></li>
+								<li><a href="">교육부공지</a></li>
+								<li><a href="">경조사공지</a></li>
+								<li><a href="">자료실</a></li>
+								<li><a href="">주간회의록</a></li>
+								<li><a href="">RAD변경사항</a></li>
+								<li><a href="">업무지시(UI)</a></li>
+								<li><a href="">특강신청게시판</a></li>
+								<li><a href="">개발이슈게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>문의관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">온라인문의</a></li>
+								<li><a href="">오프라인문의</a></li>
+								<li><a href="">재컨텍요망</a></li>
+								<li><a href="">단기특강문의</a></li>
+								<li><a href="">개별모집현황</a></li>
+								<li><a href="">컨테스트</a></li>
+								<li><a href="">회원관리</a></li>
+								<li><a href="">가망등록관리</a></li>
+								<li><a href="">이벤트관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>학사관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">시간표관리</a></li>
+								<li><a href="">운영과정관리</a></li>
+								<li><a href="">학생설문조사</a></li>
+								<li><a href="">국기면접관리</a></li>
+								<li><a href="">내사일지</a></li>
+								<li><a href="">NCS능력단위관리</a></li>
+								<li><a href="">승인과정관리</a></li>
+								<li><a href="">평가관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>수강생관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생관리</a></li>
+								<li><a href="">학생현황</a></li>
+								<li><a href="">결석생관리</a></li>
+								<li><a href="">이슈학생관리</a></li>
+								<li><a href="">프로젝트관리</a></li>
+								<li><a href="">과정공지관리</a></li>
+								<li><a href="">우리반게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>취업관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생취업관리</a></li>
+								<li><a href="">연계업체</a></li>
+								<li><a href="">채용정보</a></li>
+								<li><a href="">취업성공사례</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>대외활동관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">기본정보</a></li>
+								<li><a href="">대학관리</a></li>
+								<li><a href="">방문이력</a></li>
+								<li><a href="">연계업체</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>컨텐츠관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">공지사항 관리</a></li>
+							</ul>
+						</li>
+						<li>
+							<p>사이트관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">도메인관리</a></li>
+								<li><a href="">지점관리</a></li>
+								<li><a href="">조직관리</a></li>
+								<li><a href="">계정관리</a></li>
+								<li><a href="">역할관리</a></li>
+								<li><a href="">메뉴관리</a></li>
+								<li><a href="">강사채용</a></li>
+								<li><a href="">SMS 전송관리</a></li>
+								<li><a href="">접속자관리</a></li>
+								<li><a href="">문의분석</a></li>
+								<li><a href="">운영과정분석</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--class="menu_list"-->
+				<div class="menu_quick">
+					<ul class="cf">
+						<li><a href="dailyreport.html"><img alt="업무보고" src="images/rad/main/header_quick01.png"></a></li>
+						<li class="new_circle"><a href="schedule.html"><img alt="일정관리" src="images/rad/main/header_quick03.png"></a></li>
+						<li><a href="collaborate.html"><img alt="업무협업" src="images/rad/main/header_quick02.png"></a></li>
+					</ul>
+				</div>
+			</div><!--class="menubar"-->
+			<div class="fullmenu">
+				<div class="fullwrap">
+					<ul class="cf submenu">
+						<li><a href="">운영공지</a></li>
+						<li><a href="">학사공지</a></li>
+						<li><a href="">교육부공지</a></li>
+						<li><a href="">경조사공지</a></li>
+						<li><a href="">자료실</a></li>
+						<li><a href="">주간회의록</a></li>
+						<li><a href="">RAD변경사항</a></li>
+						<li><a href="">업무지시(UI)</a></li>
+						<li><a href="">특강신청게시판</a></li>
+						<li><a href="">개발이슈게시판</a></li>
+					</ul> 
+					<ul class="cf submenu">
+						<li><a href="">온라인문의</a></li>
+						<li><a href="">오프라인문의</a></li>
+						<li><a href="">재컨텍요망</a></li>
+						<li><a href="">단기특강문의</a></li>
+						<li><a href="">개별모집현황</a></li>
+						<li><a href="">컨테스트</a></li>
+						<li><a href="">회원관리</a></li>
+						<li><a href="">가망등록관리</a></li>
+						<li><a href="">이벤트관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">시간표관리</a></li>
+						<li><a href="">운영과정관리</a></li>
+						<li><a href="">학생설문조사</a></li>
+						<li><a href="">국기면접관리</a></li>
+						<li><a href="">내사일지</a></li>
+						<li><a href="">NCS능력단위관리</a></li>
+						<li><a href="">승인과정관리</a></li>
+						<li><a href="">평가관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생관리</a></li>
+						<li><a href="">학생현황</a></li>
+						<li><a href="">결석생관리</a></li>
+						<li><a href="">이슈학생관리</a></li>
+						<li><a href="">프로젝트관리</a></li>
+						<li><a href="">과정공지관리</a></li>
+						<li><a href="">우리반게시판</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생취업관리</a></li>
+						<li><a href="">연계업체</a></li>
+						<li><a href="">채용정보</a></li>
+						<li><a href="">취업성공사례</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">기본정보</a></li>
+						<li><a href="">대학관리</a></li>
+						<li><a href="">방문이력</a></li>
+						<li><a href="">연계업체</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">공지사항 관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">도메인관리</a></li>
+						<li><a href="">지점관리</a></li>
+						<li><a href="">조직관리</a></li>
+						<li><a href="">계정관리</a></li>
+						<li><a href="">역할관리</a></li>
+						<li><a href="">메뉴관리</a></li>
+						<li><a href="">강사채용</a></li>
+						<li><a href="">SMS 전송관리</a></li>
+						<li><a href="">접속자관리</a></li>
+						<li><a href="">문의분석</a></li>
+						<li><a href="">운영과정분석</a></li>
+					</ul>
+				</div> <!-- class="fullwrap"-->
+			</div> <!--class="fullmenu"-->
+		</nav>
+	</header>
+	
+	<section id="section">
+		<div class="sectionwrap subcomWrap">
+			<div class="collaboWrite">
+				<div class="tit">
+					<h3>업무협업</h3>
+				</div>
+				<div class="subcontent collaboWritecontent Writecontent">
+					<div class="writetit">
+						<p>업무협업 작성</p>
+					</div>
+					<div class="writeTable">
+						<table cellpadding="0" cellspacing="0">
+							<caption>업무협업 작성 테이블</caption>
+							<colgroup>
+							   <col width="120" /> 
+							   <col width="110" /> 
+							   <col width="126" /> 
+							   <col width="821" />
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>카테고리</th>
+									<td colspan="3">
+										<input type="radio" id="request_category" name="category" value="REQUEST">
+										<label for="request_category">업무요청</label>
+										
+										<input type="radio" id="etc_category" name="category" value="ETC">
+										<label for="etc_category">기타</label>
+										
+										<input type="radio" id="error_category" name="category" value="ERROR">
+										<label for="error_category">RAD수정요청</label>
+										
+										<input type="radio" id="management_category" name="category" value="MANAGEMENT">
+										<label for="management_category">시설관리업무요청</label>
+										
+										<input type="radio" id="fixtures_category" name="category" value="FIXTURES">
+										<label for="fixtures_category">비품구매요청</label>
+										
+										<input type="radio" id="card_category" name="category" value="CARD">
+										<label for="card_category">명함&amp;메일서명 신청</label>
+										
+										<input type="radio" id="doc_category" name="category" value="DOC">
+										<label for="doc_category">문서발급신청</label>
+										
+										<input type="radio" id="employee_category" name="category" value="EMPLOYEE">
+										<label for="employee_category">사원증 발급신청</label>
+										
+										<input type="radio" id="evaluation_category" name="category" value="EVALUATION">
+										<label for="evaluation_category">평가관리 수정요청</label>
+									</td>
+								</tr>
+								<tr class="selectLine">
+									<th rowspan="7">공유대상<br />선택</th>
+									<td rowspan="6" class="td_second">그룹선택</td>
+									<td>
+										<input type="checkbox" id="all" name="all" style="" value="1" onclick="fnCheckDepartmentAll(this)">
+										<label for="all">전체</label>
+									</td>
+									<td>모든 부서 및 부서원</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" id="branch1" name="branch" style="" value="1134" is_branch="true" onclick="fnCheckDepartment(this)">
+										<label for="branch1">경영지원부</label>
+									</td>
+									<td>
+										
+										<input type="checkbox" id="team11" name="team" style="" value="1135" onclick="fnCheckTeam(this)">
+										<label for="team11">회계팀</label>
+										
+										<input type="checkbox" id="team12" name="team" style="" value="1136" onclick="fnCheckTeam(this)">
+										<label for="team12">총무부</label>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" id="branch2" name="branch" style="" value="1005" onclick="fnCheckDepartment(this)">
+										<label for="branch2">기획본부</label>
+									</td>
+									<td>
+										
+										<input type="checkbox" id="team21" name="team" style="" value="1010" onclick="fnCheckTeam(this)">
+										<label for="team21">기획팀</label>
+										
+										<input type="checkbox" id="team22" name="team" style="" value="1119" onclick="fnCheckTeam(this)">
+										<label for="team22">국비팀</label>
+										
+										<input type="checkbox" id="team23" name="team" style="" value="1007" onclick="fnCheckTeam(this)">
+										<label for="team23">기업팀</label>
+										
+										<input type="checkbox" id="team24" name="team" style="" value="1008" onclick="fnCheckTeam(this)">
+										<label for="team24">대학팀</label>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" id="branch3" name="branch" style="" value="2" is_branch="true" onclick="fnCheckDepartment(this)">
+										<label for="branch3">강남지원</label>
+									</td>
+									<td>
+										
+										<input type="checkbox" id="team31" name="team" style="" value="1015" onclick="fnCheckTeam(this)">
+										<label for="team31">행정팀</label>
+										
+										<input type="checkbox" id="team32" name="team" style="" value="1016" onclick="fnCheckTeam(this)">
+										<label for="team32">입학상담 1팀</label>
+										
+										<input type="checkbox" id="team33" name="team" style="" value="1017" onclick="fnCheckTeam(this)">
+										<label for="team33">입학상담 2팀</label>
+										
+										<input type="checkbox" id="team34" name="team" style="" value="1020" onclick="fnCheckTeam(this)">
+										<label for="team34">취업지원 1팀</label>
+										
+										<input type="checkbox" id="team35" name="team" style="" value="1021" onclick="fnCheckTeam(this)">
+										<label for="team35">취업지원 2팀</label>
+										
+										<input type="checkbox" id="team36" name="team" style="" value="1023" onclick="fnCheckTeam(this)">
+										<label for="team36">자바학부</label>
+										
+										<input type="checkbox" id="team37" name="team" style="" value="1024" onclick="fnCheckTeam(this)">
+										<label for="team37">보안학부</label>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" id="branch4" name="branch" style="" value="6" is_branch="true" onclick="fnCheckDepartment(this)">
+										<label for="branch4">종로지원</label>
+									</td>
+									<td>
+										
+										<input type="checkbox" id="team41" name="team" style="" value="1104" onclick="fnCheckTeam(this)">
+										<label for="team41">운영지원팀</label>
+										
+										<input type="checkbox" id="team42" name="team" style="" value="1106" onclick="fnCheckTeam(this)">
+										<label for="team42">취업지원팀</label>
+										
+										<input type="checkbox" id="team43" name="team" style="" value="1107" onclick="fnCheckTeam(this)">
+										<label for="team43">자바학부</label>
+										
+										<input type="checkbox" id="team44" name="team" style="" value="1108" onclick="fnCheckTeam(this)">
+										<label for="team44">보안학부</label>
+										
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<input type="checkbox" id="branch5" name="branch" style="" value="10" is_branch="true" onclick="fnCheckDepartment(this)">
+										<label for="branch5">당산지원</label>
+									</td>
+									<td>
+										
+										<input type="checkbox" id="team51" name="team" style="" value="1011" onclick="fnCheckTeam(this)">
+										<label for="team51">UI팀</label>
+										
+										<input type="checkbox" id="team52" name="team" style="" value="1130" onclick="fnCheckTeam(this)">
+										<label for="team52">취업지원팀</label>
+										
+										<input type="checkbox" id="team53" name="team" style="" value="1125" onclick="fnCheckTeam(this)">
+										<label for="team53">자바학부</label>
+										
+										<input type="checkbox" id="team54" name="team" style="" value="1126" onclick="fnCheckTeam(this)">
+										<label for="team54">보안학부</label>
+										
+										<input type="checkbox" id="team55" name="team" style="" value="1129" onclick="fnCheckTeam(this)">
+										<label for="team55">운영지원팀</label>
+										
+									</td>
+								</tr>
+								<tr>
+									<td class="td_second eachSelect">
+										개별선택<br />
+										<span class="btnSm eachSelectBtn">
+											<a href="">추가</a>
+										</span>
+									</td>
+									<td colspan="2" class="eachSelect">
+										<ul>
+											<li><p>업무를 공유할 대상자를 선택하시기 바랍니다.</p></li>
+											<li>
+												<p>[강남] 입학상담실/입학상담 1팀 이민호 사원</p>
+												<a class="btn_delete" href="">&nbsp;</a>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th>제목</th>
+									<td colspan="3"><input type="text" id="title" name="title" value=""></td>
+								</tr>
+								<tr>
+									<th>분류</th>
+									<td colspan="3">
+										<input type="checkbox" id="notice" name="notice" value="0" onclick="">
+										<label for="notice">중요공지</label>
+									</td>
+								</tr>
+								<tr>
+									<th>작성자</th>
+									<td colspan="3">홍유경</td>
+								</tr>
+								<tr class="fileTr">
+									<th>첨부파일</th>
+									<td colspan="3" class="file">
+										<ul>
+											<li class="fileLiFirst">
+												<div class="fileInput">
+													<input type="text" id="filename2" disabled="disabled" value="">
+												</div>
+												<span class="btnSm file_btn">
+													<a href="">찾아보기</a>
+												</span>
+											</li>
+											<li>
+												<div class="fileInput">
+													<input type="text" id="filename2" disabled="disabled" value="">
+												</div>
+												<span class="btnSm file_btn">
+													<a href="">찾아보기</a>
+												</span>
+											</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+									<th>내용*</th>
+									<td colspan="3" class="editer"><img src="images/rad/sub/editer.jpg"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- class="writeTable"-->
+					<div class="WriteBtn">
+						<div class="btnMd update">
+							<a href="collaborate.html">등록</a>
+						</div>
+						<div class="btnMd cancel">
+							<a href="collaborate.html">취소</a>
+						</div>
+					</div><!--class="WriteBtn"-->
+				</div><!--class="subcontent gongWritecontent"-->
+				<div class="jojicpop popupcom">
+					<div class="top">
+						<p>업무 공유 대상 선택</p>
+						<img alt="업무 공유 대상 선택 팝업 닫기 버튼" src="images/rad/popup_x.png">
+					</div><!--class="top"-->
+					<div class="mid">
+						<div class="left">
+							<ul class="jojicTree">
+								<li>
+									<a href="">KH정보교육원</a>
+									<ul>
+										<li>
+											<a href="">경영지원본부</a>
+											<ul>
+												<li>
+													<a href="">총무부</a>
+												</li>
+												<li>
+													<a href="">회계팀</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="">기획본부</a>
+											<ul>
+												<li>
+													<a href="">전략기획부</a>
+													<ul>
+														<li>
+															<a href="">기획팀</a>
+														</li>
+														<li>
+															<a href="">국비팀</a>
+														</li>
+														<li>
+															<a href="">홍보팀</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="">대외협력부</a>
+													<ul>
+														<li>
+															<a href="">기업팀</a>
+														</li>
+														<li>
+															<a href="">대학팀</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="right"></div>
+					</div>
+				</div><!--class="jojicpop"-->
+			</div><!--class="gonggamWrite"-->
+		</div><!--class="subcomWrap"-->
+	</section>
+	
+	
+	
+	<!--팝업 bg 시작-->
+	<div class="popupBg"></div>
+	<!--팝업 bg 끝-->
+	
+	<!-- 우측 퀵메뉴 시작 -->
+	
+	<!-- 우측 퀵메뉴 끝 -->
+	
+	
+	<footer id="footer">
+		<div class="footerWrap">
+			<p>Copyright © 1998-2018 KH Information Educational Institute All Right Reserved</p>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

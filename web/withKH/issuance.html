@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>With KH</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/menu.css" />
+<link rel="stylesheet" href="css/sub/issuance.css" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+</head>
+<body>
+<div class="sub_wrapper">
+	<div class="issuance_wrapper">
+		<div class="sub_top sub_box">
+			<div class="back_btn" onClick="javascript:location.href='main.html'">
+				<img src="images/sub/sub_back_btn.png" alt="뒤로가기버튼" />
+			</div>
+			<h1 class="sub_title">행정문서 발급</h1>
+			<div class="menu"><img src="images/menubar_sub.png" alt="메뉴 버튼 이미지" /></div>
+		</div><!-- //sub_top -->
+		<div class="sub_content">
+			<div class="sub_issuance_visual_box sub_box">
+				<p class="sub_issuance_visual_title">최근 발급내역</p>
+				<ul>
+					<li>
+						<p class="sub_com_visual_per3">신청완료</p>
+						<p class="sub_com_visual_per2">0</p>
+					</li>
+					<li class="issuance_visual_arrow"><img src="images/sub/issuance/issuance_visual_arrow.png" alt="행정문서발급 비주얼 화살표 이미지" /></li>
+					<li>
+						<p class="sub_com_visual_per3">발급완료</p>
+						<p class="sub_com_visual_per2">0</p>
+					</li>
+					<li class="issuance_visual_arrow"><img src="images/sub/issuance/issuance_visual_arrow.png" alt="행정문서발급 비주얼 화살표 이미지" /></li>
+					<li>
+						<p class="sub_com_visual_per3">수령완료</p>
+						<p class="sub_com_visual_per2" style="color:#5957ff">1</p>
+					</li>
+				</ul>
+				<img src="images/sub/issuance/issuance_visual1.jpg" alt="행정문서발급 비주얼 이미지" />
+				<img src="images/sub/issuance/issuance_visual2.jpg" alt="행정문서발급 비주얼 이미지" style="padding-top: 4%;border-top: 1px solid #e6e9ec;"/>
+			</div><!-- //sub_issuance_visual_box -->				
+			<div class="sub_issuance_table sub_box">
+				<p class="sub_content_title">발급내역</p>
+				<div class="sub_com_table">
+					<table cellpadding="0" cellspacing="0">
+						<caption>행정문서 발급내역 테이블</caption>
+						<colgroup>
+							<col width="33%"> 
+							<col width="34%">
+							<col width="33%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">신청문서</th>
+								<th scope="col">신청일</th>
+								<th scope="col">처리결과</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><p class="sub_com_table_txt1">2018.11.23</p></td>
+								<td><p class="sub_com_table_txt1">수강증명서</p></td>
+								<td><p class="sub_com_table_txt1">신청완료</p></td>
+							</tr>
+							<tr>
+								<td><p class="sub_com_table_txt1">2018.11.23</p></td>
+								<td><p class="sub_com_table_txt1">재원증명서</p></td>
+								<td><p class="sub_com_table_txt1">발급완료</p></td>
+							</tr>
+							<tr>
+								<td><p class="sub_com_table_txt1">2018.11.23</p></td>
+								<td><p class="sub_com_table_txt1">출석부</p></td>
+								<td><p class="sub_com_table_txt1">수령완료</p></td>
+							</tr>
+							<!--<tr>
+								<td colspan="3">
+									<img src="images/sub/issuance/issuance_listno_bg.jpg" alt="발급내역이 없습니다." style="width: 31.7%;margin: 10% 0;" />
+								</td>
+							</tr>-->
+						</tbody>
+					</table>
+				</div><!-- //sub_com_table -->
+				
+				<div class="sub_com_board_num">
+					<a class="board_num_prev"></a>
+					<a class="board_num_on"><span>1</span></a>
+					<a ><span>2</span></a>
+					<a ><span>3</span></a>
+					<a class="board_num_next"></a>
+				</div><!-- //sub_board_num -->
+			</div><!-- //sub_issuance_table -->
+			<div class="sub_fixed">
+				<a href="issuanceForm.html">행정문서 발급신청
+				<img src="images/sub/fixed_write_btn_icon.png" class="sub_fixed_icon"></a>
+			</div><!-- //sub_issuance_fixed -->
+		</div><!-- //sub_content -->
+	</div><!-- //issuance_wrapper -->
+</div><!-- //sub_wrapper -->
+
+
+<div class="menu_back_bg"></div>
+<div id="menu_wrapper" class="menu_wrapper">
+	<div class="menu_box">
+		<div class="menu_top">
+			<div class="menu_top_btn cf">
+				<ul>
+					<li><a href="main.mkh"><img src="images/menu/menu_home_icon.png" alt="홈 버튼" /><span>홈</span></a></li>
+					<li><a onclick="logout()"><img src="images/menu/menu_back_icon.png" alt="로그아웃 버튼" /><span>로그아웃</span></a></li>
+				</ul>
+				<div class="menu_close_btn"><img src="images/menu/menu_close_btn.png" alt="메뉴닫기 버튼" /></div>
+			</div><!-- //menu_top_btn -->
+		</div><!-- //menu_top -->
+		<div class="menu_quick">
+			<ul class="cf">
+				<li>
+					<a href="issuance.html">
+						<img src="images/menu/menu_quick_01.png" alt="행정문서신청 버튼" /><br>
+						<span>행정문서신청</span>
+					</a>
+				</li>
+				<li>
+					<a href="counseling.html">
+						<img src="images/menu/menu_quick_02.png" alt="1:1 상담신청 버튼" /><br>
+						<span>1:1 상담신청</span>
+					</a>
+				</li>
+				<li>
+					<a href="setting.html">
+						<img src="images/menu/menu_quick_03.png" alt="앱설정 버튼" /><br>
+						<span>앱설정</span>
+					</a>
+				</li>
+			</ul>
+		</div><!-- //menu_quick -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>공지사항</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="notice.html">공지사항</a></li>
+					<li><a href="notice.html">우리반게시판</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>학사일정</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="currcal.html">학사일정</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>평가관리</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="eval.html">점수현황/이수현황</a></li>
+					<li><a href="certificate.html">이수증발급</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>취업지원</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="recruit.html">입사 제안/지원</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_bot_btn">
+			<ul>
+				<li><a href="modify.html">개인정보수정</a></li>
+				<li>|</li>
+				<li><a  href="aboutKH.html">About KH</a></li>
+			</ul>
+		</div><!-- //menu_bot_btn -->
+	</div><!-- //menu_box -->
+</div><!-- //menu_wrapper -->
+
+</body>
+
+<script>
+$(document).ready(function(){
+	/* 메뉴 열고 닫기 */
+	var menuBtn = $('.menu');
+	var menuPage = $('.menu_wrapper');
+	var menuBackBtn = $('#menu_wrapper .menu_close_btn');
+	var menuBg = $('.menu_back_bg');
+	var mainPage = $('.main_wrapper');
+	
+	menuBtn.on('click', function(){
+		menuBg.show();
+		$('html').css({'height':'100%'});
+		$('body').css({'height':'100%'});
+		mainPage.css({'height':'100%'});
+		menuPage.addClass('menu_wrapper_open');
+	});
+	
+	menuBackBtn.on('click', function(){
+		menuBg.hide();
+		$('html').css({'height':'auto'});
+		$('body').css({'height':'auto'});
+		mainPage.css({'height':'auto'});
+		menuPage.removeClass('menu_wrapper_open');
+	});
+	
+	menuBg.on('click', function(){
+		menuBg.hide();
+		$('html').css({'height':'auto'});
+		$('body').css({'height':'auto'});
+		mainPage.css({'height':'auto'});
+		menuPage.removeClass('menu_wrapper_open');
+	});
+});
+</script>
+</html>

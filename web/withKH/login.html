@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>With KH</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/login.css" />
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+</head>
+<body>
+<div class="login_wrapper">
+	<div class="login_logo">
+		<img src="images/login/login_logo.png" alt="로고" />
+	</div>
+	<div class="login_input">
+		<input type="text" id="id" name="id" placeholder="KH ID" onkeypress="f_login();">
+		<input type="password" id="password" name="password" placeholder="PASSWORD" onkeypress="f_login();">
+	</div>
+	<div class="login_btn">
+		<a href="javascript:fnLogin()"><img src="images/login/login_btn.png" alt="로그인" /></a>
+	</div>
+	<div class="login_find">
+		<ul>
+			<li><a href="">아이디찾기</a></li>
+			<li><span>|</span></li>
+			<li><a href="">비번찾기</a></li>
+		</ul>
+	</div>
+</div>
+</body>
+
+<script>
+
+function fnLogin(){
+	f_validate();
+}
+
+function f_validate() {
+	if($("#id").val()==null||$("#id").val()==""){
+		alert('아이디를 입력해주세요.');
+		document.getElementById("id").focus();
+		return false;
+	}
+	if($("#password").val()==null||$("#password").val()==""){
+		alert('비밀번호를 입력해주세요.');
+		document.getElementById("password").focus();
+		return false;
+	}
+	window.open('main.html','_self');
+}
+function f_login() {
+	if(event.keyCode != 13) {
+		return false;
+	} else {
+		fnLogin();
+	}
+}
+</script>
+</html>

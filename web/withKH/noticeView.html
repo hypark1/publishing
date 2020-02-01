@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>With KH</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/menu.css" />
+<link rel="stylesheet" href="css/sub/notice.css" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+</head>
+<body>
+<div class="sub_wrapper">
+	<div class="notice_wrapper">
+		<div class="sub_top sub_box">
+			<div class="back_btn" onClick="javascript:location.href='notice.html'">
+				<img src="images/sub/sub_back_btn.png" alt="뒤로가기버튼" />
+			</div>
+			<h1 class="sub_title">공지사항</h1>
+			<div class="menu"><img src="images/menubar_sub.png" alt="메뉴 버튼 이미지" /></div>
+		</div><!-- //sub_top -->
+		<div class="sub_content">
+			<div class="sub_comView_top">
+				<p class="sub_comView_title">4차 훈련장려금 지급에 관하여 공지합니다.</p>
+				<p class="sub_comView_txt">2018.11.04<span class="sub_com_View_bar">|</span>5</p>
+			</div><!-- //sub_comView_top -->
+			<div class="sub_comView_content">
+				<img src="images/sub/notice_exam.jpg" alt="" />
+				<p class="sub_comView_content_name">KH행정팀</p>
+				<pre>안녕하세요. 행정팀입니다.
+				2018.08.08~2018.09.07 단위기간의 훈련비는
+				9월 7일 신청한  김미옥(휴가), 김우영(휴가), 심태준(휴가), 이유진(휴가), 이진화(휴가), 주병준(휴가), 최미나(휴가), 최아영(휴가)로 인해 지연되었습니다.
+				
+				* 직권승인(결석→출석)은 주말을 제외, 2일 정도 소요됩니다.
+				
+				9/11에 훈련비 서명 후 제출하겠습니다. (전원 출석 해야합니다!)</pre>
+			</div><!-- //sub_comView_content -->
+			<div class="sub_comView_reply">
+				<div class="sub_comView_reply_list_box">
+					<div class="sub_comView_reply_list">
+						<p class="sub_comView_reply_name">김소연<a href="#" class="delete_btn"></a></p>
+						<p class="sub_comView_reply_txt">그럼 늦게 들어온다는 거네요.. ㅜㅠ</p>
+						<p class="sub_comView_reply_txt sub_comView_reply_date">2018.11.21 15:22:36</p>
+					</div>
+					<div class="sub_comView_reply_list">
+						<p class="sub_comView_reply_name">최호범<a href="#" class="delete_btn"></a></p>
+						<p class="sub_comView_reply_txt">알겠습니다. 감사합니다!</p>
+						<p class="sub_comView_reply_txt sub_comView_reply_date">2018.11.21 15:22:36</p>
+					</div>
+				</div><!-- //sub_comView_reply_list_box -->
+				<div class="sub_comView_reply_txt_box cf">
+					<p class="sub_comView_reply_txt_name">손범석</p>
+					<textarea id="reply_txt" name="reply_txt" placeholder="댓글을 입력해 주세요." rows="3" cols="30"></textarea>
+					<a href="#" class="sub_comView_reply_txt_btn">등록</a>
+				</div><!-- //sub_comView_reply_txt_box -->
+			</div><!-- //sub_comView_reply -->
+			<div class="sub_comView_bot">
+				<a href="#" class="sub_comView_bot_prev"></a>
+				<a href="notice.html" class="sub_comView_bot_list"></a>
+				<a href="#" class="sub_comView_bot_next"></a>
+			</div><!-- //sub_comView_bot -->
+		</div><!-- //sub_content -->
+	</div><!-- //notice_wrapper -->
+</div><!-- //sub_wrapper -->
+
+
+<div class="menu_back_bg"></div>
+<div id="menu_wrapper" class="menu_wrapper">
+	<div class="menu_box">
+		<div class="menu_top">
+			<div class="menu_top_btn cf">
+				<ul>
+					<li><a href="main.html"><img src="images/menu/menu_home_icon.png" alt="홈 버튼" /><span>홈</span></a></li>
+					<li><a onclick="logout()"><img src="images/menu/menu_back_icon.png" alt="로그아웃 버튼" /><span>로그아웃</span></a></li>
+				</ul>
+				<div class="menu_close_btn"><img src="images/menu/menu_close_btn.png" alt="메뉴닫기 버튼" /></div>
+			</div><!-- //menu_top_btn -->
+		</div><!-- //menu_top -->
+		<div class="menu_quick">
+			<ul class="cf">
+				<li>
+					<a href="issuance.html">
+						<img src="images/menu/menu_quick_01.png" alt="행정문서신청 버튼" /><br>
+						<span>행정문서신청</span>
+					</a>
+				</li>
+				<li>
+					<a href="counseling.html">
+						<img src="images/menu/menu_quick_02.png" alt="1:1 상담신청 버튼" /><br>
+						<span>1:1 상담신청</span>
+					</a>
+				</li>
+				<li>
+					<a href="setting.html">
+						<img src="images/menu/menu_quick_03.png" alt="앱설정 버튼" /><br>
+						<span>앱설정</span>
+					</a>
+				</li>
+			</ul>
+		</div><!-- //menu_quick -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>공지사항</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="notice.html">공지사항</a></li>
+					<li><a href="notice.html">우리반게시판</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>학사일정</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="currcal.html">학사일정</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>평가관리</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="eval.html">점수현황/이수현황</a></li>
+					<li><a href="certificate.html">이수증발급</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>취업지원</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="recruit.html">입사 제안/지원</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_bot_btn">
+			<ul>
+				<li><a href="modify.html">개인정보수정</a></li>
+				<li>|</li>
+				<li><a  href="aboutKH.html">About KH</a></li>
+			</ul>
+		</div><!-- //menu_bot_btn -->
+	</div><!-- //menu_box -->
+</div><!-- //menu_wrapper -->
+
+</body>
+
+<script>
+$(document).ready(function(){
+	
+	var replyText = $('#reply_txt');
+	var replyBtn = $('.sub_comView_reply_txt_btn');
+	var subWrapWidth = $('.sub_wrapper').width();
+	
+	/* 기기별 댓글.. */
+	if(subWrapWidth<=375){
+		replyText.css({'height':'15px','line-height':'15px','padding':'10px 3%'});
+		replyBtn.css({'height':'37px','line-height':'37px'});
+	}else if(subWrapWidth<=414){
+		replyText.css({'height':'20px','line-height':'20px','padding':'10px 3%'});
+		replyBtn.css({'height':'42px','line-height':'42px'});
+	}else if(subWrapWidth<=800){
+		replyText.css({'height':'30px','line-height':'30px'});
+		replyBtn.css({'height':'62px','line-height':'62px'});
+	}
+	
+	/* 댓글textarea 포커스시 */
+	replyText.focus(function(){
+		if(subWrapWidth<=375){
+			$(this).animate({'height':'40px','line-height':'18px'});
+		}else if(subWrapWidth<=414){
+			$(this).animate({'height':'60px','line-height':'23px'});
+		}else if(subWrapWidth<=800){
+			$(this).animate({'height':'100px','line-height':'33px'});
+		}else{
+			$(this).animate({'height':'150px','line-height':'53px'});
+		}
+		$(this).css({'width':'94%'});
+		replyBtn.css({'float':'none','display':'inline-block','margin-top':'3%'});
+		$('.sub_comView_reply_txt_box').css({'border':'1px solid #e3e3e3','padding':'2% 3% 3%','text-align':'center'});
+		$('.sub_comView_reply_txt_name').css({'display':'block'})
+	});
+	
+	/* 댓글textarea 포커스아웃시 */
+	replyText.blur(function(){
+		if(subWrapWidth<=375){
+			$(this).animate({'height':'15px'});
+		}else if(subWrapWidth<=414){
+			$(this).animate({'height':'20px'});
+		}else if(subWrapWidth<=800){
+			$(this).animate({'height':'30px'});
+		}else{
+			$(this).animate({'height':'50px'});
+		}
+		$(this).css({'width':'70%'});
+		replyBtn.css({'float':'left','display':'block','margin-top':'0'});
+		$('.sub_comView_reply_txt_box').css({'border':'0','padding':'0','text-align':'center'});
+		$('.sub_comView_reply_txt_name').css({'display':'none'})
+	});	
+
+	/* 메뉴 열고 닫기 */
+	var menuBtn = $('.menu');
+	var menuPage = $('.menu_wrapper');
+	var menuBackBtn = $('#menu_wrapper .menu_close_btn');
+	var menuBg = $('.menu_back_bg');
+	var mainPage = $('.main_wrapper');
+	
+	menuBtn.on('click', function(){
+		menuBg.show();
+		$('html').css({'height':'100%'});
+		$('body').css({'height':'100%'});
+		mainPage.css({'height':'100%'});
+		menuPage.addClass('menu_wrapper_open');
+	});
+	
+	menuBackBtn.on('click', function(){
+		menuBg.hide();
+		$('html').css({'height':'auto'});
+		$('body').css({'height':'auto'});
+		mainPage.css({'height':'auto'});
+		menuPage.removeClass('menu_wrapper_open');
+	});
+	
+	menuBg.on('click', function(){
+		menuBg.hide();
+		$('html').css({'height':'auto'});
+		$('body').css({'height':'auto'});
+		mainPage.css({'height':'auto'});
+		menuPage.removeClass('menu_wrapper_open');
+	});
+});
+</script>
+</html>

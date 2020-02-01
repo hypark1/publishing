@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+.sub_greeting{}
+.sub_greeting .greeting_top_wrap{width:100%;background:#f7f7f7;}
+.sub_greeting .greeting_top{width:1080px;height:415px;margin:0 auto;background:url(../images/sub/greeting/greeting_top.png) no-repeat;background-position:left;}
+.sub_greeting .greeting_top .greeting_top_img{float:left;width:352px;height:415px;}
+.sub_greeting .greeting_top .greeting_top_txt{float:right;font-size:50px;letter-spacing: -4px;margin: 144px 0 0 35px;line-height: 120%;}
+.sub_greeting .greeting_top .greeting_top_txt span{font-size:50px;font-weight:500;letter-spacing: -3.5px;color:#007026;vertical-align: top;}
+
+.sub_greeting .greeting_txt{width:1080px;margin:0 auto;text-align:center;}
+.sub_greeting .greeting_txt .greeting_txt1{font-size:20px;margin: 45px 0 40px;}
+.sub_greeting .greeting_txt .greeting_txt2{font-size:16px;margin-bottom:20px;}
+.sub_greeting .greeting_txt .greeting_txt3{font-size:16px;margin-top:35px;}
+.sub_greeting .greeting_txt .greeting_txt3 img{margin-left:7px;}

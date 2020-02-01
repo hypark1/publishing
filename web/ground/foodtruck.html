@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="홈페이지내용설명">
+<meta name="keywords" content="홈페이지검색어">
+<title>COMMON GROUND</title>
+
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>	
+<script type="text/javascript" src="js/respond.min.js"></script>
+<script type="text/javscript" src="js/PIE.js"></script>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/header_js.js"></script>
+
+
+
+<script>
+
+$(function(){
+	$("#navi li, #submenuwrap").hover(function(){
+	$("#submenuwrap").stop().slideToggle(300);
+	});
+});
+
+
+</script>
+
+<link href="css/reset.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/navslide.css" rel="stylesheet">
+<style>
+
+@font-face {
+    font-family:'210AppGulim';
+    src: url('font/210AppGulim.eot'); 
+    src: local('※'),url('font/210AppGulim.eot?#iefix') format('embedded-opentype'),
+         url('font/210AppGulim.woff') format('woff'); 
+         url('font/210AppGulim.ttf') format('truetype');
+	font-style:normal;
+	font-weight:normal;
+}
+
+
+body {
+  margin-top: 171px;
+  overflow-x: hidden;
+  height:100%;
+}
+
+
+#wrap{width:100%; height:auto; background-color:#252525;}
+
+header{width:100%; height:171px; float:left; background-color:white; position:relative;
+
+  z-index: 99;  position:fixed; top:0;
+  transition: all 0.5s ease-in-out;
+  opacity:1;
+
+}
+.nav-up {top:-115px; opacity:1;}
+#header #logo{width:100%; height:51px; float:left; text-align:center; position:absolute; top:40px;}
+#header #logo a{cursor:pointer;}
+#header #subnavi{width:320px; height:20px; position:absolute; right:0px; top:40px;}
+#header #subnavi li{display:block; float:left; width:8%; margin-right:20px;}
+#header #subnavi li:nth-child(1){width:15%;}
+#header #subnavi li:nth-child(2){width:20%; margin-right:15px;}
+#header #subnavi li:nth-child(3) a{font-size:15px; color:#295396;}
+#header #subnavi li:nth-child(4) a{font-size:15px; color:#8b5b4f;}
+#header #subnavi li:nth-child(5) a{font-size:15px; color:#e42c27;}
+#header #subnavi li a{font-size:10px; color:#636363; cursor:pointer; }
+#header #subnavi li a:hover{color:black; }
+#header #subnavi li:nth-child(3) a:hover{color:#1d3b6b;}
+#header #subnavi li:nth-child(4) a:hover{color:#512f30;}
+#header #subnavi li:nth-child(5) a:hover{color:#ac161a;}
+
+#header #navwrap{width:100%; height:56px; float:left; position:absolute; bottom:0; background-color:white;}
+#header #navwrap #navi{width:1025px; height:56px; margin:0 auto;}
+#header #navwrap #navi li{width:17.4%; display:block; float:left; text-align:center;}
+#header #navwrap #navi li:nth-child(5){width:13%;}
+#header #navwrap #navi li a{font-size:18px; font-weight:bold; color:#404040; line-height:56px;
+padding-bottom:5px;cursor:pointer; transition:all .2s;}
+#header #navwrap #navi li a:hover{color:black;}
+
+#header #navwrap #submenuwrap{width:100%; position:absolute; background-color:#eeeceb; left:0; 
+top:56px; height:190px; border-bottom:solid 1px #404040; padding-top:10px; display:none;}
+#header #navwrap #submenuwrap #submenu{width:1025px;; margin:0 auto;}
+#header #navwrap #submenu ul{float:left;}
+#header #navwrap #submenu #sub1 li{width:178.34px;}
+#header #navwrap #submenu #sub2 li{width:178.34px;}
+#header #navwrap #submenu #sub3 li{width:178.34px;}
+#header #navwrap #submenu #sub4 li{width:178.34px;}
+#header #navwrap #submenu #sub5 li{width:133.25px;}
+#header #navwrap #submenu #sub6 li{width:178.34px;}
+#header #navwrap #submenu ul li{text-align:center; height:30px; font-size:12px;}
+#header #navwrap #submenu ul li a{color:#404040;cursor:pointer; font-family:"맑은 고딕"}
+#header #navwrap #submenu ul li a:hover{color:black; font-weight:bold;font-family:"맑은 고딕"}
+
+#btn{position:absolute; left:20px; top:20px;}
+
+#submainwrap{width:100%; height:auto; float:left;}
+#submainwrap #submain img{width:100%;}
+
+#sectionallwrap{float:left; width:100%; height:auto; background:#f1f1f1;}
+#sectionallwrap #menutapwrap{float:left; width:100%; height:auto; background-color:#e1dcda;}
+#sectionallwrap #menutapwrap #menutap{width:22%; height:auto;margin:0 auto;}
+#sectionallwrap #menutapwrap #menutap .menu3{font-weight:bold;}
+#sectionallwrap #menutapwrap #menutap ul li{display:block; float:left; margin:4% 8% 4% 8%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:13px; font-family:"맑은 고딕"; color:#58514d;}
+#sectionallwrap #menutapwrap #menutap ul li a:hover{font-weight:bold;}
+
+#sectionallwrap #sectionwrap{margin:0 auto;width:72.1875%; height:auto;}
+#sectionallwrap #sectionwrap #section1{float:left; width:100%; height:auto;}
+#sectionallwrap #sectionwrap #section1 #titleboxwrap{float:left; width:100%; height:auto;}
+#sectionallwrap #sectionwrap #section1 #titlebox{text-align:center;float:left; width:100%; padding-bottom:14.1715116%; padding-top:5%; padding-bottom:3%;}
+#sectionallwrap #sectionwrap #section1 #titlebox #titletext{letter-spacing:3px;line-height:60px; font-family:"맑은 고딕"; color:black; width:100%;  font-size:30px; font-weight:bold;}
+#sectionallwrap #sectionwrap #section1 #titlebox #subtext{letter-spacing:1px;font-size:14px; color:#352e2e; font-weight:bold;}
+
+
+
+#sectionallwrap #sectionwrap #section2{float:left; width:100%; height:auto;}
+
+#sectionallwrap #sectionwrap #section2 #listbox{float:left; width:100%; height:auto; margin-bottom:5%;}
+#sectionallwrap #sectionwrap #section2 #listbox #box1{background-image:url(images/foodtruck_01.jpg); background-repeat:no-repeat; background-size:cover; background-position:center;}
+#sectionallwrap #sectionwrap #section2 #listbox #box3{background-image:url(images/foodtruck_02.jpg); background-repeat:no-repeat; background-size:cover; background-position:center;}
+#sectionallwrap #sectionwrap #section2 #listbox #box5{background-image:url(images/foodtruck_03.jpg); background-repeat:no-repeat; background-size:cover; background-position:center;}
+#sectionallwrap #sectionwrap #section2 #listbox #box7{background-image:url(images/foodtruck_04.jpg); background-repeat:no-repeat; background-size:cover; background-position:center;}
+
+
+
+
+#sectionallwrap #sectionwrap #section2  .rightimg_hover{overflow:hidden;position:absolute; right:0; top:0; width:62.41%; height:auto;}
+#sectionallwrap #sectionwrap #section2 .rightimgwrap{ float:left; position:relative; width:100%; padding-bottom:25.036%; margin-bottom:2.1645%; background:#000;}
+#sectionallwrap #sectionwrap #section2 .rightimg{transition:all .4s; transform:scale(1); cursor:pointer; width:100%; padding-bottom:40.116%;}
+#sectionallwrap #sectionwrap #section2 .rightimg:hover{transform:scale(1.1); opacity:.8;}
+
+#sectionallwrap #sectionwrap #section2  .leftimg_hover{overflow:hidden;position:absolute; left:0; top:0; width:62.41%; height:auto;}
+#sectionallwrap #sectionwrap #section2 .leftimgwrap{float:left; position:relative; width:100%; padding-bottom:25.036%; margin-bottom:2.1645%; background:#000;}
+#sectionallwrap #sectionwrap #section2 .leftimg{transition:all .4s; transform:scale(1); cursor:pointer; width:100%; padding-bottom:40.116%;}
+#sectionallwrap #sectionwrap #section2 .leftimg:hover{transform:scale(1.1); opacity:.8;}
+
+#sectionallwrap #sectionwrap #section2 .lefttext{position:absolute; left:0; top:0; width:37.59%; height:auto; margin-bottom:2.1645%; text-align:right;}
+#sectionallwrap #sectionwrap #section2 .lefttext h4{letter-spacing:2px;color:#fff;font-size:30px; font-weight:bold; margin:18% 5% 6% 0;}
+#sectionallwrap #sectionwrap #section2 .lefttext .boxsubtext{letter-spacing:1px; color:#fff;font-size:20px; font-weight:bold; margin-right:5%;}
+
+#sectionallwrap #sectionwrap #section2 .righttext{position:absolute; right:0; top:0; width:37.59%; height:auto; margin-bottom:2.1645%; text-align:left;}
+#sectionallwrap #sectionwrap #section2 .righttext h4{letter-spacing:2px;color:#fff;font-size:30px; font-weight:bold; margin:18% 0 6% 5%;}
+#sectionallwrap #sectionwrap #section2 .righttext .boxsubtext{letter-spacing:1px; color:#fff;font-size:20px; font-weight:bold; margin-left:5%;}
+
+
+#footerwrap{float:left; width:100%; height:auto;background:#252525; font-family:"맑은 고딕";}
+#footerwrap #footer{width:64.375%; margin:0 auto; padding-bottom:20%;}
+#footerwrap #footer #footer-topwrap{float:left; width:100%; height:auto; border-bottom:1px solid gray;}
+#footerwrap #footer #footer-topwrap #footer-top{float:left; width:30%; margin:3% 0 2% 0; height:auto;}
+#footerwrap #footer #footer-topwrap #footer-top #footerlogo{float:left; width:100%; padding-bottom:27%; background-image:url(images/logo_footer.jpg);
+background-position:center; background-size:cover; background-repeat:no-repeat;margin-bottom:2%;}
+#footerwrap #footer #footer-topwrap #footer-top #footertext1{font-size:12px; color:#848484; font-weight:bold;}
+#footerwrap #footer #footer-bottom{float:left; width:100%; height:auto; padding-top:2%;}
+#footerwrap #footer #footer-bottom #footertext2{float:left; width:50%; padding-bottom:2%;
+font-size:12px; font-weight:bold; color:#848484; line-height:18px;}
+#footerwrap #footer #footer-bottom span{font-size:12px; line-height:22px; color:#dfdede;}
+#footerwrap #footer #footer-bottom #footertext3wrap{float:left; width:50%; height:auto;}
+#footerwrap #footer #footer-bottom #footertext3wrap #logokolon{float:left; width:50%; padding:2%; background-image:url(images/logo_kolon.jpg);
+background-position:center; background-size:cover; background-repeat:no-repeat; margin-bottom:2%;}
+#footerwrap #footer #footer-bottom #footertext3wrap #footertext3{float:left; width:100%; padding-bottom:6%; 
+font-size:12px; font-weight:bold; color:#848484; line-height:22px;}
+
+
+
+@media screen and (max-width:767px){
+
+	body {margin-top:60.8px;}
+	header{height:60.8px;}
+	#subnavi{display:none;}
+	#navwrap{display:none;}
+	#header #logo{top:15px;}
+	#header #logo img{width:109.8px; height:30.6px;}
+    .menu-container{ display:block;}
+	#btn{top:15px;}
+    #navi{ display:none;}	
+    
+    #sectionallwrap #sectionwrap{width:95%;}
+    #sectionallwrap #sectionwrap #section2  .rightimg_hover{width:100%;}
+    #sectionallwrap #sectionwrap #section2  .leftimg_hover{width:100%;}
+    #sectionallwrap #sectionwrap #section2 .rightimgwrap{padding-bottom:30%;}
+    #sectionallwrap #sectionwrap #section2 .rightimg{width:100%;padding-bottom:30%;}
+    #sectionallwrap #sectionwrap #section2 .lefttext{width:100%; text-align:center;}
+    #sectionallwrap #sectionwrap #section2 .leftimgwrap{padding-bottom:30%;}
+    #sectionallwrap #sectionwrap #section2 .leftimg{width:100%; padding-bottom:30%;}
+    #sectionallwrap #sectionwrap #section2 .righttext{width:100%; text-align:center;}
+    
+    #sectionallwrap #sectionwrap #section2 .lefttext h4{letter-spacing:1px;color:#fff; font-size:20px; font-weight:bold; margin:10%0 0 0;}
+#sectionallwrap #sectionwrap #section2 .lefttext .boxsubtext{display:none;}
+
+
+#sectionallwrap #sectionwrap #section2 .righttext h4{letter-spacing:1px;color:#fff;font-size:20px; font-weight:bold; margin:10% 0 0 0;}
+#sectionallwrap #sectionwrap #section2 .righttext .boxsubtext{display:none;}
+    
+#footerwrap #footer{width:95%; padding-top:3%;}
+#footerwrap #footer #footer-bottom #footertext3wrap{display:none;}
+#footerwrap #footer #footer-topwrap #footer-top{float:none; margin:0 auto; width:60%; text-align:center;}
+#footerwrap #footer #footer-bottom #footertext2{float:none; margin:0 auto; width:90%; text-align:center;}
+	
+	}
+	
+	
+@media screen and (min-width:768px) and (max-width:1024px){
+
+	body {margin-top:70.8px;}
+	header{height:70.8px;}
+	#subnavi{display:none;}
+	#navwrap{display:none;}
+	#header #logo{top:15px;}
+	#header #logo img{width:146.4px; height:40.8px;}
+    .menu-container{ display:block;}	
+    #navi{ display:none;}
+    
+   #sectionallwrap #sectionwrap{width:95%;}
+   
+   
+
+#sectionallwrap #sectionwrap #section2 .lefttext h4{letter-spacing:1px;color:#fff;font-size:20px; font-weight:bold; margin:18% 5% 6% 0;}
+#sectionallwrap #sectionwrap #section2 .lefttext .boxsubtext{letter-spacing:0; color:#fff;font-size:13px; font-weight:bold; margin-right:5%;}
+
+
+#sectionallwrap #sectionwrap #section2 .righttext h4{letter-spacing:1px;color:#fff;font-size:20px; font-weight:bold; margin:18% 0 6% 5%;}
+#sectionallwrap #sectionwrap #section2 .righttext .boxsubtext{letter-spacing:0; color:#fff;font-size:13px; font-weight:bold; margin-left:5%;}
+
+
+	#footerwrap #footer{width:95%;}
+	
+}
+
+@media screen and (min-width:1025px){
+.menu-container{ display:none;}		
+#navi{ display:block;}
+
+	}
+
+@media screen and (min-width:1771px) and (max-width:1842px){
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:12.5px;}
+}
+
+@media screen and (min-width:1701px) and (max-width:1770px){
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:12px;}
+}
+
+@media screen and (min-width:1631px) and (max-width:1700px){
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11.5px;}
+}
+
+@media screen and (min-width:1560px) and (max-width:1630px){
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1477px) and (max-width:1561px){
+#sectionallwrap #menutapwrap #menutap{width:22%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1414px) and (max-width:1476px){
+#sectionallwrap #menutapwrap #menutap{width:23%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1355px) and (max-width:1413px){
+#sectionallwrap #menutapwrap #menutap{width:24%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1301px) and (max-width:1354px){
+#sectionallwrap #menutapwrap #menutap{width:25%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1252px) and (max-width:1300px){
+#sectionallwrap #menutapwrap #menutap{width:26%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1206px) and (max-width:1251px){
+#sectionallwrap #menutapwrap #menutap{width:27%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1164px) and (max-width:1205px){
+#sectionallwrap #menutapwrap #menutap{width:28%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1124px) and (max-width:1163px){
+#sectionallwrap #menutapwrap #menutap{width:29%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1087px) and (max-width:1123px){
+#sectionallwrap #menutapwrap #menutap{width:30%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1053px) and (max-width:1086px){
+#sectionallwrap #menutapwrap #menutap{width:31%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:1021px) and (max-width:1052px){
+#sectionallwrap #menutapwrap #menutap{width:32%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:991px) and (max-width:1020px){
+#sectionallwrap #menutapwrap #menutap{width:33%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:960px) and (max-width:990px){
+#sectionallwrap #menutapwrap #menutap{width:34%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:935px) and (max-width:961px){
+#sectionallwrap #menutapwrap #menutap{width:35%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:909px) and (max-width:934px){
+#sectionallwrap #menutapwrap #menutap{width:36%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:885px) and (max-width:908px){
+#sectionallwrap #menutapwrap #menutap{width:37%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:862px) and (max-width:884px){
+#sectionallwrap #menutapwrap #menutap{width:38%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:842px) and (max-width:861px){
+#sectionallwrap #menutapwrap #menutap{width:39%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:820px) and (max-width:841px){
+#sectionallwrap #menutapwrap #menutap{width:40%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:800px) and (max-width:821px){
+#sectionallwrap #menutapwrap #menutap{width:41%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:780px) and (max-width:801px){
+#sectionallwrap #menutapwrap #menutap{width:42%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:764px) and (max-width:781px){
+#sectionallwrap #menutapwrap #menutap{width:43%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:747px) and (max-width:763px){
+#sectionallwrap #menutapwrap #menutap{width:44%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:716px) and (max-width:746px){
+#sectionallwrap #menutapwrap #menutap{width:46%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:686px) and (max-width:715px){
+#sectionallwrap #menutapwrap #menutap{width:48%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:11px;}
+}
+
+@media screen and (min-width:601px) and (max-width:685px){
+#sectionallwrap #menutapwrap #menutap{width:50%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:10px;}
+}
+
+@media screen and (min-width:568px) and (max-width:600px){
+#sectionallwrap #menutapwrap #menutap{width:53%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:10px;}
+}
+
+@media screen and (min-width:539px) and (max-width:567px){
+#sectionallwrap #menutapwrap #menutap{width:56%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:10px;}
+}
+
+@media screen and (min-width:504px) and (max-width:538px){
+#sectionallwrap #menutapwrap #menutap{width:60%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:10px;}
+}
+
+@media screen and (min-width:464px) and (max-width:503px){
+#sectionallwrap #menutapwrap #menutap{width:65%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:10px;}
+}
+
+@media screen and (min-width:435px) and (max-width:465px){
+#sectionallwrap #menutapwrap #menutap{width:70%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7.5% 4% 7.5%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:10px;}
+}
+
+
+@media screen and (max-width:434px){
+#sectionallwrap #menutapwrap #menutap{width:75%;}
+#sectionallwrap #menutapwrap #menutap ul li{margin:4% 7% 4% 7%;}
+#sectionallwrap #menutapwrap #menutap ul li a{font-size:10px;}
+}	
+	
+</style>
+
+</head>
+<body>
+<div id="wrap">
+
+<header id="header">
+<div id="logo">
+	<a href="index.html"><img src="images/logo.jpg" alt="logo"></a>
+</div>
+
+<nav class="menu-container">
+<div class="menu-btn" id="btn"><i class="fa fa-bars fa-lg"></i></div>
+<div class="menu-slide">
+<ul class="menu-list">
+<li class="menu-item"><a href="#">로그인</a></li>
+<li class="menu-item"><a href="commonground.html">커먼그라운드</a></li>
+<li class="menu-item"><a href="access.html">매장안내</a></li>
+<li class="menu-item"><a href="4xr.html">팝업스토어</a></li>
+<li class="menu-item"><a href="restaurant.html">푸드마켓</a></li>
+<li class="menu-item"><a href="event.html">이벤트</a></li>
+<li class="menu-item"><a href="notice.html">커뮤니티</a></li>
+</ul>
+</div>
+</nav>
+
+
+
+<ul id="subnavi">
+<li><a href="#">로그인</a></li>
+<li><a href="#">회원가입</a></li>
+<li><a href="https://www.facebook.com/commonground.1st" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+<li><a href="https://www.instagram.com/commonground.1st" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+<li><a href="https://www.youtube.com/channel/UCWef7APCP5XdzmXd4GD0tZA" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+</ul>
+
+<div id="navwrap">
+	
+<ul id="navi">
+<li><a href="commonground.html">커먼그라운드</a></li>
+<li><a href="floorinfo.html">매장안내</a></li>
+<li><a href="4xr.html">팝업스토어</a></li>
+<li><a href="restaurant.html">푸드마켓</a></li>
+<li><a href="event.html">이벤트</a></li>
+<li><a href="notice.html">커뮤니티</a></li>
+</ul>
+
+<div id="submenuwrap">
+    <div id="submenu">
+
+    <ul id="sub1">
+    <li><a href="commonground.html">커먼그라운드 소개</a></li>
+    </ul>
+    
+    <ul id="sub2">
+    <li><a href="floorinfo.html">층별 안내</a></li>
+    <li><a href="category.html">카테고리별 안내</a></li>
+    <li><a href="access.html">오시는 길</a></li>
+    </ul>
+    
+        <ul id="sub3">
+    <li><a href="4xr.html">4XR</a></li>
+    <li><a href="evisu.html">EVISU</a></li>
+    <li><a href="mixxj.html">MIXXJ</a></li>
+    <li><a href="okcat.html">OKCAT</a></li>
+    <li><a href="promiz.html">PROMIZ</a></li>
+    <li><a href="kumhong.html">금홍팬시</a></li>
+    </ul>
+    
+        <ul id="sub4">
+    <li><a href="restaurant.html">RESTAURANT</a></li>
+    <li><a href="cafe.html">CAFE</a></li>
+    <li><a href="foodtruck.html">FOOD TRUCK</a></li>
+    </ul>
+    
+        <ul id="sub5">
+    <li><a href="event.html">진행중인 이벤트</a></li>
+    <li><a href="event_off.html">마감된 이벤트</a></li>
+    </ul>
+    
+    <ul id="sub6">
+    <li><a href="notice.html">공지사항</a></li>
+    <li><a href="news.html">뉴스</a></li>
+    <li><a href="sns.html">SNS</a></li>
+    <li><a href="exhibition.html">전시</a></li>
+    <li><a href="support.html">대학생 서포터즈</a></li>
+    </ul>
+
+</div>
+</div>
+
+
+</header>
+
+<div id="submainwrap">
+<div id="submain">
+<img src="images/submain_04.jpg">
+</div>
+
+</div>
+
+<!--메인갤러리 상단-->
+
+
+<div id="sectionallwrap">
+	<div id="menutapwrap">
+			<div id="menutap">
+				<ul>
+					<li class="menu1"><a href="restaurant.html">RESTAURANT</a></li>
+					<li class="menu2"><a href="cafe.html">CAFE</a></li>
+					<li class="menu3"><a href="foodtruck.html">FOOD TRUCK</a></li>
+				</ul>
+			</div>
+		</div>
+	<div id="sectionwrap">
+		<section id="section1">
+			<div id="titleboxwrap">
+				<div id="titlebox">
+					<p id="titletext">FOOD TRUCK</p>
+					<p id="subtext">푸드트럭</p>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section id="section2">
+			<div id="listbox">
+				
+				<div id="box1wrap" class="rightimgwrap">
+					<div class="rightimg_hover">
+					<div id="box1" class="rightimg"></div>
+					</div>
+					<div id="box2" class="lefttext">
+						<h4>ABIKO CURRY</h4>
+						<p class="boxsubtext">100시간의 아낌없는 정성과 노력<br>
+						오사카의 장인 정신이 녹아 있는 정성카레</p>
+					</div>
+					</div>
+				
+				<div id="box2wrap" class="leftimgwrap">
+					<div class="leftimg_hover">
+					<div id="box3" class="leftimg"></div>
+					</div>
+					<div id="box4" class="righttext">
+						<h4>ANALOG KITCHEN</h4>
+						<p class="boxsubtext">늘 한결같이 맛있고 멋스러운 음식<br>
+							아날로그 키친만의 SIGNATURE 메뉴</p>
+					</div>
+					</div>
+					
+					<div id="box3wrap" class="rightimgwrap">
+						<div class="rightimg_hover">
+					<div id="box5" class="rightimg"></div>
+					</div>
+					<div id="box6" class="lefttext">
+						<h4>BEYOND ASIA</h4>
+						<p class="boxsubtext">이국적인 식사부터 한국적인 주류까지<br>
+							누구나 즐길 수 있는 NEW FOOD CULTURE</p>
+					</div>
+					</div>
+					
+					<div id="box4wrap" class="leftimgwrap">
+						<div class="leftimg_hover">
+					<div id="box7" class="leftimg"></div>
+					</div>
+					<div id="box8" class="righttext">
+						<h4>GRILL THAI</h4>
+						<p class="boxsubtext">그릴 위에 올려놓은 태국<br>
+							태국의 열정과 뉴욕의 경쾌한 분위기</p>
+					</div>
+					</div>
+				
+			</div>
+        
+			
+		
+			
+			
+		</section>
+		
+		</div>
+	</div>
+	
+	
+	
+	
+	
+</div>
+
+<div id="footerwrap">
+	<footer id="footer">
+		<div id="footer-topwrap">
+		<div id="footer-top">
+			<div id="footerlogo"></div>
+			<p id="footertext1">서울특별시 광진구 아차산로 200(구. 광진구 자양동 17-1)</p>
+		</div>
+		</div>
+		<div id="footer-bottom">
+			<p id="footertext2">
+				<span>문의 전화</span><br>
+콜센터 :1588-7667 / AM10:00 - PM6:00 토,일,공휴일 휴무<br>
+고객센터: 02-467-2747 / AM10:00 - PM7:00 월요일~금요일<br>
+eKolon 온라인 멤버쉽 고객센터: 1588-7667<br><br>
+<span>입점 및 기타 관련문의</span><br>
+Email: commonground@kolon.com<br>
+			</p>
+			<div id="footertext3wrap">
+				<div id="logokolon"></div>
+				<div id="footertext3">
+					코오롱인더스트리(주) FnC부문 커먼그라운드  |  대표이사: 박동문  |  전화: 02-3677-3114<br>
+법인 등록번호 321-85-00020  |   주소: 경기도 과천시 코오롱로 11<br>
+개인정보관리 책임자: 경영전략본부 오원선 전무  |   개인정보관리 담당자: 정보보안TF 김정혁 과장<br>
+<span>개인정보취급방침</span>  |  
+<span>이용약관</span>  |  
+<span>개인정보처리방침</span>  |  
+<span>채용안내</span><br>
+				</div>
+				</div>
+		</div>
+		
+	</footer>
+</div>
+
+</div>
+
+
+</body>
+</html>

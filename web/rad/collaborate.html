@@ -1,0 +1,730 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>KH 정보교육원 RAD</title>
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/collaborate.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/resub.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="topwrap">
+			<div class="top cf">
+				<div class="left">
+					<h1 class="hid">KH정보교육원 RAD페이지</h1>
+					<a href="remain.html">
+						<img alt="KH정보교육원 RAD 로고 이미지" src="images/rad/main/header_logo.png">
+					</a>
+				</div>
+				<div class="right">
+					<ul class="cf regular">
+						<li><a href="jojicdo.html">KH조직도</a></li>
+						<li>|</li>
+						<li><a href="gonggam.html" class="top_new">KH 共感</a></li>
+						<li>|</li>
+						<li><a href="" class="top_new">KH 메일</a></li>
+						<li>|</li>
+						<li><a href="login.html">로그아웃</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> <!--class="topwrap"-->
+		<nav id="nav">
+			<div class="menubar cf">
+				<div class="menu_list">
+					<div class="menubtn">
+						<div class="menuicon">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
+					<ul class="cf">
+						<li class="rightline">
+							<p>공지사항<span class="underline"></span></p> 
+							<ul class="cf submenu">
+								<li><a href="">운영공지</a></li>
+								<li><a href="">학사공지</a></li>
+								<li><a href="">교육부공지</a></li>
+								<li><a href="">경조사공지</a></li>
+								<li><a href="">자료실</a></li>
+								<li><a href="">주간회의록</a></li>
+								<li><a href="">RAD변경사항</a></li>
+								<li><a href="">업무지시(UI)</a></li>
+								<li><a href="">특강신청게시판</a></li>
+								<li><a href="">개발이슈게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>문의관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">온라인문의</a></li>
+								<li><a href="">오프라인문의</a></li>
+								<li><a href="">재컨텍요망</a></li>
+								<li><a href="">단기특강문의</a></li>
+								<li><a href="">개별모집현황</a></li>
+								<li><a href="">컨테스트</a></li>
+								<li><a href="">회원관리</a></li>
+								<li><a href="">가망등록관리</a></li>
+								<li><a href="">이벤트관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>학사관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">시간표관리</a></li>
+								<li><a href="">운영과정관리</a></li>
+								<li><a href="">학생설문조사</a></li>
+								<li><a href="">국기면접관리</a></li>
+								<li><a href="">내사일지</a></li>
+								<li><a href="">NCS능력단위관리</a></li>
+								<li><a href="">승인과정관리</a></li>
+								<li><a href="">평가관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>수강생관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생관리</a></li>
+								<li><a href="">학생현황</a></li>
+								<li><a href="">결석생관리</a></li>
+								<li><a href="">이슈학생관리</a></li>
+								<li><a href="">프로젝트관리</a></li>
+								<li><a href="">과정공지관리</a></li>
+								<li><a href="">우리반게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>취업관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생취업관리</a></li>
+								<li><a href="">연계업체</a></li>
+								<li><a href="">채용정보</a></li>
+								<li><a href="">취업성공사례</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>대외활동관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">기본정보</a></li>
+								<li><a href="">대학관리</a></li>
+								<li><a href="">방문이력</a></li>
+								<li><a href="">연계업체</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>컨텐츠관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">공지사항 관리</a></li>
+							</ul>
+						</li>
+						<li>
+							<p>사이트관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">도메인관리</a></li>
+								<li><a href="">지점관리</a></li>
+								<li><a href="">조직관리</a></li>
+								<li><a href="">계정관리</a></li>
+								<li><a href="">역할관리</a></li>
+								<li><a href="">메뉴관리</a></li>
+								<li><a href="">강사채용</a></li>
+								<li><a href="">SMS 전송관리</a></li>
+								<li><a href="">접속자관리</a></li>
+								<li><a href="">문의분석</a></li>
+								<li><a href="">운영과정분석</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--class="menu_list"-->
+				<div class="menu_quick">
+					<ul class="cf">
+						<li><a href="dailyreport.html"><img alt="업무보고" src="images/rad/main/header_quick01.png"></a></li>
+						<li class="new_circle"><a href="schedule.html"><img alt="일정관리" src="images/rad/main/header_quick03.png"></a></li>
+						<li><a href="collaborate.html"><img alt="업무협업" src="images/rad/main/header_quick02.png"></a></li>
+					</ul>
+				</div>
+			</div><!--class="menubar"-->
+			<div class="fullmenu">
+				<div class="fullwrap">
+					<ul class="cf submenu">
+						<li><a href="">운영공지</a></li>
+						<li><a href="">학사공지</a></li>
+						<li><a href="">교육부공지</a></li>
+						<li><a href="">경조사공지</a></li>
+						<li><a href="">자료실</a></li>
+						<li><a href="">주간회의록</a></li>
+						<li><a href="">RAD변경사항</a></li>
+						<li><a href="">업무지시(UI)</a></li>
+						<li><a href="">특강신청게시판</a></li>
+						<li><a href="">개발이슈게시판</a></li>
+					</ul> 
+					<ul class="cf submenu">
+						<li><a href="">온라인문의</a></li>
+						<li><a href="">오프라인문의</a></li>
+						<li><a href="">재컨텍요망</a></li>
+						<li><a href="">단기특강문의</a></li>
+						<li><a href="">개별모집현황</a></li>
+						<li><a href="">컨테스트</a></li>
+						<li><a href="">회원관리</a></li>
+						<li><a href="">가망등록관리</a></li>
+						<li><a href="">이벤트관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">시간표관리</a></li>
+						<li><a href="">운영과정관리</a></li>
+						<li><a href="">학생설문조사</a></li>
+						<li><a href="">국기면접관리</a></li>
+						<li><a href="">내사일지</a></li>
+						<li><a href="">NCS능력단위관리</a></li>
+						<li><a href="">승인과정관리</a></li>
+						<li><a href="">평가관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생관리</a></li>
+						<li><a href="">학생현황</a></li>
+						<li><a href="">결석생관리</a></li>
+						<li><a href="">이슈학생관리</a></li>
+						<li><a href="">프로젝트관리</a></li>
+						<li><a href="">과정공지관리</a></li>
+						<li><a href="">우리반게시판</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생취업관리</a></li>
+						<li><a href="">연계업체</a></li>
+						<li><a href="">채용정보</a></li>
+						<li><a href="">취업성공사례</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">기본정보</a></li>
+						<li><a href="">대학관리</a></li>
+						<li><a href="">방문이력</a></li>
+						<li><a href="">연계업체</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">공지사항 관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">도메인관리</a></li>
+						<li><a href="">지점관리</a></li>
+						<li><a href="">조직관리</a></li>
+						<li><a href="">계정관리</a></li>
+						<li><a href="">역할관리</a></li>
+						<li><a href="">메뉴관리</a></li>
+						<li><a href="">강사채용</a></li>
+						<li><a href="">SMS 전송관리</a></li>
+						<li><a href="">접속자관리</a></li>
+						<li><a href="">문의분석</a></li>
+						<li><a href="">운영과정분석</a></li>
+					</ul>
+				</div> <!-- class="fullwrap"-->
+			</div> <!--class="fullmenu"-->
+		</nav>
+	</header>
+	
+	<section id="section">
+		<div class="sectionwrap subcomWrap">
+			<div class="collaborate">
+				<div class="tit">
+					<h3>업무협업</h3>
+				</div>
+				<div class="subcontent collabocontent">
+					<div class="righttop">
+						<div class="selectMenuWrap">
+							<div class="select_view">
+								<p id="select_view_searchCurr" class="default" onclick="">전체글</p>
+							</div>
+							<ul class="collaboMenu liststyle">
+								<li data-value="전체글">전체글</li>
+								<li data-value="업무요청">업무요청</li>
+								<li data-value="기타">기타</li>
+								<li data-value="RAD수정요청">RAD수정요청</li>
+								<li data-value="시설관리업무요청">시설관리업무요청</li>
+								<li data-value="비품구매요청">비품구매요청</li>
+								<li data-value="명함&메일서명 신청">명함&메일서명 신청</li>
+								<li data-value="문서발급신청">문서발급신청</li>
+								<li data-value="사원증 발급신청">사원증 발급신청</li>
+								<li data-value="평가관리 수정요청">평가관리 수정요청</li>
+							</ul>
+						</div><!--class="selectMenuWrap"-->
+					</div><!--class="righttop"-->
+					<div class="collaboTable">
+						<table cellpadding="0" cellspacing="0">
+							<caption>업무협업</caption>
+							<colgroup>
+							   <col width="85" /> 
+							   <col width="130" /> 
+							   <col width="375" /> 
+							   <col width="100" /> 
+							   <col width="100" /> 
+							   <col width="160" /> 
+							   <col width="70" /> 
+							   <col width="165" /> 
+							</colgroup>
+							<thead>
+								<tr>
+									<th scope="col">번호</th>
+									<th scope="col">카테고리</th>
+									<th scope="col">제목</th>
+									<th scope="col">작성자</th>
+									<th scope="col">담당자</th>
+									<th scope="col">날짜</th>
+									<th scope="col">처리상태</th>
+									<th scope="col">갱신일</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="major">
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p class="newNot">
+											<span>사원증 신청방법 [1]</span>
+										</p></td>
+									<td>박세영</td>
+									<td></td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr class="major">
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p class="newFile">
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td></td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr class="major">
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td></td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr class="major">
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td></td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr class="major">
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p class="newNot newFile">
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td></td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td></td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td></td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td></td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td></td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td></td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+								<tr>
+									<td class="borleft">1626</td>
+									<td>사원증 발급신청</td>
+									<td class="title">
+										<p>
+											<span>사원증 신청방법 [1]</span>
+										</p>
+									</td>
+									<td>박세영</td>
+									<td>안희석</td>
+									<td>2018. 01. 25 13:34:58</td>
+									<td>완료</td>
+									<td>2018. 01. 25 13:34:58</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!--class="collaboTable"-->
+					<div class="collaboBtn listNumBtn">
+						<ul>
+							<li class="first"><a href=""></a></li>
+							<li class="prev"><a href=""></a></li>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">4</a></li>
+							<li><a href="">5</a></li>
+							<li><a href="">6</a></li>
+							<li><a href="">7</a></li>
+							<li><a href="">8</a></li>
+							<li><a href="">9</a></li>
+							<li><a href="">10</a></li>
+							<li class="next"><a href=""></a></li>
+							<li class="last"><a href=""></a></li>
+						</ul>
+						<div class="writeBtn">
+							<div class="btnMd">
+								<a href="collaborateWrite.html">글쓰기</a>
+							</div>
+						</div>
+					</div><!--class="listNumBtn"-->
+				</div><!--class="subcontent collabocontent"-->
+				<div class="botsearchBox">
+					<div class="selectMenuWrap collaboMenuWrap">
+						<div class="select_view">
+							<p id="select_view_searchCurr" class="default" onclick="">전체글</p>
+						</div>
+						<ul class="collaboMenu liststyle">
+							<li data-value="전체글">전체글</li>
+							<li data-value="업무요청">업무요청</li>
+							<li data-value="기타">기타</li>
+							<li data-value="RAD수정요청">RAD수정요청</li>
+							<li data-value="시설관리업무요청">시설관리업무요청</li>
+							<li data-value="비품구매요청">비품구매요청</li>
+							<li data-value="명함&메일서명 신청">명함&메일서명 신청</li>
+							<li data-value="문서발급신청">문서발급신청</li>
+							<li data-value="사원증 발급신청">사원증 발급신청</li>
+							<li data-value="평가관리 수정요청">평가관리 수정요청</li>
+						</ul>
+					</div><!--class="selectMenuWrap"-->
+					<div class="selectMenuWrap collabotypeWrap">
+						<div class="select_view">
+							<p id="searchKey_select" class="default" onclick="">제목</p>
+						</div>
+						<ul class="collabotype liststyle">
+							<li data-value="제목">제목</li>
+							<li data-value="작성자">작성자</li>
+							<li data-value="내용">내용</li>
+						</ul>
+					</div><!--class="selectMenuWrap"-->
+					<div class="searchBtn">
+						<input type="text" id="searchContent" name="searchContent" value="">
+						<div class="btnMd">
+							<a href="">검색</a>
+						</div>
+					</div>
+				</div><!--class="botsearchBox"-->
+			</div><!--class="collaborate"-->
+		</div><!--class="subcomWrap"-->
+	</section>
+	
+	
+	
+	<!--팝업 bg 시작-->
+	<div class="popupBg"></div>
+	<!--팝업 bg 끝-->
+	
+	<!-- 우측 퀵메뉴 시작 -->
+	
+	<!-- 우측 퀵메뉴 끝 -->
+	
+	
+	<footer id="footer">
+		<div class="footerWrap">
+			<p>Copyright © 1998-2018 KH Information Educational Institute All Right Reserved</p>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

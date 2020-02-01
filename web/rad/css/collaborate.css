@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/* 업무협업 목록 페이지 */
+
+.collabocontent .collaboBtn .writeBtn{right: 20px;} 
+
+.collaboTable{}
+.collaboTable table th{border-left: 0; border-right: 0;}
+.collaboTable table tbody tr{cursor:pointer;}
+.collaboTable table tbody tr:hover{background:#fafbfc;}
+.collaboTable table tbody tr.major{background:#fafbfc;}
+.collaboTable table tbody td{border-left: 0; border-right: 0;}
+.collaboTable table tbody td.title{text-align:left; padding-left: 20px;}
+.collaboTable table tbody td.title>p{float:left;}
+.collaboTable table tbody td.title>p>span{float:left;}
+
+.botsearchBox .collaboMenuWrap ul{bottom: 36px;}
+.botsearchBox .collabotypeWrap ul{bottom: 35px;}
+.collabotypeWrap .select_view{width: 140px;}
+.collabotype{width: 150px;}
+.collabotype>li{width: 140px;}
+
+/* 업무협업 상세 페이지 */
+.collaboView{}
+.collaboViewcontent{}
+
+
+
+
+/* 업무협업 쓰기 페이지 */
+.collaboWritecontent{}
+.collaboWritecontent table tr.selectLine{}
+.collaboWritecontent table tr.selectLine th{line-height: 16px; vertical-align: middle;}
+.collaboWritecontent table tr td.td_second{text-align: center; padding-left:0;}
+.collaboWritecontent table tr td label{line-height: 52px;}
+.collaboWritecontent table tr td.eachSelect{padding-top:10px; padding-bottom:10px; line-height: 17px;}
+.collaboWritecontent table tr td.eachSelect>ul{}
+.collaboWritecontent table tr td.eachSelect>ul>li{}
+.collaboWritecontent table tr td.eachSelect>ul>li>p{display:inline-block;}
+.collaboWritecontent table tr td.eachSelect>ul>li>a{vertical-align: -4px; margin-left: 1px;}
+.collaboWritecontent table tr td span.eachSelectBtn{margin-top: 2px;}
+.collaboWritecontent table tr td span.eachSelectBtn>a{background:#2a2a4e;}
+.collaboWritecontent table tr.fileTr th{vertical-align:middle;}
+.collaboWritecontent table tr td.file{padding-top: 7px; padding-bottom: 7px;}
+.collaboWritecontent table tr td.file li.fileLiFirst{margin-bottom:5px;}
+
+
+
+
+
+
+

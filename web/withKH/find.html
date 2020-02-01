@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>With KH</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/sub/find.css" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+</head>
+<body>
+<div class="sub_wrapper">
+	<div class="find_wrapper">
+		<div class="sub_top sub_box">
+			<div class="back_btn">
+				<img src="images/sub/sub_back_btn.png" alt="뒤로가기버튼" />
+			</div>
+			<h1 class="sub_title">아이디/비번 찾기</h1>
+			<div class="menu"><img src="images/menubar_sub.png" alt="메뉴 버튼 이미지" /></div>
+		</div><!-- //sub_top -->
+		<div class="sub_content">
+			<div class="sub_find_box">
+				<div class="sub_find_radio_box">
+					<input type="radio" id="find_id" name="find_idpw" value="" checked="checked">
+					<label for="find_id">아이디찾기</label>
+					<input type="radio" id="find_pw" name="find_idpw" value="">
+					<label for="find_pw">비번찾기</label>
+				</div><!-- //sub_find_radio_box -->
+				<div class="sub_find_data_box">
+					<div class="sub_find_input_box">
+						<div class="sub_find_input_id">
+							<input type="text" id="name_id" name="name_id" placeholder="이름">
+							<input type="text" id="email_id" name="email_id" placeholder="이메일">
+						</div>
+						<div class="sub_find_input_pw">
+							<input type="text" id="name_pw" name="name_pw" placeholder="이름">
+							<input type="text" id="email_pw" name="email_pw" placeholder="이메일">
+							<input type="text" id="mobile_pw" name="mobile_pw" placeholder="휴대폰">
+						</div>
+					</div><!-- //sub_find_input_box -->
+				</div><!-- //sub_find_data_box -->
+				<p class="sub_find_txt">본인 확인을 위해 회원가입시 등록한 정보를 입력하시면<br>아이디 혹은 비밀번호를 이메일로 발송해드립니다.</p>
+				<a href="#" class="btn_lg">확인</a>
+			</div><!-- //sub_find_box -->
+		</div><!-- //sub_content -->
+	</div><!-- //find_wrapper -->
+</div><!-- //sub_wrapper -->
+</body>
+
+<script>
+$(document).ready(function(){
+	
+	var findIdInput = $("input[id='find_id']");
+	var findPwInput = $("input[id='find_pw']");
+	var findIdBox = $('.sub_find_input_id');
+	var findPwBox = $('.sub_find_input_pw');
+	
+	/* 로딩시 radio 체크값에 따라 해당 div 보이기 */
+	
+	if(findIdInput.is(":checked") == true){
+		findIdBox.show().siblings().hide();
+	}else if(findPwInput.is(":checked") == true){
+		findPwBox.show().siblings().hide();
+	};
+	
+	/* 클릭시 radio 체크값에 따라 해당 div 보이기 */
+	findIdInput.on('click',function(){
+		findIdBox.show().siblings().hide();
+	});
+	
+	findPwInput.on('click',function(){
+		findPwBox.show().siblings().hide();
+	});
+	
+	/* 수강생,일반회원 버튼 */
+	$('.sub_find_btn').on('click',function(){
+		$(this).css({'background':'#7fd0f3','color':'#fff'}).siblings().css({'background':'#fff','color':'#999'});
+	});
+	
+});
+</script>
+</html>

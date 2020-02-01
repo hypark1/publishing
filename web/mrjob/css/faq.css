@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+.sub_faq{width:1080px;margin:0 auto;}
+.sub_faq_list{border-top:1px solid #3a904a;}
+.sub_faq ul{}
+.sub_faq ul li{width:100%;}
+.sub_faq ul li .qu{width:100%;background:url(../images/sub/faq/faq_arrow_off.png) no-repeat;background-position: 98% 50%;border-bottom:1px solid #d7d7d7;cursor:pointer;}
+.sub_faq ul li .qu:hover{background:#f8fdf9 url(../images/sub/faq/faq_arrow_off.png) no-repeat;background-position: 98% 50%;}
+.sub_faq ul li.on .qu{background:url(../images/sub/faq/faq_arrow_on.png) no-repeat;background-position: 98% 50%;}
+.sub_faq ul li.on .qu:hover{background:#f8fdf9 url(../images/sub/faq/faq_arrow_on.png) no-repeat;background-position: 98% 50%;}
+.sub_faq ul li .qu .qna_txt1{color:#308a41;}
+.sub_faq ul li .an{display:none;width:100%;padding: 10px 0;background:#fdfdfd;border-bottom:1px solid #eaeaea;}
+.sub_faq ul li .qna_txt1{float: left;width: 50px;text-align: center;font-weight: 500;padding: 17px 0;}
+.sub_faq ul li .qna_txt2{float: right;width: 1030px;padding: 17px 0;line-height: 120%;}

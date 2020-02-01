@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>미래잡</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/succpkg.css" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+<script>
+jQuery(function(){
+	fnMenuOn(1, 3);
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div class="header_main_wrap">
+			<div class="header_main cf">
+				<h1><a href="main.html"><img src="images/header_logo.png" alt="미래잡 로고"></a></h1>
+				<div id="nav">
+					<ul class="cf">
+						<li><a href="greeting.html" onmouseover="javascript:fnHeaderShow('01', this);">센터소개</a></li>
+						<li><a href="succpkg.html" onmouseover="javascript:fnHeaderShow('02', this);">취업성공패키지</a></li>
+						<li><a href="recruit.html" onmouseover="javascript:fnHeaderShow('03', this);">채용정보</a></li>
+						<li><a href="notice.html" onmouseover="javascript:fnHeaderShow('04', this);">고객센터</a></li>
+					</ul>
+				</div><!-- //nav -->
+			</div><!-- //header_main -->
+		</div><!-- //header_main_wrap -->
+		<div class="header_sub_wrap">
+			<div class="header_sub">
+				<ul class="cf">
+					<li><a href="greeting.html">인사말</a></li>
+					<li><a href="jojicdo.html">조직도</a></li>
+					<li><a href="contact.html">찾아오시는 길</a></li>
+				</ul>
+				<ul class="cf">
+					<li><a href="succpkg.html">취업성공패키지</a></li>
+					<li><a href="succpkgInfo.html">지원대상 및 내용</a></li>
+					<li><a href="succpkgPay.html">수당지급안내</a></li>
+					<li><a href="succpkgForm.html">신청하기</a></li>
+					<li><a href="succpkgConfirm.html">신청확인</a></li>
+				</ul>
+				<ul class="cf">
+					<li><a href="recruit.html">채용정보</a></li>
+					<li><a href="recruitForm.html">채용공고 등록</a></li>
+				</ul>
+				<ul class="cf">
+					<li><a href="notice.html">공지사항</a></li>
+					<li><a href="faq.html">자주 묻는 질문</a></li>
+					<li><a href="counseling.html">1:1 상담게시판</a></li>
+					<li><a href="downcenter.html">자료실</a></li>
+				</ul>
+			</div><!-- //header_sub -->
+		</div><!-- //header_sub_wrap -->
+	</div><!-- //header -->
+	
+	<div id="section_sub_wrap">
+		<div class="sub_visual sub_visual02">
+			<div class="sub_visual_txt">
+				<h2 class="sub_visual_txt1">취업성공패키지</h2>
+				<h3 class="sub_visual_txt2">신청하기</h3>
+			</div>
+		</div><!-- //sub_visual -->
+		<div class="sub_content sub_succpkgForm">
+			<div class="succpkgForm_wrap">
+				<div class="recruitForm_box">
+					<div class="recruitForm_box_top">
+						<p>취업성공패키지 신청하기</p>
+					</div><!-- //recruitForm_box_top -->
+					<div class="table_com recruitForm_box_table">
+						<table cellpadding="0" cellspacing="0">
+							<caption>취업성공패키지 신청하기 테이블</caption>
+							<colgroup>
+							   <col width="150"> 
+							   <col width="">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>성명</th>
+									<td><input type="text" id="name" name="name" value="" maxlength="12" style="width:200px;">&nbsp;&nbsp;(0/12자)</td>
+								</tr>
+								<tr>
+									<th>생년월일</th>
+									<td>
+										<select id="year" name="year" style="width:100px;">
+											<option value="1990">1990</option>
+											<option value="1991">1991</option>
+											<option value="1992">1992</option>
+											<option value="1993">1993</option>
+											<option value="1994">1994</option>
+											<option value="1995">1995</option>
+											<option value="1996">1996</option>
+											<option value="1997">1997</option>
+											<option value="1998">1998</option>
+											<option value="1999">1999</option>
+											<option value="2000">2000</option>
+										</select>
+										&nbsp;
+										<select id="month" name="month" style="width:85px;">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+										</select>
+										&nbsp;
+										<select id="day" name="day" style="width:85px;">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+											<option value="13">13</option>
+											<option value="14">14</option>
+											<option value="15">15</option>
+											<option value="16">16</option>
+											<option value="17">17</option>
+											<option value="18">18</option>
+											<option value="19">19</option>
+											<option value="20">20</option>
+											<option value="21">21</option>
+											<option value="22">22</option>
+											<option value="23">23</option>
+											<option value="24">24</option>
+											<option value="25">25</option>
+											<option value="26">26</option>
+											<option value="27">27</option>
+											<option value="28">28</option>
+											<option value="29">29</option>
+											<option value="30">30</option>
+											<option value="31">31</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<th>연락처</th>
+									<td>
+										<select id="tel1" name="tel1" style="width:85px;">
+											<option value="010">010</option>
+										</select>
+										&nbsp;-&nbsp;
+										<input type="text" id="tel2" name="tel2" value="" maxlength="4" style="width:103px;">
+										&nbsp;-&nbsp;
+										<input type="text" id="tel3" name="tel3" value="" maxlength="4" style="width:103px;">
+									</td>
+								</tr>
+								<tr>
+									<th>이메일</th>
+									<td>
+										<input type="text" id="email1" name="email1" value="" style="width:200px;">
+										&nbsp;@&nbsp;
+										<input type="text" id="email2" name="email2" value="" style="width:200px;">
+									</td>
+								</tr>
+								<tr>
+									<th>기타 문의사항</th>
+									<td><textarea id="content" name="content" value="" style="width:873px;height: 84px;padding: 7px;"></textarea></td>
+								</tr>
+								<tr>
+									<th>이용약관 및<br>개인정보취급방침</th>
+									<td><input type="checkbox" id="agree" name="agree" value=""><label for="agree">이용약관 및 개인정보처리방침에 동의합니다.</label>
+									&nbsp;&nbsp;<a href="downcenterViewAgree1.html" target="_blank" style="color:#ffbc33;font-weight:500;">[자세히 보기]</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- //table_com -->
+					<div class="bot_btn_com">
+						<div class="bot_btn_com_dark"><a href="#">신청</a></div>
+					</div><!-- //bot_btn_com -->
+				</div><!-- //recruitForm_box -->
+			</div><!-- //succpkgForm_wrap -->
+		</div><!-- //sub_content -->
+	</div><!-- //section_wrap -->
+	
+	<div id="section_footer">
+		<div class="footer_menu_wrap">
+			<div class="footer_menu cf">
+				<div class="footer_menu_left">
+					<ul class="cf">
+						<li><a href="greeting.html">센터소개</a></li>
+						<li><a href="recruit.html">채용정보</a><span class="footer_menu_dot"></span></li>
+						<li><a href="downcenterViewAgree1.html">이용약관</a></li>
+						<li><a href="downcenterViewAgree2.html">개인정보처리방침</a></li>
+						<li><a href="sitemap.html">사이트맵</a></li>
+					</ul>
+				</div><!-- //footer_menu_left -->
+				<div class="footer_menu_right">
+					<ul class="cf">
+						<li><a href="contact.html">찾아오시는 길</a></li>
+						<li><a href="notice.html">고객센터</a></li>
+					</ul>
+				</div><!-- //footer_menu_right -->
+			</div><!-- //footer_menu -->
+		</div><!-- //footer_menu_wrap -->
+		<div class="footer_info cf">
+			<div class="footer_info_logo"><a href="main.html"><img src="../images/footer_logo.png" alt="미래잡 로고"></a></div>
+			<div class="footer_info_copyright">
+				<p class="footer_info_copyright_txt1">직업의 미래를 창조하는 주식회사 미래잡 </p>
+				<p class="footer_info_copyright_txt2">상호 : 주식회사 미래잡<span>|</span>사업자등록번호 : 880-86-01068<span>|</span>주소 : 서울 강남구 테헤란로 130 호산빌딩 7층<span>|</span>전화 : 02-6952-0547~8<span>|</span>팩스 : 02-501-3687<span>|</span>이메일 : mrjob01@mrjob.co.kr</p>
+				<p class="footer_info_copyright_txt3">COPYRIGHT &copy; MIRAEJOB  ALL RIGHTS RESERVED.</p>
+			</div>
+		</div><!-- //footer_info -->
+	</div><!-- //section_footer -->
+</div><!-- //wrapper -->
+</body>
+</html>

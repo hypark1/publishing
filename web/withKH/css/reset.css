@@ -1,0 +1,230 @@
+@CHARSET "UTF-8";
+
+html, body{width:100%;overflow-x: hidden;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: middle;
+	font-family:'Noto Sans KR', NanumGothic, 'Tahoma', Arial, Helvetica, sans-serif, "굴림체" ;
+	font-size:15px;
+	color:#3e3e3e;
+	letter-spacing: -1px;
+	}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+fieldset, img, abbr,acronym { border:0 none; } 
+ol, ul,li { list-style:none; margin: 0; padding: 0;}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	border:0 none;
+	}
+caption{display:none;}
+th, td {
+	text-align:center;
+	font-weight: normal;
+}
+
+address, trong, em, cite {
+	font-weight:normal;
+	font-style:normal;
+	}
+	
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+.cf:after, .cf:before {
+    content: "";
+    display: block;
+    clear: both;
+	visibility: hidden; 
+	line-height: 1%; 
+	height: 0; 
+}
+
+a {color: inherit; text-decoration: none; outline: none}
+a:hover, a:active {text-decoration: none;}
+a[href^="tel"]{color:inherit;text-decoration:none;
+}
+
+hr {display:none;}
+
+button{appearance: none;
+    background: none;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+	cursor:pointer;}
+	
+/* input 기본 스타일 초기화 */
+input {
+width: 60%;
+padding: 2% 3%;
+font-size: 2em;
+font-family: inherit;
+color: #222;
+letter-spacing: -1.5px;
+border: 0;
+border-radius: 0;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+input[type=radio]{
+width: 6.2%;
+padding:0 0 6.2% 0;
+margin: 0;
+border-radius: 50%;
+border: 1px solid #e3e3e3;
+background:#fff url(../images/sub/radio_bg.jpg) no-repeat;
+background-position: center;
+background-size: contain;
+}
+
+input[type=radio]:checked{
+background:#fff url(../images/sub/radio_bg_check.jpg) no-repeat;
+background-position: center;
+background-size: contain;
+}
+
+input[type=checkbox]{
+background:url(../images/check_bg_off.png) no-repeat;
+background-position: center;
+background-size: contain;
+}
+
+input[type=checkbox]:checked{
+background:url(../images/check_bg_on.png) no-repeat;
+background-position: center;
+background-size: contain;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear { display: none; }
+
+/* input type number 에서 화살표 제거 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+textarea{
+margin: 0;
+padding: 2% 4%;
+font-size: 2.2em;
+font-family: inherit;
+border: 1px solid #e3e3e3;
+letter-spacing: -1.5px;
+border-radius: 0;
+resize:none;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+
+/* Select box 스타일 초기화 */ 
+select {
+width: 31%;
+padding: 2% 3%;
+font-size: 2em;
+font-family: inherit;
+color: #222;
+letter-spacing: -1.5px;
+cursor: pointer;
+border: 0;
+border-radius: 0;
+background:#fff url(../images/sub/select_bg.png) no-repeat;
+background-position: 90% 50%;
+background-size: 13%;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+/* IE 에서 Select box 화살표 제거 */ 
+select::-ms-expand { display: none; }
+
+select:focus,input:focus,button:focus,textarea:focus {
+  outline: none;
+}
+
+pre{white-space : pre-line;}
+
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+
+
+@font-face {
+font-family: 'RixGoL';
+src: 	url('fonts/RixGoL.ttf') format('truetype'),
+		url('fonts/RixGoL.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'RixGoB';
+src: 	url('font/RixGoB.ttf') format('truetype'),
+		url('font/RixGoB.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'RobotoT';
+src: 	url('font/Roboto-Thin.ttf') format('truetype'),
+		url('font/Roboto-Thin.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'RobotoL';
+src: 	url('font/Roboto-Light.ttf') format('truetype'),
+		url('font/Roboto-Light.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'RobotoM';
+src: 	url('font/Roboto-Medium.ttf') format('truetype'),
+		url('font/Roboto-Medium.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'RobotoR';
+src: 	url('font/Roboto-Regular.ttf') format('truetype'),
+		url('font/Roboto-Regular.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'Tahoma';
+src: 	url('font/tahoma.ttf') format('truetype'),
+		url('font/tahoma.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'TahomaB';
+src: 	url('font/tahomabd.ttf') format('truetype'),
+		url('font/tahomabd.otf') format('opentype');
+}

@@ -1,0 +1,1356 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>KH 정보교육원 RAD</title>
+<link rel="shortcut icon" href="${pageContext.request.contextPath}/favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" href="css/common.css" />
+<link rel="stylesheet" type="text/css" href="css/mymenu.css" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="js/common.js"></script>
+<script src="js/resub.js"></script>
+<c:set var="currentDate" value="<%=strCD %>"/>
+
+</head>
+<body>
+	<header id="header">
+		<div class="topwrap">
+			<div class="top cf">
+				<div class="left">
+					<h1 class="hid">KH정보교육원 RAD페이지</h1>
+					<a href="remain.html">
+						<img alt="KH정보교육원 RAD 로고 이미지" src="images/rad/main/header_logo.png">
+					</a>
+				</div>
+				<div class="right">
+					<ul class="cf regular">
+						<li><a href="jojicdo.html">KH조직도</a></li>
+						<li>|</li>
+						<li><a href="gonggam.html" class="top_new">KH 共感</a></li>
+						<li>|</li>
+						<li><a href="" class="top_new">KH 메일</a></li>
+						<li>|</li>
+						<li><a href="login.html">로그아웃</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> <!--class="topwrap"-->
+		<nav id="nav">
+			<div class="menubar cf">
+				<div class="menu_list">
+					<div class="menubtn">
+						<div class="menuicon">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
+					<ul class="cf">
+						<li class="rightline">
+							<p>공지사항<span class="underline"></span></p> 
+							<ul class="cf submenu">
+								<li><a href="">운영공지</a></li>
+								<li><a href="">학사공지</a></li>
+								<li><a href="">교육부공지</a></li>
+								<li><a href="">경조사공지</a></li>
+								<li><a href="">자료실</a></li>
+								<li><a href="">주간회의록</a></li>
+								<li><a href="">RAD변경사항</a></li>
+								<li><a href="">업무지시(UI)</a></li>
+								<li><a href="">특강신청게시판</a></li>
+								<li><a href="">개발이슈게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>문의관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">온라인문의</a></li>
+								<li><a href="">오프라인문의</a></li>
+								<li><a href="">재컨텍요망</a></li>
+								<li><a href="">단기특강문의</a></li>
+								<li><a href="">개별모집현황</a></li>
+								<li><a href="">컨테스트</a></li>
+								<li><a href="">회원관리</a></li>
+								<li><a href="">가망등록관리</a></li>
+								<li><a href="">이벤트관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>학사관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">시간표관리</a></li>
+								<li><a href="">운영과정관리</a></li>
+								<li><a href="">학생설문조사</a></li>
+								<li><a href="">국기면접관리</a></li>
+								<li><a href="">내사일지</a></li>
+								<li><a href="">NCS능력단위관리</a></li>
+								<li><a href="">승인과정관리</a></li>
+								<li><a href="">평가관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>수강생관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생관리</a></li>
+								<li><a href="">학생현황</a></li>
+								<li><a href="">결석생관리</a></li>
+								<li><a href="">이슈학생관리</a></li>
+								<li><a href="">프로젝트관리</a></li>
+								<li><a href="">과정공지관리</a></li>
+								<li><a href="">우리반게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>취업관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생취업관리</a></li>
+								<li><a href="">연계업체</a></li>
+								<li><a href="">채용정보</a></li>
+								<li><a href="">취업성공사례</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>대외활동관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">기본정보</a></li>
+								<li><a href="">대학관리</a></li>
+								<li><a href="">방문이력</a></li>
+								<li><a href="">연계업체</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>컨텐츠관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">공지사항 관리</a></li>
+							</ul>
+						</li>
+						<li>
+							<p>사이트관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">도메인관리</a></li>
+								<li><a href="">지점관리</a></li>
+								<li><a href="">조직관리</a></li>
+								<li><a href="">계정관리</a></li>
+								<li><a href="">역할관리</a></li>
+								<li><a href="">메뉴관리</a></li>
+								<li><a href="">강사채용</a></li>
+								<li><a href="">SMS 전송관리</a></li>
+								<li><a href="">접속자관리</a></li>
+								<li><a href="">문의분석</a></li>
+								<li><a href="">운영과정분석</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--class="menu_list"-->
+				<div class="menu_quick">
+					<ul class="cf">
+						<li><a href="dailyreport.html"><img alt="업무보고" src="images/rad/main/header_quick01.png"></a></li>
+						<li class="new_circle"><a href="schedule.html"><img alt="일정관리" src="images/rad/main/header_quick03.png"></a></li>
+						<li><a href="collaborate.html"><img alt="업무협업" src="images/rad/main/header_quick02.png"></a></li>
+					</ul>
+				</div>
+			</div><!--class="menubar"-->
+			<div class="fullmenu">
+				<div class="fullwrap">
+					<ul class="cf submenu">
+						<li><a href="">운영공지</a></li>
+						<li><a href="">학사공지</a></li>
+						<li><a href="">교육부공지</a></li>
+						<li><a href="">경조사공지</a></li>
+						<li><a href="">자료실</a></li>
+						<li><a href="">주간회의록</a></li>
+						<li><a href="">RAD변경사항</a></li>
+						<li><a href="">업무지시(UI)</a></li>
+						<li><a href="">특강신청게시판</a></li>
+						<li><a href="">개발이슈게시판</a></li>
+					</ul> 
+					<ul class="cf submenu">
+						<li><a href="">온라인문의</a></li>
+						<li><a href="">오프라인문의</a></li>
+						<li><a href="">재컨텍요망</a></li>
+						<li><a href="">단기특강문의</a></li>
+						<li><a href="">개별모집현황</a></li>
+						<li><a href="">컨테스트</a></li>
+						<li><a href="">회원관리</a></li>
+						<li><a href="">가망등록관리</a></li>
+						<li><a href="">이벤트관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">시간표관리</a></li>
+						<li><a href="">운영과정관리</a></li>
+						<li><a href="">학생설문조사</a></li>
+						<li><a href="">국기면접관리</a></li>
+						<li><a href="">내사일지</a></li>
+						<li><a href="">NCS능력단위관리</a></li>
+						<li><a href="">승인과정관리</a></li>
+						<li><a href="">평가관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생관리</a></li>
+						<li><a href="">학생현황</a></li>
+						<li><a href="">결석생관리</a></li>
+						<li><a href="">이슈학생관리</a></li>
+						<li><a href="">프로젝트관리</a></li>
+						<li><a href="">과정공지관리</a></li>
+						<li><a href="">우리반게시판</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생취업관리</a></li>
+						<li><a href="">연계업체</a></li>
+						<li><a href="">채용정보</a></li>
+						<li><a href="">취업성공사례</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">기본정보</a></li>
+						<li><a href="">대학관리</a></li>
+						<li><a href="">방문이력</a></li>
+						<li><a href="">연계업체</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">공지사항 관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">도메인관리</a></li>
+						<li><a href="">지점관리</a></li>
+						<li><a href="">조직관리</a></li>
+						<li><a href="">계정관리</a></li>
+						<li><a href="">역할관리</a></li>
+						<li><a href="">메뉴관리</a></li>
+						<li><a href="">강사채용</a></li>
+						<li><a href="">SMS 전송관리</a></li>
+						<li><a href="">접속자관리</a></li>
+						<li><a href="">문의분석</a></li>
+						<li><a href="">운영과정분석</a></li>
+					</ul>
+				</div> <!-- class="fullwrap"-->
+			</div> <!--class="fullmenu"-->
+		</nav>
+	</header>
+	
+	<section id="section">
+		<div class="sectionwrap subcomWrap">
+			<div class="mymenu cf">
+				<div class="myleft">
+					<div class="myInfo box51">
+						<div class="myimg">
+							<div class="mynewWrap">
+								<div class="mynum">17</div>
+								<div class="mynewList">
+									<ul class="cf">
+										<li><a href="">시설관리업무요청</a></li>
+										<li><a href="">주간회의록<span>3</span></a></li>
+										<li><a href="">업무지시(UI)<span>1</span></a></li>
+										<li><a href="">RAD수정요청<span>1</span></a></li>
+										<li><a href="">KH공감</a></li>
+									</ul>
+									<div class="btncom">
+										<a href="">모두 읽음</a>
+									</div>
+								</div><!--class="mynewList"-->
+							</div><!--class="mynewWrap"-->
+						</div><!-- class="myimg"-->
+						<div class="mytxt">
+							<p class="name medium">박혜영 사원</p>
+							<p class="id">[hypark]</p>
+							<p class="team light">당산지원<br>컨텐츠연구소 / UI팀</p>
+						</div><!--class="mytxt"-->
+						<div class="mybtn">
+							<ul class="cf">
+								<li><a href="">연차현황</a></li>
+								<li><p>|</p></li>
+								<li><a href="">근태현황</a></li>
+							</ul>
+							<div class="btncom">
+								<a href="/test/remain/mymenu.jsp">내정보수정</a>
+							</div>
+						</div><!-- class="mybtn"-->
+						<div class="infoquick cf">
+							<div class="infobot mail_new">
+								<a href="">
+									<img src="images/rad/main/info_mail.jpg" alt="메일 아이콘" />
+									<p>KH메일함 바로가기</p>
+								</a>
+							</div>
+						</div><!--class="infoquick"-->
+					</div> <!--class="myInfo"-->
+				</div><!--class="myleft"-->
+				<div class="myright">
+					<div class="mytap boxtapWrap">
+						<ul class="cf">
+							<li class="on"><p>연차현황</p></li>
+							<li><p>근태현황</p></li>
+							<li><p>내정보수정</p></li>
+						</ul>
+					</div><!--class="mytap-->
+					
+					
+					<div class="mybody">
+						<!--연차현황 시작-->
+						<div class="mybox year on">
+							<div class="yearList">
+								<div class="selectBox cf">
+									<div class="sel01">
+										<div class="selectMenuWrap selectmemberWrap">
+											<div class="select_view">
+												<p id="select_view_member" class="default" onclick="">서지화 팀장 (입사일:2014/12/16)</p>
+											</div>
+											<ul class="liststyle" style="display: none;">
+												<li data-value="seoji">서지화 팀장 (입사일:2014/12/16)</li>
+												<li data-value="ahdwkahd">김윤서 주임 (입사일:2016/04/18)</li>
+												<li data-value="hypark">박혜영 사원 (입사일:2017/03/20)</li>
+												<li data-value="icoul">하정훈 사원 (입사일:2017/03/06)</li>
+												<li data-value="6young">홍유경 사원 (입사일:2017/10/10)</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sel02">
+										<div class="selectMenuWrap selectYearWrap">
+											<div class="select_view">
+												<p id="select_view_searchCurr" class="default" onclick="">2018</p>
+											</div>
+											<ul class="liststyle" style="display: none;">
+												<li data-value="2012">2012</li>
+												<li data-value="2013">2013</li>
+												<li data-value="2014">2014</li>
+												<li data-value="2015">2015</li>
+												<li data-value="2016">2016</li>
+												<li data-value="2017">2017</li>
+												<li data-value="2018">2018</li>
+												<li data-value="2019">2019</li>
+											</ul>
+										</div>
+									</div>
+								</div><!--class="selectBox"-->
+								<div class="yeartable cf">
+									<table cellpadding="0" cellspacing="0">
+										<caption>연차현황 테이블</caption>
+										<colgroup>
+										   <col width="80" /> 
+										   <col width="215" />
+										   <col width="166" />
+										   <col width="181" />
+										   <col width="146" />
+										   <col width="100" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">번호</th>
+												<th scope="col">날짜</th>
+												<th scope="col">요일</th>
+												<th scope="col">사유</th>
+												<th scope="col">구분</th>
+												<th scope="col">일수</th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<td colspan="6" class="white"></td>
+											</tr>
+											<tr>
+												<td colspan="6">총 사용연차 : 5.5일</td>
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+												<td class="borleft">1</td>
+												<td>2018.01.03</td>
+												<td>수요일</td>
+												<td>개인사유</td>
+												<td>연차</td>
+												<td class="borright">1</td>
+											</tr>
+											<tr>
+												<td class="borleft">2</td>
+												<td>2018.05.07</td>
+												<td>월요일</td>
+												<td>개인사유</td>
+												<td>연차</td>
+												<td class="borright">1</td>
+											</tr>
+											<tr>
+												<td class="borleft">3</td>
+												<td>2018. 08. 31 ~ 2018. 09. 04</td>
+												<td>목요일 ~ 월요일</td>
+												<td>개인사유</td>
+												<td>하계휴가(3일)</td>
+												<td class="borright">3</td>
+											</tr>
+											<tr>
+												<td class="borleft">4</td>
+												<td>2018.10.02</td>
+												<td>금요일</td>
+												<td>개인사유</td>
+												<td>반차</td>
+												<td class="borright">0.5</td>
+											</tr>
+										</tbody>
+									</table>
+								</div><!--class="yeartable-->
+								<div class="year_Btn">
+									<div class="btnMd">
+										<a>연차관리</a>
+									</div>
+								</div>
+							</div><!--class="yearList"-->
+							<!--연차현황 수정 시작-->
+							<div class="year_modify">
+								<div class="selectBox cf">
+									<div class="sel03">
+										<input type="text" id="selectteam" name="selectteam" value="당산지원/컨텐츠연구소/UI팀"/>
+									</div>
+									<div class="sel01">
+										<div class="selectMenuWrap selectmemberWrap">
+											<div class="select_view">
+												<p id="select_view_member" class="default" onclick="">서지화 팀장 (입사일:2014/12/16)</p>
+											</div>
+											<ul class="liststyle" style="display: none;">
+												<li data-value="seoji">서지화 팀장 (입사일:2014/12/16)</li>
+												<li data-value="ahdwkahd">김윤서 주임 (입사일:2016/04/18)</li>
+												<li data-value="hypark">박혜영 사원 (입사일:2017/03/20)</li>
+												<li data-value="icoul">하정훈 사원 (입사일:2017/03/06)</li>
+												<li data-value="6young">홍유경 사원 (입사일:2017/10/10)</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sel02">
+										<div class="selectMenuWrap selectYearWrap">
+											<div class="select_view">
+												<p id="select_view_searchCurr" class="default" onclick="">2018</p>
+											</div>
+											<ul class="liststyle" style="display: none;">
+												<li data-value="2012">2012</li>
+												<li data-value="2013">2013</li>
+												<li data-value="2014">2014</li>
+												<li data-value="2015">2015</li>
+												<li data-value="2016">2016</li>
+												<li data-value="2017">2017</li>
+												<li data-value="2018">2018</li>
+												<li data-value="2019">2019</li>
+											</ul>
+										</div>
+									</div>
+								</div><!--class="selectBox"-->
+								<div class="yearModifytable cf">
+									<table cellpadding="0" cellspacing="0">
+										<caption>연차현황수정 테이블</caption>
+										<colgroup>
+										   <col width="225" /> 
+										   <col width="340" />
+										   <col width="140" />
+										   <col width="124" />
+										   <col width="152" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">날짜</th>
+												<th scope="col">사유</th>
+												<th scope="col">구분</th>
+												<th scope="col">일수</th>
+												<th scope="col">관리</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="borleft monthsel">
+													<input type="text" id="yearstart" name="yearstart" onchange="enCal.fnChangeDateTime('sd', this)" value="2018.03.05" class="hasDatepicker" readonly="">
+													&nbsp;~&nbsp;
+													<input type="text" id="yearend" name="yearend" onchange="enCal.fnChangeDateTime('sd', this)" value="2018.03.05" class="hasDatepicker" readonly="">
+													
+													<!-- 날짜 팝업 -->
+													<div class="monthpop monthpop01">
+														<div class="pophead cf">
+															<p>2018년 1월</p>
+															<div class="btn">
+																<span class="left"></span>
+																<span class="right"></span>
+															</div>
+														</div>
+														<div class="popbody calcom">
+															<div class="weeks">
+																<ul class="cf">
+																	<li><p>Sun</p></li>
+																	<li><p>Mon</p></li>
+																	<li><p>Tue</p></li>
+																	<li><p>Wed</p></li>
+																	<li><p>Thu</p></li>
+																	<li><p>Fri</p></li>
+																	<li><p>Sat</p></li>
+																</ul>
+															</div>
+															<div class="days">
+																<ul class="cf">
+																	<li class="thisno"><p>28</p></li>
+																	<li><p>1</p></li>
+																	<li><p>2</p></li>
+																	<li><p>3</p></li>
+																	<li><p>4</p></li>
+																	<li><p>5</p></li>
+																	<li><p>6</p></li>
+																	<li><p>7</p></li>
+																	<li><p>8</p></li>
+																	<li><p>9</p></li>
+																	<li><p>10</p></li>
+																	<li><p>11</p></li>
+																	<li><p>12</p></li>
+																	<li><p>13</p></li>
+																	<li><p>14</p></li>
+																	<li><p>15</p></li>
+																	<li><p>16</p></li>
+																	<li><p>17</p></li>
+																	<li class="today"><p>18</p></li>
+																	<li><p>19</p></li>
+																	<li><p>20</p></li>
+																	<li><p>21</p></li>
+																	<li><p>22</p></li>
+																	<li><p>23</p></li>
+																	<li><p>24</p></li>
+																	<li><p>25</p></li>
+																	<li><p>26</p></li>
+																	<li><p>27</p></li>
+																	<li><p>28</p></li>
+																	<li><p>29</p></li>
+																	<li><p>30</p></li>
+																	<li><p>31</p></li>
+																	<li class="thisno"><p>1</p></li>
+																	<li class="thisno"><p>2</p></li>
+																	<li class="thisno"><p>3</p></li>
+																	<li class="thisno"><p>4</p></li>
+																	<li class="thisno"><p>5</p></li>
+																	<li class="thisno"><p>6</p></li>
+																	<li class="thisno"><p>7</p></li>
+																	<li class="thisno"><p>8</p></li>
+																	<li class="thisno"><p>9</p></li>
+																	<li class="thisno"><p>10</p></li>
+																</ul>
+															</div>
+														</div><!--class="popbody calcom"-->
+													</div><!--class="monthpop"-->	
+												</td>
+												<td class="reason">
+													<input type="text" id="reason" name="reason" value="개인사유"/>
+												</td>
+												<td>
+													<div class="selectMenuWrap selectreasonWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">선택</p>
+														</div>
+														<ul class="liststyle" style="display: none;">
+															<li data-value="연차">연차</li>
+															<li data-value="반차">반차</li>
+															<li data-value="지각">지각</li>
+															<li data-value="조퇴">조퇴</li>
+															<li data-value="경조사">경조사</li>
+															<li data-value="기타">기타</li>
+														</ul>
+													</div>
+												</td>
+												<td>
+													<div class="selectMenuWrap selectyeardayWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">0.5</p>
+														</div>
+														<ul class="liststyle" style="display: none;">
+															<li data-value="0.5">0.5</li>
+															<li data-value="1">1</li>
+															<li data-value="2">2</li>
+															<li data-value="3">3</li>
+															<li data-value="4">4</li>
+															<li data-value="5">5</li>
+															<li data-value="6">6</li>
+														</ul>
+													</div>
+												</td>
+												<td class="borright"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div><!--class="yeartable-->
+								<div class="year_modifyBtn myboxSubBtn">
+									<div class="btnMd submit">
+										<a href="">저장</a>
+									</div>
+									<div class="btnMd cancel">
+										<a href="">취소</a>
+									</div>
+								</div>
+							</div><!--class="year_modify"-->
+							<!--연차현황 수정 끝-->
+						</div><!--class="mybox mytap01"-->
+						<!--연차현황 끝-->
+						
+					
+					
+						<!--근태현황 시작-->
+						<div class="mybox time">
+							<div class="timeList">
+								<div class="selectBox cf">
+									<div class="sel01">
+										<div class="selectMenuWrap selectmemberWrap">
+											<div class="select_view">
+												<p id="select_view_member" class="default" onclick="">서지화 팀장 (입사일:2014/12/16)</p>
+											</div>
+											<ul class="liststyle" style="display: none;">
+												<li data-value="seoji">서지화 팀장 (입사일:2014/12/16)</li>
+												<li data-value="ahdwkahd">김윤서 주임 (입사일:2016/04/18)</li>
+												<li data-value="hypark">박혜영 사원 (입사일:2017/03/20)</li>
+												<li data-value="icoul">하정훈 사원 (입사일:2017/03/06)</li>
+												<li data-value="6young">홍유경 사원 (입사일:2017/10/10)</li>
+											</ul>
+										</div>
+									</div><!--class="sel01"-->
+									<div class="sel04">
+										<input type="text" id="selectTime" onchange="javascript:fnChangeCalendar();" class="hasDatepicker">
+										<div class="selectDayImg"></div>
+									</div><!--class="sel04"-->
+								</div><!--class="selectBox"-->
+								<div class="timetable cf">
+									<table cellpadding="0" cellspacing="0">
+										<caption>근태현황 테이블</caption>
+										<colgroup>
+										   <col width="200" /> 
+										   <col width="160" />
+										   <col width="160" />
+										   <col width="130" />
+										   <col width="130" />
+										   <col width="175" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">날짜</th>
+												<th scope="col">구분</th>
+												<th scope="col">일수</th>
+												<th scope="col">출근</th>
+												<th scope="col">퇴근</th>
+												<th scope="col">사유/메모</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="borleft">2018.02.01</td>
+												<td>목요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.02</td>
+												<td>금요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr class="holiday">
+												<td class="borleft">2018.02.03</td>
+												<td>토요일</td>
+												<td>휴일</td>
+												<td></td>
+												<td></td>
+												<td class="borright"></td>
+											</tr>
+											<tr class="holiday">
+												<td class="borleft">2018.02.04</td>
+												<td>일요일</td>
+												<td>휴일</td>
+												<td></td>
+												<td></td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.05</td>
+												<td>월요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.06</td>
+												<td>화요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.07</td>
+												<td>수요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.08</td>
+												<td>목요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.09</td>
+												<td>금요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr class="holiday">
+												<td class="borleft">2018.02.10</td>
+												<td>토요일</td>
+												<td>휴일</td>
+												<td></td>
+												<td></td>
+												<td class="borright"></td>
+											</tr>
+											<tr class="holiday">
+												<td class="borleft">2018.02.11</td>
+												<td>일요일</td>
+												<td>휴일</td>
+												<td></td>
+												<td></td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.12</td>
+												<td>월요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.13</td>
+												<td>화요일</td>
+												<td>평일</td>
+												<td></td>
+												<td></td>
+												<td class="borright">연차</td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.14</td>
+												<td>수요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.15</td>
+												<td>목요일</td>
+												<td>설연휴</td>
+												<td></td>
+												<td></td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.16</td>
+												<td>금요일</td>
+												<td>설날</td>
+												<td></td>
+												<td></td>
+												<td class="borright"></td>
+											</tr>
+											<tr class="holiday">
+												<td class="borleft">2018.02.17</td>
+												<td>토요일</td>
+												<td>설연휴</td>
+												<td></td>
+												<td></td>
+												<td class="borright"></td>
+											</tr>
+											<tr class="holiday">
+												<td class="borleft">2018.02.18</td>
+												<td>일요일</td>
+												<td>휴일</td>
+												<td></td>
+												<td></td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.19</td>
+												<td>월요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.20</td>
+												<td>화요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.21</td>
+												<td>수요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.22</td>
+												<td>목요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.23</td>
+												<td>금요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr class="holiday">
+												<td class="borleft">2018.02.24</td>
+												<td>토요일</td>
+												<td>휴일</td>
+												<td></td>
+												<td></td>
+												<td class="borright"></td>
+											</tr>
+											<tr class="holiday">
+												<td class="borleft">2018.02.25</td>
+												<td>일요일</td>
+												<td>휴일</td>
+												<td></td>
+												<td></td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.26</td>
+												<td>월요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.27</td>
+												<td>화요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+											<tr>
+												<td class="borleft">2018.02.28</td>
+												<td>수요일</td>
+												<td>평일</td>
+												<td>08:55</td>
+												<td>18:10</td>
+												<td class="borright"></td>
+											</tr>
+										</tbody>
+									</table>
+								</div><!--class="timetable-->
+								<div class="time_Btn">
+									<div class="btnMd modifyBtn">
+										<a>수정모드</a>
+									</div>
+									<div class="btnMd uploadBtn">
+										<a>근태파일 업로드</a>
+									</div>
+								</div>
+							</div><!--class="timeList"-->
+							<!--근태파일 업로드 시작-->
+							<div class="time_fileupload">
+								<div class="selectBox cf">
+									<div class="sel03">
+										<input type="text" id="selectteam" name="selectteam" value="당산지원/컨텐츠연구소/UI팀"/>
+									</div><!--class="sel03"-->
+									<div class="sel04">
+										<input type="text" id="selectTime">
+										<div class="selectDayImg"></div>
+									</div>
+								</div><!--class="selectBox"-->
+								<div class="timeUploadtable cf">
+									<table cellpadding="0" cellspacing="0">
+										<caption>근태현황수정 테이블</caption>
+										<colgroup>
+										   <col width="244" /> 
+										   <col width="95" />
+										   <col width="135" />
+										   <col width="120" />
+										   <col width="362" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">부서(권한)</th>
+												<th scope="col">성명</th>
+												<th scope="col">해당년도</th>
+												<th scope="col">해당월</th>
+												<th scope="col">파일업로드</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td class="borleft">당산지원/컨텐츠연구소/UI팀/팀장</td>
+												<td>서지화</td>
+												<td class="tdYearsel">
+													<div class="selectMenuWrap selectYearWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">2018</p>
+														</div>
+														<ul class="collaboMenu liststyle" style="display: none;">
+															<li data-value="2012">2012</li>
+															<li data-value="2013">2013</li>
+															<li data-value="2014">2014</li>
+															<li data-value="2015">2015</li>
+															<li data-value="2016">2016</li>
+															<li data-value="2017">2017</li>
+															<li data-value="2018">2018</li>
+															<li data-value="2019">2019</li>
+														</ul>
+													</div>
+												</td>
+												<td class="tdMonthsel">
+													<div class="selectMenuWrap selectMonthWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">03</p>
+														</div>
+														<ul class="collaboMenu liststyle" style="display: none;">
+															<li data-value="01">01</li>
+															<li data-value="02">02</li>
+															<li data-value="03">03</li>
+															<li data-value="04">04</li>
+															<li data-value="05">05</li>
+															<li data-value="06">06</li>
+															<li data-value="07">07</li>
+															<li data-value="08">08</li>
+															<li data-value="09">09</li>
+															<li data-value="10">10</li>
+															<li data-value="11">11</li>
+															<li data-value="12">12</li>
+														</ul>
+													</div>
+												</td>
+												<td class="file borright">
+													<div class="fileInput">
+														<input type="text" id="filename1" disabled="disabled" value="">
+													</div>
+													<span class="btnSm file_btn">
+														<a>찾아보기</a>
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="borleft">당산지원/컨텐츠연구소/UI팀/주임</td>
+												<td>김윤서</td>
+												<td class="tdYearsel">
+													<div class="selectMenuWrap selectYearWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">2018</p>
+														</div>
+														<ul class="collaboMenu liststyle" style="display: none;">
+															<li data-value="2012">2012</li>
+															<li data-value="2013">2013</li>
+															<li data-value="2014">2014</li>
+															<li data-value="2015">2015</li>
+															<li data-value="2016">2016</li>
+															<li data-value="2017">2017</li>
+															<li data-value="2018">2018</li>
+															<li data-value="2019">2019</li>
+														</ul>
+													</div>
+												</td>
+												<td class="tdMonthsel">
+													<div class="selectMenuWrap selectMonthWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">03</p>
+														</div>
+														<ul class="collaboMenu liststyle" style="display: none;">
+															<li data-value="01">01</li>
+															<li data-value="02">02</li>
+															<li data-value="03">03</li>
+															<li data-value="04">04</li>
+															<li data-value="05">05</li>
+															<li data-value="06">06</li>
+															<li data-value="07">07</li>
+															<li data-value="08">08</li>
+															<li data-value="09">09</li>
+															<li data-value="10">10</li>
+															<li data-value="11">11</li>
+															<li data-value="12">12</li>
+														</ul>
+													</div>
+												</td>
+												<td class="file borright">
+													<div class="fileInput">
+														<input type="text" id="filename1" disabled="disabled" value="">
+													</div>
+													<span class="btnSm file_btn">
+														<a>찾아보기</a>
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="borleft">당산지원/컨텐츠연구소/UI팀/사원</td>
+												<td>박혜영</td>
+												<td class="tdYearsel">
+													<div class="selectMenuWrap selectYearWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">2018</p>
+														</div>
+														<ul class="collaboMenu liststyle" style="display: none;">
+															<li data-value="2012">2012</li>
+															<li data-value="2013">2013</li>
+															<li data-value="2014">2014</li>
+															<li data-value="2015">2015</li>
+															<li data-value="2016">2016</li>
+															<li data-value="2017">2017</li>
+															<li data-value="2018">2018</li>
+															<li data-value="2019">2019</li>
+														</ul>
+													</div>
+												</td>
+												<td class="tdMonthsel">
+													<div class="selectMenuWrap selectMonthWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">03</p>
+														</div>
+														<ul class="collaboMenu liststyle" style="display: none;">
+															<li data-value="01">01</li>
+															<li data-value="02">02</li>
+															<li data-value="03">03</li>
+															<li data-value="04">04</li>
+															<li data-value="05">05</li>
+															<li data-value="06">06</li>
+															<li data-value="07">07</li>
+															<li data-value="08">08</li>
+															<li data-value="09">09</li>
+															<li data-value="10">10</li>
+															<li data-value="11">11</li>
+															<li data-value="12">12</li>
+														</ul>
+													</div>
+												</td>
+												<td class="file borright">
+													<div class="fileInput">
+														<input type="text" id="filename1" disabled="disabled" value="">
+													</div>
+													<span class="btnSm file_btn">
+														<a>찾아보기</a>
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="borleft">당산지원/컨텐츠연구소/UI팀/사원</td>
+												<td>하정훈</td>
+												<td class="tdYearsel">
+													<div class="selectMenuWrap selectYearWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">2018</p>
+														</div>
+														<ul class="collaboMenu liststyle" style="display: none;">
+															<li data-value="2012">2012</li>
+															<li data-value="2013">2013</li>
+															<li data-value="2014">2014</li>
+															<li data-value="2015">2015</li>
+															<li data-value="2016">2016</li>
+															<li data-value="2017">2017</li>
+															<li data-value="2018">2018</li>
+															<li data-value="2019">2019</li>
+														</ul>
+													</div>
+												</td>
+												<td class="tdMonthsel">
+													<div class="selectMenuWrap selectMonthWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">03</p>
+														</div>
+														<ul class="collaboMenu liststyle" style="display: none;">
+															<li data-value="01">01</li>
+															<li data-value="02">02</li>
+															<li data-value="03">03</li>
+															<li data-value="04">04</li>
+															<li data-value="05">05</li>
+															<li data-value="06">06</li>
+															<li data-value="07">07</li>
+															<li data-value="08">08</li>
+															<li data-value="09">09</li>
+															<li data-value="10">10</li>
+															<li data-value="11">11</li>
+															<li data-value="12">12</li>
+														</ul>
+													</div>
+												</td>
+												<td class="file borright">
+													<div class="fileInput">
+														<input type="text" id="filename1" disabled="disabled" value="">
+													</div>
+													<span class="btnSm file_btn">
+														<a>찾아보기</a>
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td class="borleft">당산지원/컨텐츠연구소/UI팀/사원</td>
+												<td>홍유경</td>
+												<td class="tdYearsel">
+													<div class="selectMenuWrap selectYearWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">2018</p>
+														</div>
+														<ul class="collaboMenu liststyle" style="display: none;">
+															<li data-value="2012">2012</li>
+															<li data-value="2013">2013</li>
+															<li data-value="2014">2014</li>
+															<li data-value="2015">2015</li>
+															<li data-value="2016">2016</li>
+															<li data-value="2017">2017</li>
+															<li data-value="2018">2018</li>
+															<li data-value="2019">2019</li>
+														</ul>
+													</div>
+												</td>
+												<td class="tdMonthsel">
+													<div class="selectMenuWrap selectMonthWrap">
+														<div class="select_view">
+															<p id="select_view_searchCurr" class="default" onclick="">03</p>
+														</div>
+														<ul class="collaboMenu liststyle" style="display: none;">
+															<li data-value="01">01</li>
+															<li data-value="02">02</li>
+															<li data-value="03">03</li>
+															<li data-value="04">04</li>
+															<li data-value="05">05</li>
+															<li data-value="06">06</li>
+															<li data-value="07">07</li>
+															<li data-value="08">08</li>
+															<li data-value="09">09</li>
+															<li data-value="10">10</li>
+															<li data-value="11">11</li>
+															<li data-value="12">12</li>
+														</ul>
+													</div>
+												</td>
+												<td class="file borright">
+													<div class="fileInput">
+														<input type="text" id="filename1" disabled="disabled" value="">
+													</div>
+													<span class="btnSm file_btn">
+														<a>찾아보기</a>
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div><!--class="timeUploadtable-->
+								<div class="time_UploadBtn myboxSubBtn">
+									<div class="btnMd submit">
+										<a>등록</a>
+									</div>
+									<div class="btnMd cancel">
+										<a>취소</a>
+									</div>
+								</div>
+							</div><!--class="year_modify"-->
+							<!--근태파일 업로드 끝-->
+						</div><!--class="mybox mytap02"-->
+						<!--근태현황 끝-->
+					
+					
+						<!--내정보수정 시작-->
+						<div class="mybox modify">
+							<h5>내정보 수정</h5>
+							<div class="modifytable">
+								<table cellpadding="0" cellspacing="0">
+									<caption>내정보 수정 테이블</caption>
+									<colgroup>
+									   <col width="103" /> 
+									   <col width="239" />
+									   <col width="103" />
+									   <col width="170" />
+									   <col width="103" />
+									   <col width="170" />
+									</colgroup>
+									<tbody>
+										<tr>
+											<th>부서</th>
+											<td>당산지원/컨텐츠연구소/UI팀</td>
+											<th>소속</th>
+											<td>인포텍</td>
+											<th>입사일</th>
+											<td>2017.10.10</td>
+										</tr>
+										<tr>
+											<th>성명 / 직급</th>
+											<td>홍유경 사원</td>
+											<th>아이디</th>
+											<td>6young</td>
+											<th>영문명</th>
+											<td><input type="text" id="" name="" value=""/></td>
+										</tr>
+										<tr>
+											<th>생일</th>
+											<td class="birth">
+												<input type="text" class="birthtxt" id="" name="" value=""/>
+												<p>
+													<input type="radio" id="birth1" name="birth" checked="checked" />
+													<label for="birth1">양력</label>
+													<input type="radio" id="birth2" name="birth" />
+													<label for="birth2">음력</label>
+												</p>
+											</td>
+											<th>패스워드수정</th>
+											<td><input type="password" id="" name=""/></td>
+											<th>사내전화</th>
+											<td><input type="tel" id="" name="" value=""/></td>
+										</tr>
+										<tr>
+											<th>사내메일</th>
+											<td><input type="email" id="" name="" value=""/></td>
+											<th>패스워드확인</th>
+											<td><input type="password" id="" name=""/></td>
+											<th>휴대전화</th>
+											<td><input type="tel" id="mytelnum" name="mytelnum" value="" maxlength="13"/></td>
+										</tr>
+										<tr>
+											<th>네이트온</th>
+											<td><input type="email" id="" name="" value=""/></td>
+											<th>주소</th>
+											<td colspan="3" class="txtleft">경기도 고양시 일산서구 대화동</td>
+										</tr>
+									</tbody>
+								</table>
+							</div><!-- class="modifytable"-->
+							<div class="boardSet cf">
+								<h5>새 글 알림 게시판 설정</h5>
+								<div class="boardCheck boardCheck01">
+									<div class="top">
+										<p>업무 게시판</p>
+									</div>
+									<div class="mid">
+										<input type="checkbox" name="allboard" id="allboard" value="업무게시판 모두 체크">
+										<label for="allboard">업무게시판 모두 체크</label>
+									</div>
+									<div class="bot">
+										<ul>
+											<li>
+												<input type="checkbox" name="" id="" value="교육부">
+												<label for="">교육부</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="자료실">
+												<label for="">자료실</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="주간회의록">
+												<label for="">주간회의록</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="업무지시(UI)">
+												<label for="">업무지시(UI)</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="특강신청게시판">
+												<label for="">특강신청게시판</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="RAD변경사항">
+												<label for="">RAD변경사항</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="노하우게시판">
+												<label for="">노하우게시판</label>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="boardCheck boardCheck02">
+									<div class="top">
+										<p>업무협업</p>
+									</div>
+									<div class="mid">
+										<input type="checkbox" name="allboard" id="allboard" value="업무협업 모두 체크">
+										<label for="allboard">업무협업 모두 체크</label>
+									</div>
+									<div class="bot">
+										<ul>
+											<li>
+												<input type="checkbox" name="" id="" value="RAD수정요청">
+												<label for="">RAD수정요청</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="시설관리업무요청">
+												<label for="">시설관리업무요청</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="비품구매요청">
+												<label for="">비품구매요청</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="명함&메일서명 신청">
+												<label for="">명함&메일서명 신청</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="문서발급신청">
+												<label for="">문서발급신청</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="사원증발급신청">
+												<label for="">사원증발급신청</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="평가관리수정요청">
+												<label for="">평가관리수정요청</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="기타요청업무">
+												<label for="">기타요청업무</label>
+											</li>
+											<li>
+												<input type="checkbox" name="" id="" value="업무요청">
+												<label for="">업무요청</label>
+											</li>
+										</ul>
+									</div>
+								</div><!--class="boardCheck boardCheck02"-->
+							</div><!--class="boardSet"-->
+							<div class="submitBtn">
+								<div class="btnMd">
+									<a href="">저장</a>
+								</div>
+							</div>
+						</div><!-- class="mybox modify"-->
+						<!--내정보수정 끝-->
+					</div><!--class="mybody"-->
+				</div><!-- class="myright"-->
+			</div><!--class="mymenu-->
+		</div><!--class="subcomWrap"-->
+	</section>
+
+	<footer id="footer">
+		<div class="footerWrap">
+			<p>Copyright © 1998-2018 KH Information Educational Institute All Right Reserved</p>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

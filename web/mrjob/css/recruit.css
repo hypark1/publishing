@@ -1,0 +1,44 @@
+@CHARSET "UTF-8";
+
+.sub_recruit,
+.sub_recruitView,
+.sub_recruitForm{width:1080px;margin:0 auto;}
+
+/* 채용정보 목록 */
+.sub_recruit .recruit_table table td{padding: 20px 10px;font-size:14px;}
+.sub_recruit .recruit_table table tr{cursor:pointer;}
+.sub_recruit .recruit_table table tr:hover{background:#fbfbfb;}
+.sub_recruit .recruit_table table .company{font-size:15px;}
+.sub_recruit .recruit_table table .title_td{padding-left:30px;}
+.sub_recruit .recruit_table table .title_td .title_txt{font-size:15px;max-width:405px;letter-spacing: -0.7px;}
+.sub_recruit .recruit_table table .title_td .title_txt2{font-size:14px;color:#8b8b8b;letter-spacing: -0.7px;}
+
+/* 채용정보 상세 */
+.recruitView_wrap{width:100%;}
+.recruitView_wrap .recruitView_content{width:100%;}
+.recruitView_wrap .recruitView_content .recruitView_top{position:relative;width:1040px;padding:35px 20px 25px;border-top:2px solid #3a904a;}
+.recruitView_wrap .recruitView_content .recruitView_top_company{font-size:20px;}
+.recruitView_wrap .recruitView_content .recruitView_top_title{font-size:40px;letter-spacing: -3px;}
+.recruitView_wrap .recruitView_content .recruitView_date{position:absolute;right:20px;bottom:30px;display:block;width:90px;padding:9px 0;background: url(../images/sub/notice/notice_btn5.png) no-repeat;background-size: contain;font-size:16px;font-weight:400;color:#fff;text-align:center;letter-spacing: -1px;}
+.recruitView_wrap .recruitView_content .recruitView_mid{width:100%;border:solid #d7d7d7;border-width:1px 0;}
+.recruitView_wrap .recruitView_content .recruitView_mid_box{float:left;width:230px;padding:25px 20px;}
+.recruitView_wrap .recruitView_content .recruitView_mid_box .recruitView_mid_tit{margin-bottom:12px;font-size:22px;color:#308a41;font-weight:500;letter-spacing: -2px;}
+.recruitView_wrap .recruitView_content .recruitView_mid_box ul li{margin:0 0 10px -3px;}
+.recruitView_wrap .recruitView_content .recruitView_mid_box .recruitView_mid_txt1{display:inline-block;margin-right: 10px;font-size:16px;color:#8b8b8b;}
+.recruitView_wrap .recruitView_content .recruitView_mid_box .recruitView_mid_txt2{display:inline-block;font-size:16px;}
+.recruitView_wrap .recruitView_content .recruitView_bot{padding:0 20px 35px;border-bottom:1px solid #d7d7d7;}
+.recruitView_wrap .recruitView_content .recruitView_bot_box{width:100%;}
+.recruitView_wrap .recruitView_content .recruitView_bot_box .recruitView_bot_tit{padding:35px 0 15px;font-size:27px;color:#308a41;font-weight:400;letter-spacing:-2px;}
+.recruitView_wrap .recruitView_content .recruitView_bot_box .recruitView_table{width:100%;}
+.recruitView_wrap .recruitView_content .recruitView_bot_box .recruitView_table th{}
+.recruitView_wrap .recruitView_content .recruitView_bot_box .recruitView_table td{padding: 30px 20px 25px;text-align:left;border-right: 1px solid #d7d7d7;font-size:16px;vertical-align:top;}
+.recruitView_wrap .recruitView_content .recruitView_bot_box .recruitView_table td:last-child{border-right:0;}
+.recruitView_wrap .recruitView_content .recruitView_bot_box .recruitView_table ul li{margin-bottom:7px;}
+.recruitView_wrap .recruitView_content .recruitView_bot_box .recruitView_bot_ul li{margin-bottom:4px;}
+.recruitView_wrap .recruitView_content .recruitView_bot_box .recruitView_bot_ul li p{vertical-align:top;line-height: 22px;}
+.recruitView_wrap .recruitView_content .recruitView_bot_box .recruitView_bot_txt1{display:inline-block;width:90px;font-size:16px;}
+.recruitView_wrap .recruitView_content .recruitView_bot_box .recruitView_bot_txt2{display:inline-block;font-size:16px;}
+
+/* 채용정보 등록 */
+.recruitForm_wrap{width:100%;}
+

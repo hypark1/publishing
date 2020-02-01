@@ -1,0 +1,146 @@
+﻿@charset "utf-8";
+
+
+.mymenu{background:#ffffff;}
+
+.mymenu .myleft{float:left; background:#ffffff;
+-webkit-box-shadow:5px 0px 10px rgba(0,0,0,0.05); 
+-moz-box-shadow:5px 0px 10px rgba(0,0,0,0.05); 
+box-shadow:5px 0px 10px rgba(0,0,0,0.05);}
+	.mymenu .myInfo{padding: 27px 0; height: auto;}
+	.mymenu .myInfo .myimg{margin-top: 0;}
+	.mymenu .myInfo .mybtn{margin-bottom: 22px;}
+	.mymenu .myInfo .infoquick{position:relative;}
+
+.mymenu .myright{float:right; width: 960px; min-height: 740px; margin:0 30px 0 50px;}
+.mymenu .myright .mytap{float:left; width:100%; border-bottom: 1px solid #f3f5f7;}
+
+.mybody{float: left; width: 100%; margin-top:30px;}
+.mybox{display:none; position:relative;}
+.mybox table{width:100%; margin-top:10px;}
+.mybox table tbody>tr>td.borleft{line-height:44px;}
+.mybox.on{display:block;}
+
+.myboxSubBtn{text-align: center;}
+.mybody .myboxSubBtn .submit{margin-right:10px;}
+.mybody .myboxSubBtn .submit>a{background:#ff626c;}
+.mybody .myboxSubBtn .cancel{}
+.mybody .myboxSubBtn .cancel>a{background:#2a2a4e;}
+
+
+.mybody .btnMd{margin-top:30px; margin-bottom:30px;}
+
+
+/* 연차현황 */
+
+.yearList{}
+
+.selectBox{width: 100%;}
+.selectBox>div{float: left; position:relative; margin-right: 10px;}
+.selectBox select{padding-left: 15px;}
+.selectBox select>option{}
+
+
+.sel04{}
+.sel04>input[type=text]{float:left; width:70px; padding-left: 0; text-align: center; letter-spacing:-0.5px;}
+.sel04>.selectDayImg{float:left; width:36px; height:36px; background:url(../images/rad/main/select_date.jpg) no-repeat; background-position:center; cursor:pointer;}
+.sel05{}
+.sel05>input[type=text]{width:193px;}
+
+.year_Btn{text-align: center;}
+.mybody .year .year_Btn .btnMd>a{background:#2a2a4e;}
+
+/* 연차현황 수정 */
+
+.year_modify{display:none;}
+.year_modify .selectmemberWrap{z-index:16;}
+.year_modify .selectYearWrap{z-index:16;}
+.sel03{position:relative;}
+.sel03>input[type=text]{width: 200px; color:#000000; font-weight: 500;}
+.year_modify input[type=text]{padding-left: 0; line-height: 36px; font-size: 13px; color: #999999; letter-spacing: -0.3px; height: 34px; border: 1px solid #dfe2e9; text-align: center;}
+.yearModifytable{margin-top: 10px;}
+.yearModifytable td.monthsel{position:relative;}
+.yearModifytable td.monthsel .monthpop .popbody .weeks>ul>li>p{line-height: 14px;}
+.yearModifytable td.monthsel .monthpop .pophead .btn span{margin-top:0;}
+.yearModifytable td.monthsel input[type=text]{width:86px; margin-top: -4px;}
+.yearModifytable td.reason input[type=text]{width:309px; margin-top: -1px;}
+
+
+/*연차현황수정_업무공유 대상 선택 팝업*/
+.year_modify .jojicpop{left:0; top: 50px; display:block; }
+
+/* 근태현황 */
+.time_Btn{text-align: center;}
+.mybody .time .modifyBtn>a{background:#2a2a4e; margin-right: 10px;}
+.mybody .time .uploadBtn>a{background:#ff626c;}
+
+
+.time_fileupload{display:none;}
+.timeUploadtable{}
+.timeUploadtable table td{position:relative;}
+.timeUploadtable table td .selectMenuWrap{left: 11px;}
+.timeUploadtable table td.tdYearsel{}
+.timeUploadtable table td.tdMonthsel{}
+.timeUploadtable table td.file .fileInput input[type=text]{width: 235px;}
+
+
+
+
+
+/* 내정보수정 */
+.modify{}
+	.modify h5{font-size: 20px; font-weight: 500; margin-bottom: 20px;}
+	.modifytable{}
+	.modifytable table{width:100%; text-align:center; font-weight:300;  letter-spacing: -0.5px; border-right: 1px solid #f3f5f7;}
+	.modifytable table>tbody{}
+	.modifytable table>tbody>tr{height: 52px;}
+	.modifytable table>tbody>tr>th{border:1px solid #e9eaf0;}
+	.modifytable table>tbody>tr>td{color:#999999; border-top:1px solid #f3f5f7; border-bottom:1px solid #f3f5f7; padding:7px 10px;}
+	.modifytable table>tbody>tr>td.txtleft{text-align:left;}
+	.modifytable table input{border:1px solid #dfe2e9; line-height: 35px; width: 93%; padding: 0 3%; text-align: center; color: #999999;}
+	.modifytable table td.birth{}
+	.modifytable table td.birth>input.birthtxt{float: left; width: 70px;}
+	.modifytable table td.birth>p{float: left; margin: 9px 13px;}
+	.modifytable table td.birth>p>input{width: auto;}
+	.modifytable table td.birth>p>label{margin-right: 10px;}
+
+
+.boardSet{width:100%; margin-top: 35px;}
+	.boardCheck{float:left; width:466px; color:#999999; text-align:left;}
+	.boardCheck>div{width:100%;}
+	.boardCheck01{margin-right:25px;}
+	.boardCheck02{}
+	.boardCheck>.top{height:48px; border:1px solid #6fa5ee; background:#74acf6;}
+	.boardCheck>.top>p{color:#ffffff; margin-left:30px; line-height: 48px;}
+	.boardCheck>.mid{border-left: 1px solid #f3f5f7; border-right: 1px solid #f3f5f7;}
+	.boardCheck>.mid label{line-height: 44px;}
+	.boardCheck>.bot{border: 1px solid #f3f5f7;}
+	.boardCheck ul{margin: 17px 0 20px; min-height: 216px;}
+	.boardCheck input[type="checkbox"]{margin-left:30px;}
+	.boardCheck label{line-height:24px;}
+	
+.modify .submitBtn{text-align:center;}
+.modify .submitBtn .btnMd{margin-top: 30px;}
+.modify .submitBtn .btnMd>a{background:#2a2a4e;}
+
+/* 나의일정 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

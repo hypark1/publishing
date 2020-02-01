@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+/* 취업지원 */
+.recruit_wrapper{}
+.recruit_wrapper .sub_recruit_visual_box{padding: 4% 0 0;}
+.recruit_wrapper .sub_recruit_visual_box .sub_recruit_visual_title{margin-bottom: 2%;}
+.recruit_wrapper .sub_recruit_visual_box ul{margin-bottom: 2%;}
+.recruit_wrapper .sub_recruit_visual_box ul li{display:inline-block;}
+.recruit_wrapper .sub_recruit_visual_box ul .sub_recruit_visual_bar{width: 1px;padding-bottom: 7%;margin: 0 5%;background: url(/app/images/sub/line_gray.jpg) repeat-y;}
+.recruit_wrapper .sub_recruit_visual_box img{width:100%;}
+.recruit_wrapper .sub_recruit_table .sub_com_tap ul li{width:50%;}
+.recruit_wrapper .sub_recruit_table tr td .sub_com_table_txt1{font-weight: 400;}
+.recruit_wrapper .sub_recruit_table tr td .sub_com_table_txt3{line-height: 140%;margin-bottom: 2%;max-width: 90%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;display: inline-block;}
+.recruit_wrapper .sub_recruit_table tr td .sub_com_table_txt4,
+.recruit_wrapper .sub_recruit_table tr td .sub_com_table_txt5{margin-top:0;}
+.recruit_wrapper .sub_recruit_table tr td:nth-child(2) .sub_com_table_txt5{font-weight: 500;font-family: 'Noto Sans KR';}
+.recruit_wrapper .sub_recruit_table tr td .list_new{width: 6.3%;padding-bottom: 6.3%;margin-left: 2%;margin-top: -1.3%;}
+.recruit_wrapper .sub_recruit_table tr .sub_recruit_table_btn img{width:88%;}
+
+/* 취업지원 상세보기 */
+.recruitView_wrapper{}
+.recruitView_wrapper .sub_recruitView_top{}
+.recruitView_wrapper .sub_recruitView_title{line-height: 130%;}
+.recruitView_wrapper .sub_recruitView_top .dday{display: inline-block;width: 10%;padding-bottom: 5.3%;margin: -1% 0 0 1.5%;}
+.recruitView_wrapper .sub_recruitView_top .dday0{width: 13%;background: url(/app/images/sub/recruit/dday0.png) no-repeat;background-size: contain;background-position: center;}
+.recruitView_wrapper .sub_recruitView_top .dday1{background: url(/app/images/sub/recruit/dday1.png) no-repeat;background-size: contain;background-position: center;}
+.recruitView_wrapper .sub_recruitView_top .dday2{background: url(/app/images/sub/recruit/dday2.png) no-repeat;background-size: contain;background-position: center;}
+.recruitView_wrapper .sub_recruitView_top .dday3{background: url(/app/images/sub/recruit/dday3.png) no-repeat;background-size: contain;background-position: center;}
+.recruitView_wrapper .sub_recruitView_top .dday4{background: url(/app/images/sub/recruit/dday4.png) no-repeat;background-size: contain;background-position: center;}
+.recruitView_wrapper .sub_recruitView_top .dday5{background: url(/app/images/sub/recruit/dday5.png) no-repeat;background-size: contain;background-position: center;}
+.recruitView_wrapper .sub_recruitView_table{margin-bottom:0;}
+.recruitView_wrapper .sub_recruitView_table td{padding-bottom: 4%;font-weight: 500;vertical-align: top;}
+.recruitView_wrapper .sub_recruitView_table td:first-child{text-align:right;color:#9797a7;}
+.recruitView_wrapper .sub_recruitView_table td:last-child{text-align:left;padding-left:5%;line-height: 120%;}
+.recruitView_btn{padding-bottom: 4%;background: #fff;text-align: center;}

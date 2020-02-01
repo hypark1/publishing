@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+.sub_wrapper .certificate_wrapper{background:#fff;}
+
+.certificate_wrapper .sub_content{width:88%;padding:4% 6%;}
+.certificate_wrapper .sub_com_table table td:first-child{text-align:left;}
+.certificate_wrapper .certificate_alldown_btn{width:48%;margin:4% auto;}
+.certificate_wrapper .certificate_alldown_btn img{width:100%;}

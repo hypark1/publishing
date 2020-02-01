@@ -1,0 +1,559 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>KH 정보교육원 RAD</title>
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/dailyreport.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/resub.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="topwrap">
+			<div class="top cf">
+				<div class="left">
+					<h1 class="hid">KH정보교육원 RAD페이지</h1>
+					<a href="remain.html">
+						<img alt="KH정보교육원 RAD 로고 이미지" src="images/rad/main/header_logo.png">
+					</a>
+				</div>
+				<div class="right">
+					<ul class="cf regular">
+						<li><a href="jojicdo.html">KH조직도</a></li>
+						<li>|</li>
+						<li><a href="gonggam.html" class="top_new">KH 共感</a></li>
+						<li>|</li>
+						<li><a href="" class="top_new">KH 메일</a></li>
+						<li>|</li>
+						<li><a href="login.html">로그아웃</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> <!--class="topwrap"-->
+		<nav id="nav">
+			<div class="menubar cf">
+				<div class="menu_list">
+					<div class="menubtn">
+						<div class="menuicon">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
+					<ul class="cf">
+						<li class="rightline">
+							<p>공지사항<span class="underline"></span></p> 
+							<ul class="cf submenu">
+								<li><a href="">운영공지</a></li>
+								<li><a href="">학사공지</a></li>
+								<li><a href="">교육부공지</a></li>
+								<li><a href="">경조사공지</a></li>
+								<li><a href="">자료실</a></li>
+								<li><a href="">주간회의록</a></li>
+								<li><a href="">RAD변경사항</a></li>
+								<li><a href="">업무지시(UI)</a></li>
+								<li><a href="">특강신청게시판</a></li>
+								<li><a href="">개발이슈게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>문의관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">온라인문의</a></li>
+								<li><a href="">오프라인문의</a></li>
+								<li><a href="">재컨텍요망</a></li>
+								<li><a href="">단기특강문의</a></li>
+								<li><a href="">개별모집현황</a></li>
+								<li><a href="">컨테스트</a></li>
+								<li><a href="">회원관리</a></li>
+								<li><a href="">가망등록관리</a></li>
+								<li><a href="">이벤트관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>학사관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">시간표관리</a></li>
+								<li><a href="">운영과정관리</a></li>
+								<li><a href="">학생설문조사</a></li>
+								<li><a href="">국기면접관리</a></li>
+								<li><a href="">내사일지</a></li>
+								<li><a href="">NCS능력단위관리</a></li>
+								<li><a href="">승인과정관리</a></li>
+								<li><a href="">평가관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>수강생관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생관리</a></li>
+								<li><a href="">학생현황</a></li>
+								<li><a href="">결석생관리</a></li>
+								<li><a href="">이슈학생관리</a></li>
+								<li><a href="">프로젝트관리</a></li>
+								<li><a href="">과정공지관리</a></li>
+								<li><a href="">우리반게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>취업관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생취업관리</a></li>
+								<li><a href="">연계업체</a></li>
+								<li><a href="">채용정보</a></li>
+								<li><a href="">취업성공사례</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>대외활동관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">기본정보</a></li>
+								<li><a href="">대학관리</a></li>
+								<li><a href="">방문이력</a></li>
+								<li><a href="">연계업체</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>컨텐츠관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">공지사항 관리</a></li>
+							</ul>
+						</li>
+						<li>
+							<p>사이트관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">도메인관리</a></li>
+								<li><a href="">지점관리</a></li>
+								<li><a href="">조직관리</a></li>
+								<li><a href="">계정관리</a></li>
+								<li><a href="">역할관리</a></li>
+								<li><a href="">메뉴관리</a></li>
+								<li><a href="">강사채용</a></li>
+								<li><a href="">SMS 전송관리</a></li>
+								<li><a href="">접속자관리</a></li>
+								<li><a href="">문의분석</a></li>
+								<li><a href="">운영과정분석</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--class="menu_list"-->
+				<div class="menu_quick">
+					<ul class="cf">
+						<li><a href="dailyreport.html"><img alt="업무보고" src="images/rad/main/header_quick01.png"></a></li>
+						<li class="new_circle"><a href="schedule.html"><img alt="일정관리" src="images/rad/main/header_quick03.png"></a></li>
+						<li><a href="collaborate.html"><img alt="업무협업" src="images/rad/main/header_quick02.png"></a></li>
+					</ul>
+				</div>
+			</div><!--class="menubar"-->
+			<div class="fullmenu">
+				<div class="fullwrap">
+					<ul class="cf submenu">
+						<li><a href="">운영공지</a></li>
+						<li><a href="">학사공지</a></li>
+						<li><a href="">교육부공지</a></li>
+						<li><a href="">경조사공지</a></li>
+						<li><a href="">자료실</a></li>
+						<li><a href="">주간회의록</a></li>
+						<li><a href="">RAD변경사항</a></li>
+						<li><a href="">업무지시(UI)</a></li>
+						<li><a href="">특강신청게시판</a></li>
+						<li><a href="">개발이슈게시판</a></li>
+					</ul> 
+					<ul class="cf submenu">
+						<li><a href="">온라인문의</a></li>
+						<li><a href="">오프라인문의</a></li>
+						<li><a href="">재컨텍요망</a></li>
+						<li><a href="">단기특강문의</a></li>
+						<li><a href="">개별모집현황</a></li>
+						<li><a href="">컨테스트</a></li>
+						<li><a href="">회원관리</a></li>
+						<li><a href="">가망등록관리</a></li>
+						<li><a href="">이벤트관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">시간표관리</a></li>
+						<li><a href="">운영과정관리</a></li>
+						<li><a href="">학생설문조사</a></li>
+						<li><a href="">국기면접관리</a></li>
+						<li><a href="">내사일지</a></li>
+						<li><a href="">NCS능력단위관리</a></li>
+						<li><a href="">승인과정관리</a></li>
+						<li><a href="">평가관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생관리</a></li>
+						<li><a href="">학생현황</a></li>
+						<li><a href="">결석생관리</a></li>
+						<li><a href="">이슈학생관리</a></li>
+						<li><a href="">프로젝트관리</a></li>
+						<li><a href="">과정공지관리</a></li>
+						<li><a href="">우리반게시판</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생취업관리</a></li>
+						<li><a href="">연계업체</a></li>
+						<li><a href="">채용정보</a></li>
+						<li><a href="">취업성공사례</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">기본정보</a></li>
+						<li><a href="">대학관리</a></li>
+						<li><a href="">방문이력</a></li>
+						<li><a href="">연계업체</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">공지사항 관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">도메인관리</a></li>
+						<li><a href="">지점관리</a></li>
+						<li><a href="">조직관리</a></li>
+						<li><a href="">계정관리</a></li>
+						<li><a href="">역할관리</a></li>
+						<li><a href="">메뉴관리</a></li>
+						<li><a href="">강사채용</a></li>
+						<li><a href="">SMS 전송관리</a></li>
+						<li><a href="">접속자관리</a></li>
+						<li><a href="">문의분석</a></li>
+						<li><a href="">운영과정분석</a></li>
+					</ul>
+				</div> <!-- class="fullwrap"-->
+			</div> <!--class="fullmenu"-->
+		</nav>
+	</header>
+	
+	<section id="section">
+		<div class="sectionwrap subcomWrap">
+			<div class="dailyReportView">
+				<div class="tit">
+					<h3>일일보고게시판</h3>
+				</div>
+				<div class="subcontent dailyReportViewcontent">
+					<div class="viewTop">
+						<div class="toptxt">
+							<p class="txt1">2018.03.14 (수) 업무보고</p>
+							<p class="txt2">등록일 : 2018.03.14 19:17:15</p>
+							<p class="txt2">UI팀 홍유경사원</p>
+						</div>
+						<div class="topImg">
+							<ul>
+								<li class="thumbImg thumbImg1"></li>
+							</ul>
+						</div>
+						<div class="topLine"></div>
+					</div><!--class="viewTop"-->
+					<div class="viewMid">
+						<div class="tableWrap dailyReportViwe_Table">
+							<!--<table cellpadding="0" cellspacing="0">
+								<caption>일일업무보고 보기 테이블</caption>
+								<colgroup>
+								   <col width="140" /> 
+								   <col width="140" />
+								   <col width="296" />
+								   <col width="300" />
+								   <col width="300" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="5">UI팀 홍유경사원 일일업무보고 [2018.03.14]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="borleft">작성자</th>
+										<th>항목</th>
+										<th>주간업무 및 지시사항</th>
+										<th>금일 업무내용</th>
+										<th class="borright">명일 예정업무</th>
+									</tr>
+									<tr>
+										<td rowspan="4" class="borleft borcenter">홍유경</td>
+										<td class="borcenter">KH</td>
+										<td></td>
+										<td>* 채용박람회 준비 [03/14-]<br />
+										- 포스터<br /><br />
+										* 화이트데이 이벤트 삭제 [03/15-]<br />
+										- 메인 롤링배너, 하단 이미지 배너<br />
+										- 모바일 동일작업</td>
+										<td class="borright">* 학사갤러리 1건 정리<br />
+										- 03/05_학사갤러리(O오후)_김언체</td>
+									</tr>
+									<tr>
+										<td class="borcenter">아텐츠</td>
+										<td>* 스마일코리아 영상 제작</td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									<tr>
+										<td class="borcenter">이슈상황</td>
+										<td></td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									<tr>
+										<td class="borcenter">기타사항</td>
+										<td>* 홍유경사원 연차(03/15)</td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+								</tbody>
+							</table>
+							
+							<table cellpadding="0" cellspacing="0">
+								<caption>일일업무보고 보기 테이블</caption>
+								<colgroup>
+								   <col width="140" /> 
+								   <col width="140" />
+								   <col width="296" />
+								   <col width="300" />
+								   <col width="300" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="5">UI팀 홍유경사원 일일업무보고 [2018.03.13]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="borleft">작성자</th>
+										<th>항목</th>
+										<th>주간업무 및 지시사항</th>
+										<th>금일 업무내용</th>
+										<th class="borright">명일 예정업무</th>
+									</tr>
+									<tr>
+										<td rowspan="4" class="borleft borcenter">홍유경</td>
+										<td class="borcenter">KH</td>
+										<td></td>
+										<td>* 공감 게시글 등록<br />
+										 - 화이트데이 주제<br /><br />
+										* 수료생 인터뷰 정리본 수정<br />
+										 - 보안(K오전)_노지선<br />
+										 - UI팀 제작요청</td>
+										<td class="borright">* 국비심사팀 업무지원<br />
+										 - 이수자평가 테스트<br /><br />
+										 * 인증평가 PPT 제작<br />
+										  - 당산지원, 종로지원</td>
+									</tr>
+									<tr>
+										<td class="borcenter">아텐츠</td>
+										<td>* 스마일코리아 영상 제작</td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									<tr>
+										<td class="borcenter">이슈상황</td>
+										<td></td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									<tr>
+										<td class="borcenter">기타사항</td>
+										<td>* 홍유경사원 연차(03/15)</td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+								</tbody>
+							</table>-->
+							
+							<table cellpadding="0" cellspacing="0">
+								<caption>일일업무보고 보기 테이블</caption>
+								<colgroup>
+								   <col width="140" /> 
+								   <col width="140" />
+								   <col width="296" />
+								   <col width="300" />
+								   <col width="300" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col" colspan="5">UI팀 일일업무보고 [2018.03.12]</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th class="borleft">작성자</th>
+										<th>항목</th>
+										<th>주간업무 및 지시사항</th>
+										<th>금일 업무내용</th>
+										<th class="borright">명일 예정업무</th>
+									</tr>
+									<tr>
+										<td rowspan="4" class="borleft borcenter">김윤서</td>
+										<td class="borcenter">KH</td>
+										<td></td>
+										<td>* 공감 게시글 등록<br />
+										 - 화이트데이 주제<br /><br />
+										* 수료생 인터뷰 정리본 수정<br />
+										 - 보안(K오전)_노지선<br />
+										 - UI팀 제작요청</td>
+										<td class="borright">* 국비심사팀 업무지원<br />
+										 - 이수자평가 테스트<br /><br />
+										 * 인증평가 PPT 제작<br />
+										  - 당산지원, 종로지원</td>
+									</tr>
+									<tr>
+										<td class="borcenter">아텐츠</td>
+										<td>* 스마일코리아 영상 제작</td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									<tr>
+										<td class="borcenter">이슈상황</td>
+										<td></td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									<tr>
+										<td class="borcenter">기타사항</td>
+										<td>* 홍유경사원 연차(03/15)</td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									
+									
+									<tr>
+										<td rowspan="4" class="borleft borcenter">하정훈</td>
+										<td class="borcenter">KH</td>
+										<td></td>
+										<td>* 채용박람회 준비 [03/14-]<br />
+										- 포스터<br /><br />
+										* 화이트데이 이벤트 삭제 [03/15-]<br />
+										- 메인 롤링배너, 하단 이미지 배너<br />
+										- 모바일 동일작업</td>
+										<td class="borright">* 학사갤러리 1건 정리<br />
+										- 03/05_학사갤러리(O오후)_김언체</td>
+									</tr>
+									<tr>
+										<td class="borcenter">아텐츠</td>
+										<td>* 스마일코리아 영상 제작</td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									<tr>
+										<td class="borcenter">이슈상황</td>
+										<td></td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									<tr>
+										<td class="borcenter">기타사항</td>
+										<td>* 홍유경사원 연차(03/15)</td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									
+									
+									<tr>
+										<td rowspan="4" class="borleft borcenter">홍유경</td>
+										<td class="borcenter">KH</td>
+										<td></td>
+										<td>* 공감 게시글 등록<br />
+										 - 화이트데이 주제<br /><br />
+										* 수료생 인터뷰 정리본 수정<br />
+										 - 보안(K오전)_노지선<br />
+										 - UI팀 제작요청</td>
+										<td class="borright">* 국비심사팀 업무지원<br />
+										 - 이수자평가 테스트<br /><br />
+										 * 인증평가 PPT 제작<br />
+										  - 당산지원, 종로지원</td>
+									</tr>
+									<tr>
+										<td class="borcenter">아텐츠</td>
+										<td>* 스마일코리아 영상 제작</td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									<tr>
+										<td class="borcenter">이슈상황</td>
+										<td></td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+									<tr>
+										<td class="borcenter">기타사항</td>
+										<td>* 홍유경사원 연차(03/15)</td>
+										<td></td>
+										<td class="borright"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div><!--class="tableWrap dailyReportViwe_Table"-->
+					</div><!--class="viewMid"-->
+					<div class="viewBot">
+						<div class="viewAdminBtn">
+							<div class="btnSm modify">
+								<a href="">수정</a>
+							</div>
+							<div class="btnSm del">
+								<a href="">삭제</a>
+							</div>
+						</div><!--class="viewAdminBtn"-->
+						<div class="pageBtnWrap">
+							<div class="pageBtn pageBtn-prev">
+								<ul>
+									<li>이전글</li>
+									<li class="bar">|</li>
+									<li><a href="">2018.03.14 (수) 업무보고 [박혜영]</a></li>
+									<li class="date">2018. 03. 14</li>
+								</ul>
+							</div>
+							<div class="pageBtn pageBtn-next">
+								<ul>
+									<li>다음글</li>
+									<li class="bar">|</li>
+									<li><a href="">2018.03.14 (수) 업무보고 [하정훈]</a></li>
+									<li class="date">2018. 03. 14</li>
+								</ul>
+							</div>
+						</div><!--class="pageBtnWrap"-->
+					</div><!--class="viewBot"-->
+				</div><!--class="subcontent dailyReportViewcontent"-->
+			</div><!--class="collaborateView"-->
+			<div class="ListpageBtn">
+				<div class="btnMd">
+					<a href="dailyreport.html">목록</a>
+				</div>
+			</div><!--class="ListpageBtn"-->
+		</div><!--class="subcomWrap"-->
+	</section>
+	
+	
+	
+	<!--팝업 bg 시작-->
+	<div class="popupBg"></div>
+	<!--팝업 bg 끝-->
+	
+	<!-- 우측 퀵메뉴 시작 -->
+	
+	<!-- 우측 퀵메뉴 끝 -->
+	
+	
+	<footer id="footer">
+		<div class="footerWrap">
+			<p>Copyright © 1998-2018 KH Information Educational Institute All Right Reserved</p>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

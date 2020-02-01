@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>With KH</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/menu.css" />
+<link rel="stylesheet" href="css/sub/counseling.css" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+</head>
+<body>
+<div class="sub_wrapper">
+	<div class="counselingForm_wrapper">
+		<div class="sub_top sub_box">
+			<div class="back_btn" onClick="javascript:location.href='counseling.html'">
+				<img src="images/sub/sub_back_btn.png" alt="뒤로가기버튼" />
+			</div>
+			<h1 class="sub_title">1:1 상담신청</h1>
+			<div class="menu"><img src="images/menubar_sub.png" alt="메뉴 버튼 이미지" /></div>
+		</div><!-- //sub_top -->
+		<div class="sub_content">
+			<div class="sub_myclass sub_box">
+				<p class="sub_myclass_name">김소연 수강생</p>
+				<p class="sub_myclass_curr">[NCS]웹개발 응용SW엔지니어 양성과정</p>
+				<p class="sub_myclass_classroom">강남A강의장<span>|</span>2018. 04. 30 ~ 2018. 11. 05<span>|</span>09:00 ~ 15:30<br>윤필용 강사<span>|</span>이경아 취업담임</p>
+			</div><!-- //sub_myclass -->
+			<div class="sub_modifybox sub_box">
+				<div class="sub_modifybox_table">
+					<table cellpadding="0" cellspacing="0">
+					<caption>1:1상담신청 테이블</caption>
+						<colgroup>
+							<col width="15%"> 
+							<col width="85%">
+						</colgroup>
+						<tbody>
+							<!-- 원글은 추가상담시에만 -->
+							<tr>
+								<th>원글</th>
+								<td class="td_disabled" style="padding: 3% 4% 4%;">
+									<p class="sub_counselingForm_txt sub_counselingForm_txt1">소연씨, KH정보교육원입니다.</p>
+									<p class="sub_counselingForm_txt sub_counselingForm_txt2">결석예외처리 관련하여 행정팀과 상담예정입니다.금주 수요일(11/28) 오후 1시에 인포에서 문의바랍니다.</p>
+								</td>
+							</tr>
+							<tr>
+								<th>이름</th>
+								<td class="td_disabled"><input type="text" id="name" name="name" disabled="disabled" value="김소연" /></td>
+							</tr>
+							<tr>
+								<th>연락처</th>
+								<td><input type="text" id="mobile" name="mobile" value="01012345678" /></td>
+							</tr>
+							<tr>
+								<th>분류</th>
+								<td>
+									<select>
+										<option>선택</option>
+										<option>하세요</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>제목</th>
+								<td><input type="text" id="title" name="title" value="" /></td>
+							</tr>
+							<tr>
+								<th>내용</th>
+								<td>
+									<textarea id="content" name="content" value=""></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>	 
+				</div><!-- //sub_modifybox_table -->
+				<div class="issuanceForm_btn">
+					<a href="#" class="btn_lg confirm">등록</a>
+					<a href="counseling.html" class="btn_lg cancel">취소</a>
+					
+					<!-- 
+					추가상담신청시에
+					<a href="#" class="btn_lg confirm">추가상담 등록</a>
+					<a href="#" class="btn_lg cancel">취소</a> -->
+				</div>
+			</div><!-- //sub_modifybox -->
+		</div><!-- //sub_content -->
+	</div><!-- //modify_wrapper -->
+</div><!-- //sub_wrapper -->
+
+
+<div class="menu_back_bg"></div>
+<div id="menu_wrapper" class="menu_wrapper">
+	<div class="menu_box">
+		<div class="menu_top">
+			<div class="menu_top_btn cf">
+				<ul>
+					<li><a href="main.html"><img src="images/menu/menu_home_icon.png" alt="홈 버튼" /><span>홈</span></a></li>
+					<li><a onclick="logout()"><img src="images/menu/menu_back_icon.png" alt="로그아웃 버튼" /><span>로그아웃</span></a></li>
+				</ul>
+				<div class="menu_close_btn"><img src="images/menu/menu_close_btn.png" alt="메뉴닫기 버튼" /></div>
+			</div><!-- //menu_top_btn -->
+		</div><!-- //menu_top -->
+		<div class="menu_quick">
+			<ul class="cf">
+				<li>
+					<a href="issuance.html">
+						<img src="images/menu/menu_quick_01.png" alt="행정문서신청 버튼" /><br>
+						<span>행정문서신청</span>
+					</a>
+				</li>
+				<li>
+					<a href="counseling.html">
+						<img src="images/menu/menu_quick_02.png" alt="1:1 상담신청 버튼" /><br>
+						<span>1:1 상담신청</span>
+					</a>
+				</li>
+				<li>
+					<a href="setting.html">
+						<img src="images/menu/menu_quick_03.png" alt="앱설정 버튼" /><br>
+						<span>앱설정</span>
+					</a>
+				</li>
+			</ul>
+		</div><!-- //menu_quick -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>공지사항</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="notice.html">공지사항</a></li>
+					<li><a href="notice.html">우리반게시판</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>학사일정</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="currcal.html">학사일정</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>평가관리</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="eval.html">점수현황/이수현황</a></li>
+					<li><a href="certificate.html">이수증발급</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_list cf">
+			<div class="menu_list_title"><p>취업지원</p></div>
+			<div class="menu_list_sub">
+				<ul>
+					<li><a href="recruit.html">입사 제안/지원</a></li>
+				</ul>
+			</div>
+		</div><!-- //menu_list -->
+		<div class="menu_bot_btn">
+			<ul>
+				<li><a href="modify.html">개인정보수정</a></li>
+				<li>|</li>
+				<li><a  href="aboutKH.html">About KH</a></li>
+			</ul>
+		</div><!-- //menu_bot_btn -->
+	</div><!-- //menu_box -->
+</div><!-- //menu_wrapper -->
+
+</body>
+
+<script>
+$(document).ready(function(){
+	/* 메뉴 열고 닫기 */
+	var menuBtn = $('.menu');
+	var menuPage = $('.menu_wrapper');
+	var menuBackBtn = $('#menu_wrapper .menu_close_btn');
+	var menuBg = $('.menu_back_bg');
+	var mainPage = $('.main_wrapper');
+	
+	menuBtn.on('click', function(){
+		menuBg.show();
+		$('html').css({'height':'100%'});
+		$('body').css({'height':'100%'});
+		mainPage.css({'height':'100%'});
+		menuPage.addClass('menu_wrapper_open');
+	});
+	
+	menuBackBtn.on('click', function(){
+		menuBg.hide();
+		$('html').css({'height':'auto'});
+		$('body').css({'height':'auto'});
+		mainPage.css({'height':'auto'});
+		menuPage.removeClass('menu_wrapper_open');
+	});
+	
+	menuBg.on('click', function(){
+		menuBg.hide();
+		$('html').css({'height':'auto'});
+		$('body').css({'height':'auto'});
+		mainPage.css({'height':'auto'});
+		menuPage.removeClass('menu_wrapper_open');
+	});
+});
+</script>
+</html>

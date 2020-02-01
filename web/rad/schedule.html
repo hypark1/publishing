@@ -1,0 +1,2001 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>KH 정보교육원 RAD</title>
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/schedule.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/resub.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="topwrap">
+			<div class="top cf">
+				<div class="left">
+					<h1 class="hid">KH정보교육원 RAD페이지</h1>
+					<a href="remain.html">
+						<img alt="KH정보교육원 RAD 로고 이미지" src="images/rad/main/header_logo.png">
+					</a>
+				</div>
+				<div class="right">
+					<ul class="cf regular">
+						<li><a href="jojicdo.html">KH조직도</a></li>
+						<li>|</li>
+						<li><a href="gonggam.html" class="top_new">KH 共感</a></li>
+						<li>|</li>
+						<li><a href="" class="top_new">KH 메일</a></li>
+						<li>|</li>
+						<li><a href="login.html">로그아웃</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> <!--class="topwrap"-->
+		<nav id="nav">
+			<div class="menubar cf">
+				<div class="menu_list">
+					<div class="menubtn">
+						<div class="menuicon">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
+					<ul class="cf">
+						<li class="rightline">
+							<p>공지사항<span class="underline"></span></p> 
+							<ul class="cf submenu">
+								<li><a href="">운영공지</a></li>
+								<li><a href="">학사공지</a></li>
+								<li><a href="">교육부공지</a></li>
+								<li><a href="">경조사공지</a></li>
+								<li><a href="">자료실</a></li>
+								<li><a href="">주간회의록</a></li>
+								<li><a href="">RAD변경사항</a></li>
+								<li><a href="">업무지시(UI)</a></li>
+								<li><a href="">특강신청게시판</a></li>
+								<li><a href="">개발이슈게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>문의관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">온라인문의</a></li>
+								<li><a href="">오프라인문의</a></li>
+								<li><a href="">재컨텍요망</a></li>
+								<li><a href="">단기특강문의</a></li>
+								<li><a href="">개별모집현황</a></li>
+								<li><a href="">컨테스트</a></li>
+								<li><a href="">회원관리</a></li>
+								<li><a href="">가망등록관리</a></li>
+								<li><a href="">이벤트관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>학사관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">시간표관리</a></li>
+								<li><a href="">운영과정관리</a></li>
+								<li><a href="">학생설문조사</a></li>
+								<li><a href="">국기면접관리</a></li>
+								<li><a href="">내사일지</a></li>
+								<li><a href="">NCS능력단위관리</a></li>
+								<li><a href="">승인과정관리</a></li>
+								<li><a href="">평가관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>수강생관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생관리</a></li>
+								<li><a href="">학생현황</a></li>
+								<li><a href="">결석생관리</a></li>
+								<li><a href="">이슈학생관리</a></li>
+								<li><a href="">프로젝트관리</a></li>
+								<li><a href="">과정공지관리</a></li>
+								<li><a href="">우리반게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>취업관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생취업관리</a></li>
+								<li><a href="">연계업체</a></li>
+								<li><a href="">채용정보</a></li>
+								<li><a href="">취업성공사례</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>대외활동관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">기본정보</a></li>
+								<li><a href="">대학관리</a></li>
+								<li><a href="">방문이력</a></li>
+								<li><a href="">연계업체</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>컨텐츠관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">공지사항 관리</a></li>
+							</ul>
+						</li>
+						<li>
+							<p>사이트관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">도메인관리</a></li>
+								<li><a href="">지점관리</a></li>
+								<li><a href="">조직관리</a></li>
+								<li><a href="">계정관리</a></li>
+								<li><a href="">역할관리</a></li>
+								<li><a href="">메뉴관리</a></li>
+								<li><a href="">강사채용</a></li>
+								<li><a href="">SMS 전송관리</a></li>
+								<li><a href="">접속자관리</a></li>
+								<li><a href="">문의분석</a></li>
+								<li><a href="">운영과정분석</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--class="menu_list"-->
+				<div class="menu_quick">
+					<ul class="cf">
+						<li><a href="dailyreport.html"><img alt="업무보고" src="images/rad/main/header_quick01.png"></a></li>
+						<li class="new_circle"><a href="schedule.html"><img alt="일정관리" src="images/rad/main/header_quick03.png"></a></li>
+						<li><a href="collaborate.html"><img alt="업무협업" src="images/rad/main/header_quick02.png"></a></li>
+					</ul>
+				</div>
+			</div><!--class="menubar"-->
+			<div class="fullmenu">
+				<div class="fullwrap">
+					<ul class="cf submenu">
+						<li><a href="">운영공지</a></li>
+						<li><a href="">학사공지</a></li>
+						<li><a href="">교육부공지</a></li>
+						<li><a href="">경조사공지</a></li>
+						<li><a href="">자료실</a></li>
+						<li><a href="">주간회의록</a></li>
+						<li><a href="">RAD변경사항</a></li>
+						<li><a href="">업무지시(UI)</a></li>
+						<li><a href="">특강신청게시판</a></li>
+						<li><a href="">개발이슈게시판</a></li>
+					</ul> 
+					<ul class="cf submenu">
+						<li><a href="">온라인문의</a></li>
+						<li><a href="">오프라인문의</a></li>
+						<li><a href="">재컨텍요망</a></li>
+						<li><a href="">단기특강문의</a></li>
+						<li><a href="">개별모집현황</a></li>
+						<li><a href="">컨테스트</a></li>
+						<li><a href="">회원관리</a></li>
+						<li><a href="">가망등록관리</a></li>
+						<li><a href="">이벤트관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">시간표관리</a></li>
+						<li><a href="">운영과정관리</a></li>
+						<li><a href="">학생설문조사</a></li>
+						<li><a href="">국기면접관리</a></li>
+						<li><a href="">내사일지</a></li>
+						<li><a href="">NCS능력단위관리</a></li>
+						<li><a href="">승인과정관리</a></li>
+						<li><a href="">평가관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생관리</a></li>
+						<li><a href="">학생현황</a></li>
+						<li><a href="">결석생관리</a></li>
+						<li><a href="">이슈학생관리</a></li>
+						<li><a href="">프로젝트관리</a></li>
+						<li><a href="">과정공지관리</a></li>
+						<li><a href="">우리반게시판</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생취업관리</a></li>
+						<li><a href="">연계업체</a></li>
+						<li><a href="">채용정보</a></li>
+						<li><a href="">취업성공사례</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">기본정보</a></li>
+						<li><a href="">대학관리</a></li>
+						<li><a href="">방문이력</a></li>
+						<li><a href="">연계업체</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">공지사항 관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">도메인관리</a></li>
+						<li><a href="">지점관리</a></li>
+						<li><a href="">조직관리</a></li>
+						<li><a href="">계정관리</a></li>
+						<li><a href="">역할관리</a></li>
+						<li><a href="">메뉴관리</a></li>
+						<li><a href="">강사채용</a></li>
+						<li><a href="">SMS 전송관리</a></li>
+						<li><a href="">접속자관리</a></li>
+						<li><a href="">문의분석</a></li>
+						<li><a href="">운영과정분석</a></li>
+					</ul>
+				</div> <!-- class="fullwrap"-->
+			</div> <!--class="fullmenu"-->
+		</nav>
+	</header>
+	
+	<section id="section">
+		<div class="sectionwrap subcomWrap">
+			<div class="schedule">
+				<div class="tit">
+					<h3>일정관리</h3>
+				</div>
+				<div class="subcomTap boxtapWrap">
+					<ul>
+						<li class="on"><p>전체보기</p></li>
+						<li><p>강남지원</p></li>
+						<li><p>종로지원</p></li>
+						<li><p>당산지원</p></li>
+						<li><p>이태원지원</p></li>
+					</ul>
+				</div><!--class="subcomTap-->
+				<div class="subcontent scheduleContent cf">
+					<div class="left">
+						<div class="calendarArea">
+							<div class="my">
+								<div class="list_title">
+									<p>나의 캘린더</p>
+									<img alt="나의 캘린더 추가 버튼" src="images/rad/main/calweekPlus.png" onclick="enCal.showCalendarDetail('ADD_PRIVATE');">
+								</div><!--class="list_title"-->
+								<div class="list_wrap">
+									<ul>
+										<li>
+											<span class="circle" style="background:#ff9da1"></span>
+											<p>홍유경의 기본달력</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#96bebe"></span>
+											<p>6young diary</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+									</ul>
+								</div><!--class="list_wrap"-->
+							</div><!--class="my"-->
+							<div class="share_setting">
+								<div class="list_title">
+									<p>공유 캘린더</p>
+									<img alt="공유 캘린더 추가 버튼" src="images/rad/main/calweekPlus.png" onclick="enCal.showCalendarDetail('ADD_PRIVATE');">
+								</div><!--class="list_title"-->
+								<div class="list_wrap">
+									<ul>
+										<li>
+											<span class="circle" style="background:#e99d00"></span>
+											<p>학사일정(개강)</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#e97600"></span>
+											<p>학사일정(종강)</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#c05a30"></span>
+											<p>이수자평가</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#c74678"></span>
+											<p>국기면접일정</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#bf54b5"></span>
+											<p>직원생일일정</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#d181c9"></span>
+											<p>직원연차일정</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#f67e64"></span>
+											<p>KH행사일정</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#558ee9"></span>
+											<p>회의,상담,인터뷰일정</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#96bebe"></span>
+											<p>특강일정</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#97bf95"></span>
+											<p>실전대비면접일정</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+										<li>
+											<span class="circle" style="background:#fd90c9"></span>
+											<p>장비 사용 일정</p>
+											<span class="arrow"><img src="images/rad/sub/schedule_arrow.png" alt="호버시 화살표 버튼" /></span>
+										</li>
+									</ul>
+									<div class="listSet_popup">
+										<div class="top">
+											<ul>
+												<li><a href="">· 현재 달력만 보기</a></li>
+												<li><a href="">· 내보내기(iCalendar)</a></li>
+											</ul>
+										</div>
+										<div class="colorPick">
+											<ul class="cf">
+												<li style="background:#a47ae2"><span></span></li>
+												<li style="background:#9da5ef"><span></span></li>
+												<li style="background:#5ac4db"><span></span></li>
+												<li style="background:#558ee9"><span></span></li>
+												<li style="background:#2b62c2"><span></span></li>
+												<li style="background:#006b75"><span></span></li>
+												<li style="background:#249c93"><span></span></li>
+												<li style="background:#54aa16"><span></span></li>
+												<li style="background:#a1c72e"><span></span></li>
+												<li style="background:#f0cb00"><span></span></li>
+												<li style="background:#e99d00"><span></span></li>
+												<li style="background:#e97600"><span></span></li>
+												<li style="background:#c05a30"><span></span></li>
+												<li style="background:#c74678"><span></span></li>
+												<li style="background:#bf54b5"><span></span></li>
+												<li style="background:#d181c9"><span></span></li>
+												<li style="background:#fd90c9"><span></span></li>
+												<li style="background:#ff9da1"><span></span></li>
+												<li style="background:#f67e64"><span></span></li>
+												<li style="background:#ec5157"><span></span></li>
+												<li style="background:#96bebe"><span></span></li>
+												<li style="background:#97bf95"><span></span></li>
+												<li style="background:#c6c6c6"><span></span></li>
+												<li style="background:#adadad"><span></span></li>
+											</ul>
+										</div>
+									</div><!--class="listSet_popup"-->
+								</div><!--class="list_wrap"-->
+							</div><!--class="share_setting"-->
+						</div><!--class="calendarArea"-->
+					</div><!--class="left"-->
+					<div class="right">
+						<div class="top">
+							<div class="scheduletap subcontap">
+								<ul class="cf">
+									<li class="on"><p>일간일정</p></li>
+									<li><p>주간일정</p></li>
+									<li><p>월간일정</p></li>
+								</ul>
+								<div class="setting"></div>
+							</div><!--class="scheduletap subcontap"-->
+							<p>회의실 선택</p>
+						</div><!--class="top"-->
+						<div class="displayRoom">
+							<ul>
+								<li>
+									<input type="checkbox" id="room_all" name="room_all" value="회의실 전체선택">
+									<label for="room_all">회의실 전체선택</label>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<input type="checkbox" id="room_gangnam11" name="room_gangnam11" value="강남1관 2층 면접실1">
+									<label for="room_gangnam11">강남1관 2층 면접실1</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_gangnam12" name="room_gangnam12" value="강남1관 4층 상담실1">
+									<label for="room_gangnam12">강남1관 4층 상담실1</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_gangnam13" name="room_gangnam13" value="강남1관 4층 상담실2">
+									<label for="room_gangnam13">강남1관 4층 상담실2</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_gangnam14" name="room_gangnam14" value="강남1관 4층 면접실3">
+									<label for="room_gangnam14">강남1관 4층 면접실3</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_gangnam15" name="room_gangnam15" value="강남1관 4층 회의실">
+									<label for="room_gangnam15">강남1관 4층 회의실</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_gangnam16" name="room_gangnam16" value="강남1관 7층 상담실">
+									<label for="room_gangnam16">강남1관 7층 상담실</label>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<input type="checkbox" id="room_gangnam21" name="room_gangnam21" value="강남1관 2층 면접실1">
+									<label for="room_gangnam21">강남2관 3층 상담실1</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_gangnam22" name="room_gangnam22" value="강남1관 2층 면접실1">
+									<label for="room_gangnam22">강남2관 3층 상담실2</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_gangnam23" name="room_gangnam23" value="강남1관 2층 면접실1">
+									<label for="room_gangnam23">강남2관 3층 상담실3</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_gangnam24" name="room_gangnam24" value="강남2관 3층 세미나실">
+									<label for="room_gangnam24">강남2관 3층 세미나실</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_gangnam25" name="room_gangnam25" value="강남2관 7층 상담실">
+									<label for="room_gangnam25">강남2관 7층 상담실</label>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<input type="checkbox" id="room_jongro1" name="room_jongro1" value="종로지원 2층 면접실">
+									<label for="room_jongro1">종로지원 2층 면접실</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_jongro2" name="room_jongro2" value="종로지원 2층 상담실1 ">
+									<label for="room_jongro2">종로지원 2층 상담실1 </label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_jongro3" name="room_jongro3" value="종로지원 2층 상담실2 ">
+									<label for="room_jongro3">종로지원 2층 상담실2 </label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_jongro4" name="room_jongro4" value="종로지원 2층 상담실3 ">
+									<label for="room_jongro4">종로지원 2층 상담실3 </label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_jongro5" name="room_jongro5" value="종로지원 3층 회의실">
+									<label for="room_jongro5">종로지원 3층 회의실</label>
+								</li>
+							</ul>
+							<ul>
+								<li>
+									<input type="checkbox" id="room_dangsan1" name="room_dangsan1" value="당산지원 20층 면접실">
+									<label for="room_dangsan1">당산지원 20층 면접실</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_dangsan2" name="room_dangsan2" value="당산지원 20층 상담실1">
+									<label for="room_dangsan2">당산지원 20층 상담실1</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_dangsan3" name="room_dangsan3" value="당산지원 20층 상담실2">
+									<label for="room_dangsan3">당산지원 20층 상담실2</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_dangsan4" name="room_dangsan4" value="당산지원 20층 상담실3">
+									<label for="room_dangsan4">당산지원 20층 상담실3</label>
+								</li>
+								<li>
+									<input type="checkbox" id="room_dangsan5" name="room_dangsan5" value="당산지원 20층 회의실">
+									<label for="room_dangsan5">당산지원 20층 회의실</label>
+								</li>
+							</ul>
+						</div><!--class="displayRoom"-->
+						<div class="scheduleTableWrap">
+							<div class="dailytap on">
+								<div class="dateWrap">
+									<div class="listPrev listBtncom">
+										<a href="">
+											<img src="images/rad/cirarrow_prev.png" alt="캘린더 prev">
+										</a>
+									</div>
+									<div class="today_month">
+										<p>2018년 3월 5일 - 월요일</p>
+									</div>
+									<div class="listNext listBtncom">
+										<a href="">
+											<img src="images/rad/cirarrow_next.png" alt="캘린더 next">
+										</a>
+									</div>
+								</div><!--class="dateWrap"-->
+								<div class="todayBtn">
+									<p>today</p>
+								</div><!--class="todayBtn"-->
+								<div class="popupcom pop_selectday_daily pop_selectday">
+									<div class="top">
+										<p>직접선택하기</p>
+										<img alt="날짜선택 팝업 닫기 버튼" src="images/rad/popup_x.png">
+									</div><!--class="top"-->
+									<div class="listWrap">
+										<ul class="year">
+											<li><p>2017년</p></li>
+											<li><p>2018년</p></li>
+											<li><p>2019년</p></li>
+											<li><p>2020년</p></li>
+											<li><p>2021년</p></li>
+											<li><p>2022년</p></li>
+											<li><p>2023년</p></li>
+										</ul>
+										<ul class="month">
+											<li><p>1월</p></li>
+											<li><p>2월</p></li>
+											<li><p>3월</p></li>
+											<li><p>4월</p></li>
+											<li><p>5월</p></li>
+											<li><p>6월</p></li>
+											<li><p>7월</p></li>
+											<li><p>8월</p></li>
+											<li><p>9월</p></li>
+											<li><p>10월</p></li>
+											<li><p>11월</p></li>
+											<li><p>12월</p></li>
+										</ul>
+									</div>
+								</div><!--class="popupcom dailytap_popup"-->
+								<div class="dailyTable dayweekTable">
+									<table cellpadding="0" cellspacing="0">
+										<caption>일간일정 테이블</caption>
+										<colgroup>
+										   <col width="100" /> 
+										   <col width="859" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col" colspan="2">03/05 월요일</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="allday">
+												<th rowspan="2">종일</th>
+												<td>
+													<p style="color:#ffffff; background:#bf54b5;">am 이지연 생일</p>
+												</td>
+											</tr>
+											<tr class="allday">
+												<td>
+													<p style="color:#ffffff; background:#558ee9;">pm M오전반 취업상담</p>
+												</td>
+											</tr>
+											<tr>
+												<th rowspan="2">오전 08:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오전 09:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오전 10:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오전 11:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 12:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 01:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 02:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 03:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 04:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 05:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 06:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 07:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 08:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 09:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 10:00</th>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+											</tr>
+											
+										</tbody>
+									</table>
+								</div><!--class="dailyTable"-->
+							</div><!--class="dailytap"-->
+							
+							<div class="weeklytap">
+								<div class="dateWrap">
+									<div class="listPrev listBtncom">
+										<a href="">
+											<img src="images/rad/cirarrow_prev.png" alt="캘린더 prev">
+										</a>
+									</div>
+									<div class="today_month">
+										<p>2018년 3월 5일 ~ 10일</p>
+									</div>
+									<div class="listNext listBtncom">
+										<a href="">
+											<img src="images/rad/cirarrow_next.png" alt="캘린더 next">
+										</a>
+									</div>
+								</div><!--class="dateWrap"-->
+								<div class="todayBtn">
+									<p>today</p>
+								</div><!--class="todayBtn"-->
+								<div class="popupcom pop_selectday_weekly pop_selectday">
+									<div class="top">
+										<p>직접선택하기</p>
+										<img alt="날짜선택 팝업 닫기 버튼" src="images/rad/popup_x.png">
+									</div><!--class="top"-->
+									<div class="listWrap">
+										<ul class="year">
+											<li><p>2017년</p></li>
+											<li><p>2018년</p></li>
+											<li><p>2019년</p></li>
+											<li><p>2020년</p></li>
+											<li><p>2021년</p></li>
+											<li><p>2022년</p></li>
+											<li><p>2023년</p></li>
+										</ul>
+										<ul class="month">
+											<li><p>1월</p></li>
+											<li><p>2월</p></li>
+											<li><p>3월</p></li>
+											<li><p>4월</p></li>
+											<li><p>5월</p></li>
+											<li><p>6월</p></li>
+											<li><p>7월</p></li>
+											<li><p>8월</p></li>
+											<li><p>9월</p></li>
+											<li><p>10월</p></li>
+											<li><p>11월</p></li>
+											<li><p>12월</p></li>
+										</ul>
+									</div>
+								</div><!--class="popupcom weeklytap_popup"-->
+								<div class="weeklyTable dayweekTable">
+									<table cellpadding="0" cellspacing="0">
+										<caption>주간일정 테이블</caption>
+										<colgroup>
+										   <col width="100" /> 
+										   <col width="122" />
+										   <col width="122" />
+										   <col width="122" />
+										   <col width="122" />
+										   <col width="122" />
+										   <col width="122" />
+										   <col width="122" />
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col"></th>
+												<th scope="col">03/04 일</th>
+												<th scope="col" class="today">03/05 월</th>
+												<th scope="col">03/06 화</th>
+												<th scope="col">03/07 수</th>
+												<th scope="col">03/08 목</th>
+												<th scope="col">03/09 금</th>
+												<th scope="col">03/10 토</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="allday">
+												<th rowspan="2">종일</th>
+												<td>
+													<p class="day2" style="color:#ffffff; background:#bf54b5;">am 이지연 생일</p>
+												</td>
+												<td class="today"></td>
+												<td>
+													<p class="day3" style="color:#ffffff; background:#558ee9;">pm M오전반 취업상담</p>
+												</td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr class="allday">
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오전 08:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오전 09:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오전 10:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td><p class="day6" style="color:#ffffff; background:#e99d00;">am 이지연 생일</p></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오전 11:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 12:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 01:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 02:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 03:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 04:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 05:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 06:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 07:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 08:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 09:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<th rowspan="2">오후 10:00</th>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="today"></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div><!--class="weeklyTable"-->
+							</div><!--class="weeklytap"-->
+							
+							<div class="monthtap">
+								<div class="dateWrap">
+									<div class="listPrev listBtncom">
+										<a href="">
+											<img src="images/rad/cirarrow_prev.png" alt="캘린더 prev">
+										</a>
+									</div>
+									<div class="today_month">
+										<p>2018년 4월</p>
+									</div>
+									<div class="listNext listBtncom">
+										<a href="">
+											<img src="images/rad/cirarrow_next.png" alt="캘린더 next">
+										</a>
+									</div>
+								</div><!--class="dateWrap"-->
+								<div class="todayBtn">
+									<p>today</p>
+								</div><!--class="todayBtn"-->
+								<div class="popupcom pop_selectday_month pop_selectday">
+									<div class="top">
+										<p>직접선택하기</p>
+										<img alt="날짜선택 팝업 닫기 버튼" src="images/rad/popup_x.png">
+									</div><!--class="top"-->
+									<div class="listWrap">
+										<ul class="year">
+											<li><p>2017년</p></li>
+											<li><p>2018년</p></li>
+											<li><p>2019년</p></li>
+											<li><p>2020년</p></li>
+											<li><p>2021년</p></li>
+											<li><p>2022년</p></li>
+											<li><p>2023년</p></li>
+										</ul>
+										<ul class="month">
+											<li><p>1월</p></li>
+											<li><p>2월</p></li>
+											<li><p>3월</p></li>
+											<li><p>4월</p></li>
+											<li><p>5월</p></li>
+											<li><p>6월</p></li>
+											<li><p>7월</p></li>
+											<li><p>8월</p></li>
+											<li><p>9월</p></li>
+											<li><p>10월</p></li>
+											<li><p>11월</p></li>
+											<li><p>12월</p></li>
+										</ul>
+									</div>
+								</div><!--class="popupcom monthtap_popup"-->
+								<div class="monthTable">
+									<table cellpadding="0" cellspacing="0">
+										<caption>월간일정 테이블</caption>
+										<colgroup>
+										   <col width="137" /> 
+										   <col width="137" /> 
+										   <col width="137" /> 
+										   <col width="137" /> 
+										   <col width="137" /> 
+										   <col width="137" /> 
+										   <col width="137" /> 
+										</colgroup>
+										<thead>
+											<tr>
+												<th scope="col">일</th>
+												<th scope="col">월</th>
+												<th scope="col">화</th>
+												<th scope="col">수</th>
+												<th scope="col">목</th>
+												<th scope="col">금</th>
+												<th scope="col">토</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="month_date">
+												<td class="sun">1</td>
+												<td>2</td>
+												<td>3</td>
+												<td>4</td>
+												<td>5</td>
+												<td>6</td>
+												<td class="sat">7</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td><p class="day1" style="color:#ffffff; background:#e99d00;">am 이지연 생일</p></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr class="month_date">
+												<td class="sun">8</td>
+												<td>9</td>
+												<td>10</td>
+												<td>11</td>
+												<td>12</td>
+												<td>13</td>
+												<td class="sat">14</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td><p class="day4" style="color:#ffffff; background:#558ee9;">pm M오전반 취업상담</p>
+												<p class="day2" style="color:#ffffff; background:#c05a30; top: 20px;">pm 통합 구현 논술형</p></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr class="month_date">
+												<td class="sun">15</td>
+												<td>16</td>
+												<td>17</td>
+												<td>18</td>
+												<td>19</td>
+												<td>20</td>
+												<td class="sat">21</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr class="month_date">
+												<td class="sun">22</td>
+												<td>23</td>
+												<td>24</td>
+												<td>25</td>
+												<td>26</td>
+												<td>27</td>
+												<td class="sat">28</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr class="month_date">
+												<td class="sun">29</td>
+												<td>30</td>
+												<td class="thisno">1</td>
+												<td class="thisno">2</td>
+												<td class="thisno">3</td>
+												<td class="thisno">4</td>
+												<td class="sat thisno">5</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr class="month_date">
+												<td class="sun thisno">6</td>
+												<td class="thisno">7</td>
+												<td class="thisno">8</td>
+												<td class="thisno">9</td>
+												<td class="thisno">10</td>
+												<td class="thisno">11</td>
+												<td class="sat thisno">12</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+								</div><!--class="monthTable"-->
+							</div><!--class="monthtap"-->
+						</div><!--class="scheduleTableWrap"-->
+						<div class="popupcom pop_schedule_add">
+							<div class="top">
+								<p>일정추가</p>
+								<img alt="일정추가 팝업 닫기 버튼" src="images/rad/popup_x.png">
+							</div><!--class="top"-->
+							<div class="mid">
+								<div class="addcalWrap cf">
+									<div>
+										<div class="addcalMid">
+											<div class="addcalBox addcal01">
+												<div class="addtxt">
+													<p>상세일정</p>
+												</div>
+												<div class="addformbox">
+													<div class="formdiv form01">
+														<p>달력</p>
+														<select id="hopeDiary" name="hopeDiary">
+															<option value="6young 다이어리">6young 다이어리</option>
+															<option value="홍유경 기본달력">홍유경 기본달력</option>
+															<option value="UI팀 캘린더">UI팀 캘린더</option>
+														</select>
+													</div>
+													<div class="formdiv form02">
+														<p>제목</p>
+														<input type="text" id="" name="" value="">
+														<div class="txtdel">
+															<img src="images/rad/input_x.png" alt="글씨 삭제 버튼">
+														</div>
+													</div>
+													<div class="formdiv form03">
+														<p>일시</p>
+														<div class="selday selday01">
+															<div class="monthsel">
+																<input type="text" id="start" name="start" onchange="enCal.fnChangeDateTime('sd', this)" value="2018.03.05" class="hasDatepicker" readonly="">
+															</div>
+															<select name="startTime" id="startTime">
+																<option value="08:30">08 : 30</option>
+																<option value="09:00" selected="">09 : 00</option>
+																<option value="09:30">09 : 30</option>
+																<option value="10:00">10 : 00</option>
+																<option value="10:30">10 : 30</option>
+																<option value="11:00">11 : 00</option>
+																<option value="11:30">11 : 30</option>
+																<option value="12:00">12 : 00</option>
+																<option value="12:30">12 : 30</option>
+																<option value="13:00">13 : 00</option>
+																<option value="13:30">13 : 30</option>
+																<option value="14:00">14 : 00</option>
+																<option value="14:30">14 : 30</option>
+																<option value="15:00">15 : 00</option>
+																<option value="15:30">15 : 30</option>
+																<option value="16:00">16 : 00</option>
+																<option value="16:30">16 : 30</option>
+																<option value="17:00">17 : 00</option>
+																<option value="17:30">17 : 30</option>
+																<option value="18:00">18 : 00</option>
+																<option value="18:30">18 : 30</option>
+																<option value="19:00">19 : 00</option>
+																<option value="19:30">19 : 30</option>
+																<option value="20:00">20 : 00</option>
+																<option value="20:30">20 : 30</option>
+																<option value="21:00">21 : 00</option>
+																<option value="21:30">21 : 30</option>
+																<option value="22:00">22 : 00</option>
+																<option value="22:30">22 : 30</option>
+																<option value="23:00">23 : 00</option>
+																<option value="23:30">23 : 30</option>
+															</select>
+															
+														</div><!--class="selday selday01"-->
+														<div class="selday selday02">
+															<div class="monthsel">
+																<input type="text" id="end" name="end" onchange="enCal.fnChangeDateTime('ed', this)" value="2018.03.05" class="hasDatepicker" readonly="">
+															</div>
+															<select name="endTime" id="endTime">
+																<option value="08:30">08 : 30</option>
+																<option value="09:00" selected="">09 : 00</option>
+																<option value="09:30">09 : 30</option>
+																<option value="10:00">10 : 00</option>
+																<option value="10:30">10 : 30</option>
+																<option value="11:00">11 : 00</option>
+																<option value="11:30">11 : 30</option>
+																<option value="12:00">12 : 00</option>
+																<option value="12:30">12 : 30</option>
+																<option value="13:00">13 : 00</option>
+																<option value="13:30">13 : 30</option>
+																<option value="14:00">14 : 00</option>
+																<option value="14:30">14 : 30</option>
+																<option value="15:00">15 : 00</option>
+																<option value="15:30">15 : 30</option>
+																<option value="16:00">16 : 00</option>
+																<option value="16:30">16 : 30</option>
+																<option value="17:00">17 : 00</option>
+																<option value="17:30">17 : 30</option>
+																<option value="18:00">18 : 00</option>
+																<option value="18:30">18 : 30</option>
+																<option value="19:00">19 : 00</option>
+																<option value="19:30">19 : 30</option>
+																<option value="20:00">20 : 00</option>
+																<option value="20:30">20 : 30</option>
+																<option value="21:00">21 : 00</option>
+																<option value="21:30">21 : 30</option>
+																<option value="22:00">22 : 00</option>
+																<option value="22:30">22 : 30</option>
+																<option value="23:00">23 : 00</option>
+																<option value="23:30">23 : 30</option>
+															</select>
+														</div><!--class="selday selday02"-->
+														<div class="checkbox">
+															<input type="checkbox" name="allday" id="allday" value="종일">
+															<label for="allday">종일</label>
+														</div>
+													</div><!--class="formdiv form03"-->
+													<div class="formdiv form04">
+														<p>장소</p>
+														<select id="schedulePlaceSelect" onchange="$('#schedulePlace').val( $('#schedulePlaceSelect option:selected').val() )">
+															<option value="">회의실 선택</option>
+															<option value="강남1관 2층 면접실1">강남1관 2층 면접실1</option>
+															<option value="강남1관 4층 상담실1">강남1관 4층 상담실1</option>
+															<option value="강남1관 4층 상담실2">강남1관 4층 상담실2</option>
+															<option value="강남1관 4층 상담실3">강남1관 4층 상담실3</option>
+															<option value="강남1관 4층 회의실">강남1관 4층 회의실</option>
+															<option value="강남1관 7층 상담실">강남1관 7층 상담실</option>
+															<option value="강남2관 3층 상담실1">강남2관 3층 상담실1</option>
+															<option value="강남2관 3층 상담실2">강남2관 3층 상담실2</option>
+															<option value="강남2관 3층 상담실3">강남2관 3층 상담실3</option>
+															<option value="강남2관 3층 세미나실">강남2관 3층 세미나실</option>
+															<option value="강남2관 7층 상담실">강남2관 7층 상담실</option>
+															<option value="당산지원">당산지원</option>
+															<option value="종로지원 2층 면접실">종로지원 2층 면접실</option>
+															<option value="종로지원 2층 상담실1">종로지원 2층 상담실1</option>
+															<option value="종로지원 2층 상담실2">종로지원 2층 상담실2</option>
+															<option value="종로지원 2층 상담실3">종로지원 2층 상담실3</option>
+															<option value="종로지원 3층 회의실">종로지원 3층 회의실</option>
+															<option value="직접입력하기">직접입력하기</option>
+														</select>
+														<input type="text" id="placeWrite" name="placeWrite" value="직접입력하기 선택시에만 활성화 해주세요!! 디폴트:비활성화.. 활성화시 background:#ffffff로 변경되게 해주세요">
+													</div><!--class="formdiv form04"-->
+													<div class="formdiv form05">
+														<p>설명</p>
+														<input type="text" id="" name="" value="">
+													</div><!--class="formdiv form05"-->
+													<div class="formdiv form06">
+														<ul>
+															<li class="addcal02btn"><p>참석자 및 권한설정</p></li>
+															<li>|</li>
+															<li class="addcal03btn">반복설정</li>
+														</ul>
+													</div><!--class="formdiv form05"-->
+												</div><!--class="addformbox"-->							
+												
+												<div class="monthpop monthpop01">
+													<div class="pophead cf">
+														<p>2018년 1월</p>
+														<div class="btn">
+															<span class="left"></span>
+															<span class="right"></span>
+														</div>
+													</div>
+													<div class="popbody calcom">
+														<div class="weeks">
+															<ul class="cf">
+																<li><p>Sun</p></li>
+																<li><p>Mon</p></li>
+																<li><p>Tue</p></li>
+																<li><p>Wed</p></li>
+																<li><p>Thu</p></li>
+																<li><p>Fri</p></li>
+																<li><p>Sat</p></li>
+															</ul>
+														</div>
+														<div class="days">
+															<ul class="cf">
+																<li class="thisno"><p>28</p></li>
+																<li><p>1</p></li>
+																<li><p>2</p></li>
+																<li><p>3</p></li>
+																<li><p>4</p></li>
+																<li><p>5</p></li>
+																<li><p>6</p></li>
+																<li><p>7</p></li>
+																<li><p>8</p></li>
+																<li><p>9</p></li>
+																<li><p>10</p></li>
+																<li><p>11</p></li>
+																<li><p>12</p></li>
+																<li><p>13</p></li>
+																<li><p>14</p></li>
+																<li><p>15</p></li>
+																<li><p>16</p></li>
+																<li><p>17</p></li>
+																<li class="today"><p>18</p></li>
+																<li><p>19</p></li>
+																<li><p>20</p></li>
+																<li><p>21</p></li>
+																<li><p>22</p></li>
+																<li><p>23</p></li>
+																<li><p>24</p></li>
+																<li><p>25</p></li>
+																<li><p>26</p></li>
+																<li><p>27</p></li>
+																<li><p>28</p></li>
+																<li><p>29</p></li>
+																<li><p>30</p></li>
+																<li><p>31</p></li>
+																<li class="thisno"><p>1</p></li>
+																<li class="thisno"><p>2</p></li>
+																<li class="thisno"><p>3</p></li>
+																<li class="thisno"><p>4</p></li>
+																<li class="thisno"><p>5</p></li>
+																<li class="thisno"><p>6</p></li>
+																<li class="thisno"><p>7</p></li>
+																<li class="thisno"><p>8</p></li>
+																<li class="thisno"><p>9</p></li>
+																<li class="thisno"><p>10</p></li>
+															</ul>
+														</div>
+													</div><!--class="popbody calcom"-->
+												</div><!--class="monthpop"-->
+												
+												<div class="monthpop monthpop02">
+													<div class="pophead cf">
+														<p>2018년 1월</p>
+														<div class="btn">
+															<span class="left"></span>
+															<span class="right"></span>
+														</div>
+													</div>
+													<div class="popbody calcom">
+														<div class="weeks">
+															<ul class="cf">
+																<li><p>Sun</p></li>
+																<li><p>Mon</p></li>
+																<li><p>Tue</p></li>
+																<li><p>Wed</p></li>
+																<li><p>Thu</p></li>
+																<li><p>Fri</p></li>
+																<li><p>Sat</p></li>
+															</ul>
+														</div>
+														<div class="days">
+															<ul class="cf">
+																<li class="thisno"><p>28</p></li>
+																<li><p>1</p></li>
+																<li><p>2</p></li>
+																<li><p>3</p></li>
+																<li><p>4</p></li>
+																<li><p>5</p></li>
+																<li><p>6</p></li>
+																<li><p>7</p></li>
+																<li><p>8</p></li>
+																<li><p>9</p></li>
+																<li><p>10</p></li>
+																<li><p>11</p></li>
+																<li><p>12</p></li>
+																<li><p>13</p></li>
+																<li><p>14</p></li>
+																<li><p>15</p></li>
+																<li><p>16</p></li>
+																<li><p>17</p></li>
+																<li class="today"><p>18</p></li>
+																<li><p>19</p></li>
+																<li><p>20</p></li>
+																<li><p>21</p></li>
+																<li><p>22</p></li>
+																<li><p>23</p></li>
+																<li><p>24</p></li>
+																<li><p>25</p></li>
+																<li><p>26</p></li>
+																<li><p>27</p></li>
+																<li><p>28</p></li>
+																<li><p>29</p></li>
+																<li><p>30</p></li>
+																<li><p>31</p></li>
+																<li class="thisno"><p>1</p></li>
+																<li class="thisno"><p>2</p></li>
+																<li class="thisno"><p>3</p></li>
+																<li class="thisno"><p>4</p></li>
+																<li class="thisno"><p>5</p></li>
+																<li class="thisno"><p>6</p></li>
+																<li class="thisno"><p>7</p></li>
+																<li class="thisno"><p>8</p></li>
+																<li class="thisno"><p>9</p></li>
+																<li class="thisno"><p>10</p></li>
+															</ul>
+														</div>
+													</div><!--class="popbody calcom"-->
+												</div><!--class="monthpop"-->
+											</div><!--class="addcal01"-->
+											<div class="addcalBox addcal02">
+												<div class="addtxt">
+													<p>참석자 및 권한</p>
+												</div>
+												<div class="addformbox">
+													<div class="searchInput formdiv">
+														<div class="search_textbox">
+															<input type="text" id="searchUser4Schedule" name="search" maxlength="40" onclick="" title="참석자 검색은 '지원 / 부서 / 이름  직책'순으로 4가지 중 택일하여 입력하면 됩니다. (복수입력가능)" placeholder="'지원 / 부서 / 이름 / 직책'순으로 입력하세요. (복수입력가능)">
+														</div>
+														<div class="search_btn">
+															<img id="searchUserButton4Schedule" alt="참석자 검색 버튼" src="images/rad/input_search.jpg">
+														</div>
+													</div><!--class="searchInput"-->
+													<div class="attendList">
+														<div class="result_mid">
+															<ul>
+																<li userid="ahdwkahd">
+																	<ul>
+																		<li>
+																			<p>[당산] 컨텐츠연구소/UI팀 김윤서 주임</p>
+																		</li>
+																		<li class="right">
+																			<input type="checkbox" id="ahdwkahd_modify" name="attendmodify" value="ahdwkahd|김윤서 일정수정">
+																			<label for="ahdwkahd_modify">일정수정</label>
+																			<input type="checkbox" id="ahdwkahd_attendview" name="attendview" value="ahdwkahd|김윤서 참석자보기">
+																			<label for="ahdwkahd_attendview">참석자보기</label>
+																			<span></span>
+																		</li>
+																	</ul>	
+																</li>
+																<li userid="seoji">
+																	<ul>
+																		<li>
+																			<p>[당산] 컨텐츠연구소/UI팀 서지화 팀장</p>
+																		</li>
+																		<li class="right">
+																			<input type="checkbox" id="seoji_modify" name="attendmodify" value="seoji|서지화 일정수정">
+																			<label for="seoji_modify">일정수정</label>
+																			<input type="checkbox" id="seoji_attendview" name="attendview" value="seoji|서지화 참석자보기">
+																			<label for="seoji_attendview">참석자보기</label>
+																			<span></span>
+																		</li>
+																	</ul>
+																</li>
+																<li userid="icoul">
+																	<ul>
+																		<li>
+																			<p>[당산] 컨텐츠연구소/UI팀 하정훈 사원</p>
+																		</li>
+																		<li class="right">
+																			<input type="checkbox" id="icoul_modify" name="attendmodify" value="icoul|하정훈 일정수정">
+																			<label for="icoul_modify">일정수정</label>
+																			<input type="checkbox" id="icoul_attendview" name="attendview" value="icoul|하정훈 참석자보기">
+																			<label for="icoul_attendview">참석자보기</label>
+																			<span></span>
+																		</li>
+																	</ul>
+																</li>
+																<li userid="6young">
+																	<ul>
+																		<li>
+																			<p>[당산] 컨텐츠연구소/UI팀 홍유경 사원</p>
+																		</li>
+																		<li class="right">
+																			<input type="checkbox" id="6young_modify" name="attendmodify" value="icoul|하정훈 일정수정">
+																			<label for="6young_modify">일정수정</label>
+																			<input type="checkbox" id="6young_attendview" name="attendview" value="icoul|하정훈 참석자보기">
+																			<label for="6young_attendview">참석자보기</label>
+																			<span></span>
+																		</li>
+																	</ul>
+																</li>
+																<li userid="6young">
+																	<ul>
+																		<li>
+																			<p>[강남] 입학상담실/입학상담 2팀 최보람 팀장</p>
+																		</li>
+																		<li class="right">
+																			<input type="checkbox" id="6young_modify" name="attendmodify" value="6young|홍유경 일정수정">
+																			<label for="6young_modify">일정수정</label>
+																			<input type="checkbox" id="6young_attendview" name="attendview" value="6young|홍유경 참석자보기">
+																			<label for="6young_attendview">참석자보기</label>
+																			<span></span>
+																		</li>
+																	</ul>
+																</li>
+																<li userid="6young">
+																	<ul>
+																		<li>
+																			<p>[강남] 입학상담실/입학상담 1팀 이민호 사원
+																		</p></li>
+																		<li class="right">
+																			<input type="checkbox" id="6young_modify1" name="attendmodify" value="6young|홍유경 일정수정">
+																			<label for="6young_modify1">일정수정</label>
+																			<input type="checkbox" id="6young_attendview1" name="attendview" value="6young|홍유경 참석자보기">
+																			<label for="6young_attendview1">참석자보기</label>
+																			<span></span>
+																		</li>
+																	</ul>
+																</li>
+																<li userid="6young">
+																	<ul>
+																		<li>
+																			<p>[당산] 컨텐츠연구소/UI팀 홍유경 사원</p>
+																		</li>
+																		<li class="right">
+																			<input type="checkbox" id="6young_modify2" name="attendmodify" value="6young|홍유경 일정수정">
+																			<label for="6young_modify2">일정수정</label>
+																			<input type="checkbox" id="6young_attendview2" name="attendview" value="6young|홍유경 참석자보기">
+																			<label for="6young_attendview2">참석자보기</label>
+																			<span></span>
+																		</li>
+																	</ul>
+																</li>
+																<li userid="6young">
+																	<ul>
+																		<li>
+																			<p>[당산] 컨텐츠연구소/UI팀 홍유경 사원</p>
+																		</li>
+																		<li class="right">
+																			<input type="checkbox" id="6young_modify3" name="attendmodify" value="6young|홍유경 일정수정">
+																			<label for="6young_modify3">일정수정</label>
+																			<input type="checkbox" id="6young_attendview3" name="attendview" value="6young|홍유경 참석자보기">
+																			<label for="6young_attendview3">참석자보기</label>
+																			<span></span>
+																		</li>
+																	</ul>
+																</li>
+																<li userid="6young">
+																	<ul>
+																		<li>
+																			<p>[당산] 컨텐츠연구소/UI팀 홍유경 사원</p>
+																		</li>
+																		<li class="right">
+																			<input type="checkbox" id="6young_modify4" name="attendmodify" value="6young|홍유경 일정수정">
+																			<label for="6young_modify4">일정수정</label>
+																			<input type="checkbox" id="6young_attendview4" name="attendview" value="6young|홍유경 참석자보기">
+																			<label for="6young_attendview4">참석자보기</label>
+																			<span></span>
+																		</li>
+																	</ul>
+																</li>
+															</ul>
+														</div><!--class="result_mid"-->
+													</div><!--class="searchResult"-->
+													<div class="searchResult">
+														<div class="result_top">
+															<input type="checkbox" id="attendcheck" name="attendcheck" value="검색목록에서 참석자를 선택하세요."><label for="attendcheck">검색목록에서 참석자를 선택하세요.</label>
+														</div><!--class="result_top"-->
+														<div class="result_mid">
+															<ul>
+																<li userid="ahdwkahd">
+																	<input type="checkbox" id="attendlist_ahdwkahd" name="attendlist" value="ahdwkahd|김윤서 주임|당산|컨텐츠연구소/UI팀 "><label for="attendlist_ahdwkahd">[당산] 컨텐츠연구소/UI팀 김윤서 주임(ahdwkahd)</label>
+																</li>
+																<li userid="seoji">
+																	<input type="checkbox" id="attendlist_seoji" name="attendlist" value="seoji|서지화 팀장|당산|컨텐츠연구소/UI팀"><label for="attendlist_seoji">[당산] 컨텐츠연구소/UI팀 서지화 팀장(seoji)</label>
+																</li>
+																<li userid="icoul">
+																	<input type="checkbox" id="attendlist_icoul" name="attendlist" value="icoul|하정훈 사원|당산|컨텐츠연구소/UI팀"><label for="attendlist_icoul">[당산] 컨텐츠연구소/UI팀 하정훈 사원(icoul)</label>
+																</li>
+																<li userid="6young">
+																	<input type="checkbox" id="attendlist_6young" name="attendlist" value="6young|홍유경 사원|당산|컨텐츠연구소/UI팀"><label for="attendlist_6young">[당산] 컨텐츠연구소/UI팀 홍유경 사원(6young)</label>
+																</li>
+																<li userid="6young">
+																	<input type="checkbox" id="attendlist_6young1" name="attendlist" value="6young|홍유경 사원|당산|컨텐츠연구소/UI팀"><label for="attendlist_6young1">[당산] 컨텐츠연구소/UI팀 홍유경 사원(6young)</label>
+																</li>
+																<li userid="6young">
+																	<input type="checkbox" id="attendlist_6young2" name="attendlist" value="6young|홍유경 사원|당산|컨텐츠연구소/UI팀"><label for="attendlist_6young2">[당산] 컨텐츠연구소/UI팀 홍유경 사원(6young)</label>
+																</li>
+																<li userid="6young">
+																	<input type="checkbox" id="attendlist_6young3" name="attendlist" value="6young|홍유경 사원|당산|컨텐츠연구소/UI팀"><label for="attendlist_6young3">[당산] 컨텐츠연구소/UI팀 홍유경 사원(6young)</label>
+																</li>
+																<li userid="6young">
+																	<input type="checkbox" id="attendlist_6young4" name="attendlist" value="6young|홍유경 사원|당산|컨텐츠연구소/UI팀"><label for="attendlist_6young4">[당산] 컨텐츠연구소/UI팀 홍유경 사원(6young)</label>
+																</li>
+																<li userid="6young">
+																	<input type="checkbox" id="attendlist_6young5" name="attendlist" value="6young|홍유경 사원|당산|컨텐츠연구소/UI팀"><label for="attendlist_6young5">[당산] 컨텐츠연구소/UI팀 홍유경 사원(6young)</label>
+																</li>
+															</ul>
+														</div><!--class="result_mid"-->
+														<div class="result_bot">
+															<div class="result_send">
+																<div class="btnSm search_confirm">
+																	<a href="">확인</a>
+																</div>
+																<div class="btnSm search_cancel">
+																	<a href="">취소</a>
+																</div>
+															</div>
+														</div><!-- class="result_bot"-->
+													</div><!--class="searchResult"-->
+												</div><!--class="addformbox"-->
+											</div><!--class="addcal02"-->
+											<div class="addcalBox addcal03">
+												<div class="addtxt">
+													<p>반복설정 - 반복없음</p>
+												</div>
+												<div class="addformbox">
+													<div class="repeatset01 formdiv">
+														<p>반복여부</p>
+														<input type="checkbox" name="norepeat" id="norepeat" value="반복없음">
+														<label for="norepeat">반복없음</label>
+													</div>
+													<div class="repeatset02 formdiv">
+														<p>반복빈도</p>
+														<select name="freq" id="freq">
+															<option value="매일" selected="">매일</option>
+															<option value="매주">매주</option>
+															<option value="매월">매월</option>
+															<option value="매년">매년</option>
+														</select>
+													</div>
+													<div class="repeatset03 formdiv">
+														<p>반복주기</p>
+														<select id="interval" name="interval">
+															<option value="01">01</option>
+															<option value="02">02</option>
+															<option value="03">03</option>
+															<option value="04">04</option>
+															<option value="05">05</option>
+															<option value="06">06</option>
+															<option value="07">07</option>
+															<option value="08">08</option>
+															<option value="09">09</option>
+															<option value="10">10</option>
+															<option value="11">11</option>
+															<option value="12">12</option>
+															<option value="13">13</option>
+															<option value="14">14</option>
+															<option value="15">15</option>
+															<option value="16">16</option>
+															<option value="17">17</option>
+															<option value="18">18</option>
+															<option value="19">19</option>
+															<option value="20">20</option>
+															<option value="21">21</option>
+															<option value="22">22</option>
+															<option value="23">23</option>
+															<option value="24">24</option>
+															<option value="25">25</option>
+															<option value="26">26</option>
+															<option value="27">27</option>
+															<option value="28">28</option>
+															<option value="29">29</option>
+															<option value="30">30</option>
+														</select>
+														<label for="">일</label>
+													</div>
+													<div class="repeatset04 formdiv">
+														<p>반복요일</p>
+														<input type="checkbox" name="byday" id="su" style="" value="su">
+														<label class="valLabel" for="su">일</label>
+														<input type="checkbox" name="byday" id="mo" style="" value="mo">
+														<label class="valLabel" for="mo">월</label>
+														<input type="checkbox" name="byday" id="tu" style="" value="tu">
+														<label class="valLabel" for="tu">화</label>
+														<input type="checkbox" name="byday" id="we" style="" value="we">
+														<label class="valLabel" for="we">수</label>
+														<input type="checkbox" name="byday" id="th" style="" value="th">
+														<label class="valLabel" for="th">목</label>
+														<input type="checkbox" name="byday" id="fr" style="" value="fr">
+														<label class="valLabel" for="fr">금</label>
+														<input type="checkbox" name="byday" id="sa" style="" value="sa">
+														<label class="valLabel" for="sa">토</label>
+													</div>
+													<div class="repeatset05 formdiv">
+														<p>시작날짜</p>
+														<input type="text" class="rruleDate hasDatepicker" id="rruleStart" name="rruleStart" value="2018.03.05" readonly="">
+														<div class="monthpop">
+															<div class="pophead cf">
+																<p>2018년 1월</p>
+																<div class="btn">
+																	<span class="left"></span>
+																	<span class="right"></span>
+																</div>
+															</div>
+															<div class="popbody calcom">
+																<div class="weeks">
+																	<ul class="cf">
+																		<li><p>Sun</p></li>
+																		<li><p>Mon</p></li>
+																		<li><p>Tue</p></li>
+																		<li><p>Wed</p></li>
+																		<li><p>Thu</p></li>
+																		<li><p>Fri</p></li>
+																		<li><p>Sat</p></li>
+																	</ul>
+																</div>
+																<div class="days">
+																	<ul class="cf">
+																		<li class="thisno"><p>28</p></li>
+																		<li><p>1</p></li>
+																		<li><p>2</p></li>
+																		<li><p>3</p></li>
+																		<li><p>4</p></li>
+																		<li><p>5</p></li>
+																		<li><p>6</p></li>
+																		<li><p>7</p></li>
+																		<li><p>8</p></li>
+																		<li><p>9</p></li>
+																		<li><p>10</p></li>
+																		<li><p>11</p></li>
+																		<li><p>12</p></li>
+																		<li><p>13</p></li>
+																		<li><p>14</p></li>
+																		<li><p>15</p></li>
+																		<li><p>16</p></li>
+																		<li><p>17</p></li>
+																		<li class="today"><p>18</p></li>
+																		<li><p>19</p></li>
+																		<li><p>20</p></li>
+																		<li><p>21</p></li>
+																		<li><p>22</p></li>
+																		<li><p>23</p></li>
+																		<li><p>24</p></li>
+																		<li><p>25</p></li>
+																		<li><p>26</p></li>
+																		<li><p>27</p></li>
+																		<li><p>28</p></li>
+																		<li><p>29</p></li>
+																		<li><p>30</p></li>
+																		<li><p>31</p></li>
+																		<li class="thisno"><p>1</p></li>
+																		<li class="thisno"><p>2</p></li>
+																		<li class="thisno"><p>3</p></li>
+																		<li class="thisno"><p>4</p></li>
+																		<li class="thisno"><p>5</p></li>
+																		<li class="thisno"><p>6</p></li>
+																		<li class="thisno"><p>7</p></li>
+																		<li class="thisno"><p>8</p></li>
+																		<li class="thisno"><p>9</p></li>
+																		<li class="thisno"><p>10</p></li>
+																	</ul>
+																</div>
+															</div><!--class="popbody calcom"-->
+														</div><!--class="monthpop"-->
+													</div>
+													<div class="repeatset06 formdiv">
+														<p>종료날짜</p>
+														<input type="text" class="rruleDate" readonly="readonly" id="until" name="until" value="2018.03.05">
+														<input type="checkbox" name="infiniterepeat" id="infiniterepeat" value="무한반복" checked="">
+														<label for="infiniterepeat">무한반복</label>
+														<div class="monthpop">
+															<div class="pophead cf">
+																<p>2018년 1월</p>
+																<div class="btn">
+																	<span class="left"></span>
+																	<span class="right"></span>
+																</div>
+															</div>
+															<div class="popbody calcom">
+																<div class="weeks">
+																	<ul class="cf">
+																		<li><p>Sun</p></li>
+																		<li><p>Mon</p></li>
+																		<li><p>Tue</p></li>
+																		<li><p>Wed</p></li>
+																		<li><p>Thu</p></li>
+																		<li><p>Fri</p></li>
+																		<li><p>Sat</p></li>
+																	</ul>
+																</div>
+																<div class="days">
+																	<ul class="cf">
+																		<li class="thisno"><p>28</p></li>
+																		<li><p>1</p></li>
+																		<li><p>2</p></li>
+																		<li><p>3</p></li>
+																		<li><p>4</p></li>
+																		<li><p>5</p></li>
+																		<li><p>6</p></li>
+																		<li><p>7</p></li>
+																		<li><p>8</p></li>
+																		<li><p>9</p></li>
+																		<li><p>10</p></li>
+																		<li><p>11</p></li>
+																		<li><p>12</p></li>
+																		<li><p>13</p></li>
+																		<li><p>14</p></li>
+																		<li><p>15</p></li>
+																		<li><p>16</p></li>
+																		<li><p>17</p></li>
+																		<li class="today"><p>18</p></li>
+																		<li><p>19</p></li>
+																		<li><p>20</p></li>
+																		<li><p>21</p></li>
+																		<li><p>22</p></li>
+																		<li><p>23</p></li>
+																		<li><p>24</p></li>
+																		<li><p>25</p></li>
+																		<li><p>26</p></li>
+																		<li><p>27</p></li>
+																		<li><p>28</p></li>
+																		<li><p>29</p></li>
+																		<li><p>30</p></li>
+																		<li><p>31</p></li>
+																		<li class="thisno"><p>1</p></li>
+																		<li class="thisno"><p>2</p></li>
+																		<li class="thisno"><p>3</p></li>
+																		<li class="thisno"><p>4</p></li>
+																		<li class="thisno"><p>5</p></li>
+																		<li class="thisno"><p>6</p></li>
+																		<li class="thisno"><p>7</p></li>
+																		<li class="thisno"><p>8</p></li>
+																		<li class="thisno"><p>9</p></li>
+																		<li class="thisno"><p>10</p></li>
+																	</ul>
+																</div>
+															</div><!--class="popbody calcom"-->
+														</div><!--class="monthpop"-->
+													</div>
+												</div><!--class="addformbox"-->
+											</div><!--class="addcal03"-->
+										</div><!-- class="addcalMid"-->
+										<div class="addcalBtn" style="width: 1278px;">
+											<div class="addcalbtn_wrap">
+												<div class="btnSm addcal_add">
+													<a href="">일정추가</a>
+												</div>
+												<div class="btnSm addcal_cancel">
+													<a href="">취소</a>
+												</div>
+											</div><!--class="addcalbtn_wrap"-->
+										</div><!--class="addcalBtn"-->
+									</div>
+								</div>
+							</div><!--class="mid"-->
+						</div>
+					</div><!--class="right"-->
+				</div><!--class="subcontent scheduleContent"-->
+			</div><!--class="jojicdoWrap"-->
+		</div><!--class="subcomWrap"-->
+	</section>
+	
+	
+	<!--팝업 bg 시작-->
+	<div class="popupBg"></div>
+	<!--팝업 bg 끝-->
+	
+	<!-- 우측 퀵메뉴 시작 -->
+	
+	<!-- 우측 퀵메뉴 끝 -->
+	
+	
+	<footer id="footer">
+		<div class="footerWrap">
+			<p>Copyright © 1998-2018 KH Information Educational Institute All Right Reserved</p>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

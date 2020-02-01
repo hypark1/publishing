@@ -1,0 +1,105 @@
+﻿@charset "utf-8";
+
+html, body,
+div, span,
+dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, address, pre, cite,
+form, fieldset, input, textarea, select,
+table, th, td {
+	background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: middle;
+	font-family:'NSR_R';
+	font-size:15px;
+	color:#242424;
+	letter-spacing: -1px;
+	}
+
+fieldset, img, abbr,acronym { border:0 none; } 
+ol, ul,li { list-style:none; margin: 0; padding: 0;}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+	border:0 none;
+	}
+caption{display:none;}
+th, td {
+	text-align:center;
+	font-weight: normal;
+}
+
+address, trong, em, cite {
+	font-weight:normal;
+	font-style:normal;
+	}
+	
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+	visibility: hidden; 
+	line-height: 1%; 
+	height: 0; 
+}
+a[href^="tel"]{
+    color:inherit;
+    text-decoration:none;
+}
+
+hr {display:none;}
+
+button{appearance: none;-webkit-appearance:none;
+    background: none;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+	cursor:pointer;}
+input:focus,button:focus,textarea:focus {
+  outline: none;
+}
+
+input[type="text"], input[type="tel"]{height: 36px;font-family: "NSR_R";border: 1px solid #e3e3e3;border-radius: 0;color: #6c6c6c;padding-left: 12px;line-height: 36px;font-size: 15px;background-color: #ffffff;appearance: none;-webkit-appearance:none;}
+select{height: 36px;font-family: "NSR_R";cursor: pointer;border: 1px solid #e3e3e3;border-radius: 0;color: #6c6c6c;background:url(../images/select_bg.jpg) no-repeat;background-position: right;padding-left: 12px;line-height: 36px;font-size: 15px;background-color: #ffffff;appearance: none;-webkit-appearance:none;}
+textarea{font-size: 15px;font-family: "NSR_R";padding: 10px;line-height: 18px;background-color: #ffffff;border: 1px solid #e3e3e3;border-radius: 0;appearance: none;-webkit-appearance:none;resize:none;}
+
+@font-face {
+font-family: 'NSR_EB';
+src: url('font/NanumSquareRoundEB.eot'),
+		url('font/NanumSquareRoundEB.woff') format('woff'),
+		url('font/NanumSquareRoundEB.ttf') format('truetype');
+		url('font/NanumSquareRoundEB.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'NSR_R';
+src: url('font/NanumSquareRoundR.eot'),
+		url('font/NanumSquareRoundR.woff') format('woff'),
+		url('font/NanumSquareRoundR.ttf') format('truetype');
+		url('font/NanumSquareRoundR.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'NSR_B';
+src: url('font/NanumSquareRoundB.eot'),
+		url('font/NanumSquareRoundB.woff') format('woff'),
+		url('font/NanumSquareRoundB.ttf') format('truetype');
+		url('font/NanumSquareRoundB.otf') format('opentype');
+}
+
+@font-face {
+font-family: 'NSR_L';
+src: url('font/NanumSquareRoundL.eot'),
+		url('font/NanumSquareRoundL.woff') format('woff'),
+		url('font/NanumSquareRoundL.ttf') format('truetype');
+		url('font/NanumSquareRoundL.otf') format('opentype');
+}

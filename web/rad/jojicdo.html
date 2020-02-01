@@ -1,0 +1,723 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>KH 정보교육원 RAD</title>
+	<link rel="shortcut icon" href="${pageContext.request.contextPath}/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/jojicdo.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/resub.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="topwrap">
+			<div class="top cf">
+				<div class="left">
+					<h1 class="hid">KH정보교육원 RAD페이지</h1>
+					<a href="remain.html">
+						<img alt="KH정보교육원 RAD 로고 이미지" src="images/rad/main/header_logo.png">
+					</a>
+				</div>
+				<div class="right">
+					<ul class="cf regular">
+						<li><a href="jojicdo.html">KH조직도</a></li>
+						<li>|</li>
+						<li><a href="gonggam.html" class="top_new">KH 共感</a></li>
+						<li>|</li>
+						<li><a href="" class="top_new">KH 메일</a></li>
+						<li>|</li>
+						<li><a href="login.html">로그아웃</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> <!--class="topwrap"-->
+		<nav id="nav">
+			<div class="menubar cf">
+				<div class="menu_list">
+					<div class="menubtn">
+						<div class="menuicon">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
+					</div>
+					<ul class="cf">
+						<li class="rightline">
+							<p>공지사항<span class="underline"></span></p> 
+							<ul class="cf submenu">
+								<li><a href="">운영공지</a></li>
+								<li><a href="">학사공지</a></li>
+								<li><a href="">교육부공지</a></li>
+								<li><a href="">경조사공지</a></li>
+								<li><a href="">자료실</a></li>
+								<li><a href="">주간회의록</a></li>
+								<li><a href="">RAD변경사항</a></li>
+								<li><a href="">업무지시(UI)</a></li>
+								<li><a href="">특강신청게시판</a></li>
+								<li><a href="">개발이슈게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>문의관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">온라인문의</a></li>
+								<li><a href="">오프라인문의</a></li>
+								<li><a href="">재컨텍요망</a></li>
+								<li><a href="">단기특강문의</a></li>
+								<li><a href="">개별모집현황</a></li>
+								<li><a href="">컨테스트</a></li>
+								<li><a href="">회원관리</a></li>
+								<li><a href="">가망등록관리</a></li>
+								<li><a href="">이벤트관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>학사관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">시간표관리</a></li>
+								<li><a href="">운영과정관리</a></li>
+								<li><a href="">학생설문조사</a></li>
+								<li><a href="">국기면접관리</a></li>
+								<li><a href="">내사일지</a></li>
+								<li><a href="">NCS능력단위관리</a></li>
+								<li><a href="">승인과정관리</a></li>
+								<li><a href="">평가관리</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>수강생관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생관리</a></li>
+								<li><a href="">학생현황</a></li>
+								<li><a href="">결석생관리</a></li>
+								<li><a href="">이슈학생관리</a></li>
+								<li><a href="">프로젝트관리</a></li>
+								<li><a href="">과정공지관리</a></li>
+								<li><a href="">우리반게시판</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>취업관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">학생취업관리</a></li>
+								<li><a href="">연계업체</a></li>
+								<li><a href="">채용정보</a></li>
+								<li><a href="">취업성공사례</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>대외활동관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">기본정보</a></li>
+								<li><a href="">대학관리</a></li>
+								<li><a href="">방문이력</a></li>
+								<li><a href="">연계업체</a></li>
+							</ul>
+						</li>
+						<li class="rightline">
+							<p>컨텐츠관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">공지사항 관리</a></li>
+							</ul>
+						</li>
+						<li>
+							<p>사이트관리<span class="underline"></span></p>
+							<ul class="cf submenu">
+								<li><a href="">도메인관리</a></li>
+								<li><a href="">지점관리</a></li>
+								<li><a href="">조직관리</a></li>
+								<li><a href="">계정관리</a></li>
+								<li><a href="">역할관리</a></li>
+								<li><a href="">메뉴관리</a></li>
+								<li><a href="">강사채용</a></li>
+								<li><a href="">SMS 전송관리</a></li>
+								<li><a href="">접속자관리</a></li>
+								<li><a href="">문의분석</a></li>
+								<li><a href="">운영과정분석</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!--class="menu_list"-->
+				<div class="menu_quick">
+					<ul class="cf">
+						<li><a href="dailyreport.html"><img alt="업무보고" src="images/rad/main/header_quick01.png"></a></li>
+						<li class="new_circle"><a href="schedule.html"><img alt="일정관리" src="images/rad/main/header_quick03.png"></a></li>
+						<li><a href="collaborate.html"><img alt="업무협업" src="images/rad/main/header_quick02.png"></a></li>
+					</ul>
+				</div>
+			</div><!--class="menubar"-->
+			<div class="fullmenu">
+				<div class="fullwrap">
+					<ul class="cf submenu">
+						<li><a href="">운영공지</a></li>
+						<li><a href="">학사공지</a></li>
+						<li><a href="">교육부공지</a></li>
+						<li><a href="">경조사공지</a></li>
+						<li><a href="">자료실</a></li>
+						<li><a href="">주간회의록</a></li>
+						<li><a href="">RAD변경사항</a></li>
+						<li><a href="">업무지시(UI)</a></li>
+						<li><a href="">특강신청게시판</a></li>
+						<li><a href="">개발이슈게시판</a></li>
+					</ul> 
+					<ul class="cf submenu">
+						<li><a href="">온라인문의</a></li>
+						<li><a href="">오프라인문의</a></li>
+						<li><a href="">재컨텍요망</a></li>
+						<li><a href="">단기특강문의</a></li>
+						<li><a href="">개별모집현황</a></li>
+						<li><a href="">컨테스트</a></li>
+						<li><a href="">회원관리</a></li>
+						<li><a href="">가망등록관리</a></li>
+						<li><a href="">이벤트관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">시간표관리</a></li>
+						<li><a href="">운영과정관리</a></li>
+						<li><a href="">학생설문조사</a></li>
+						<li><a href="">국기면접관리</a></li>
+						<li><a href="">내사일지</a></li>
+						<li><a href="">NCS능력단위관리</a></li>
+						<li><a href="">승인과정관리</a></li>
+						<li><a href="">평가관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생관리</a></li>
+						<li><a href="">학생현황</a></li>
+						<li><a href="">결석생관리</a></li>
+						<li><a href="">이슈학생관리</a></li>
+						<li><a href="">프로젝트관리</a></li>
+						<li><a href="">과정공지관리</a></li>
+						<li><a href="">우리반게시판</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">학생취업관리</a></li>
+						<li><a href="">연계업체</a></li>
+						<li><a href="">채용정보</a></li>
+						<li><a href="">취업성공사례</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">기본정보</a></li>
+						<li><a href="">대학관리</a></li>
+						<li><a href="">방문이력</a></li>
+						<li><a href="">연계업체</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">공지사항 관리</a></li>
+					</ul>
+					<ul class="cf submenu">
+						<li><a href="">도메인관리</a></li>
+						<li><a href="">지점관리</a></li>
+						<li><a href="">조직관리</a></li>
+						<li><a href="">계정관리</a></li>
+						<li><a href="">역할관리</a></li>
+						<li><a href="">메뉴관리</a></li>
+						<li><a href="">강사채용</a></li>
+						<li><a href="">SMS 전송관리</a></li>
+						<li><a href="">접속자관리</a></li>
+						<li><a href="">문의분석</a></li>
+						<li><a href="">운영과정분석</a></li>
+					</ul>
+				</div> <!-- class="fullwrap"-->
+			</div> <!--class="fullmenu"-->
+		</nav>
+	</header>
+	
+	<section id="section">
+		<div class="sectionwrap subcomWrap">
+			<div class="jojicdo">
+				<div class="tit">
+					<h3>KH 조직도</h3>
+				</div>
+				<div class="subcomTap boxtapWrap">
+					<ul>
+						<li class="on"><p>펼쳐보기</p></li>
+						<li><p>접기</p></li>
+					</ul>
+				</div><!--class="subcomTap-->
+				<div class="subcontent jojicdoContent">
+					<div class="jojichead">
+						<div><p class="top">대표이사</p></div>
+						<ul>
+							<li><p>송한주</p></li>
+							<li><p>양지현</p></li>
+						</ul>
+					</div><!--class="jojichead"-->
+					<div class="lineImg"></div>
+					<div class="jojibody cf">
+						<div class="jojicUl jojicUl01">
+							<div><p class="top">경영지원본부</p></div>
+							<ul>
+								<li><p>양진선 이사</p></li>
+								<li>
+									<p class="blue">총무부</p>
+									<ul>
+										<li><p>안희석 부장</p></li>
+										<li><p>오지훈 사원</p></li>
+										<li><p>홍성수 사원</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">회계팀</p>
+									<ul>
+										<li><p class="last">김하영 사원</p></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="jojicUl jojicUl02">
+							<div><p class="top">기획본부</p></div>
+							<ul>
+								<li>
+									<p class="blue">전략기획부</p>
+									<ul>
+										<li><p>이경현 이사</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">기획팀</p>
+									<ul>
+										<li><p>박세영 팀장</p></li>
+										<li><p>곽진 주임</p></li>
+										<li><p>김혜정 주임</p></li>
+										<li><p>이소영 사원</p></li>
+										<li><p>임하림 사원</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">국비팀</p>
+									<ul>
+										<li><p>안병일 팀장</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">홍보팀</p>
+								</li>
+								<li>
+									<p class="blue">대외협력부</p>
+									<ul>
+										<li><p>조재철 이사</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">기업팀</p>
+									<ul>
+										<li><p>장성권 팀장</p></li>
+										<li><p>김선용 사원</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">대학팀</p>
+									<ul>
+										<li><p>김성배 팀장</p></li>
+										<li><p class="last">함창범 과장</p></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="jojicUl jojicUl03">
+							<div><p class="top">강남지원</p></div>
+							<ul>
+								<li><p>박성철 부원장</p></li>
+								<li><p class="blue">운영부</p></li>
+								<li><p class="gray">총무팀</p></li>
+								<li>
+									<p class="gray">행정팀</p>
+									<ul>
+										<li><p>김원재 팀장</p></li>
+										<li><p>김지혜 주임</p></li>
+										<li><p>조민경 주임</p></li>
+										<li><p>이수현 사원</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="blue">입학상담실</p>
+									<ul>
+										<li><p>홍소영 부원장</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">입학상담 1팀</p>
+									<ul>
+										<li><p>송기훈 팀장</p></li>
+										<li><p>서정희 사원</p></li>
+										<li><p>이민호 사원</p></li>
+										<li><p>최다현 사원</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">입학상담 2팀</p>
+									<ul>
+										<li><p>최보람 팀장</p></li>
+										<li><p>이지연 사원</p></li>
+										<li><p>정연일 사원</p></li>
+										<li><p>홍소련 사원</p></li>
+									</ul>
+								</li>
+								<li><p class="blue">취업지원부</p></li>
+								<li>
+									<p class="gray">취업지원 1팀</p>
+									<ul>
+										<li><p>조지은 팀장</p></li>
+										<li><p>김다운 사원</p></li>
+										<li><p>백서아 사원</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">취업지원 2팀</p>
+									<ul>
+										<li><p>이경아 팀장</p></li>
+										<li><p>이한나 사원</p></li>
+										<li><p>이호정 사원</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">취업지원 3팀</p>
+									<ul>
+										<li><p>김인애 팀장</p></li>
+										<li><p>배슬기 사원</p></li>
+										<li><p>허은정 사원</p></li>
+									</ul>
+								</li>
+								<li><p class="blue">교육부</p></li>
+								<li>
+									<p class="gray">자바학부</p>
+									<ul>
+										<li><p>윤차주 학과장</p></li>
+										<li><p>김대기 강사</p></li>
+										<li><p>김동현 강사</p></li>
+										<li><p>김지훈 강사</p></li>
+										<li><p>박신우 강사</p></li>
+										<li><p>백동현 강사</p></li>
+										<li><p>윤대명 강사</p></li>
+										<li><p>윤민영 강사</p></li>
+										<li><p>윤필용 강사</p></li>
+										<li><p>최범석 강사</p></li>
+										<li><p>한지오 강사</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">보안학부</p>
+									<ul>
+										<li><p>김언체 학과장</p></li>
+										<li><p>고승욱 강사</p></li>
+										<li><p>김정우 강사</p></li>
+										<li><p>문성기 강사</p></li>
+										<li><p>박세찬 강사</p></li>
+										<li><p>박준수 강사</p></li>
+										<li><p>신기화 강사</p></li>
+										<li><p>이정수 강사</p></li>
+										<li><p>정유미 강사</p></li>
+										<li><p class="last">조현석 강사</p></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="jojicUl jojicUl04">
+						<div><p class="top">종로지원</p></div>
+							<ul>
+								<li><p>이은주 원장</p></li>
+								<li><p class="blue">학사지원부</p></li>
+								<li>
+									<p class="gray">운영지원팀</p>
+									<ul>
+										<li><p>노정희 팀장</p></li>
+										<li><p>나대식 사원</p></li>
+									</ul>
+								</li>
+								<li><p class="blue">취업교육부</p></li>
+								<li>
+									<p class="gray">취업지원팀</p>
+									<ul>
+										<li><p>최상진 사원</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">자바학부</p>
+									<ul>
+										<li><p>김수연 강사</p></li>
+										<li><p>김용만 강사</p></li>
+										<li><p>김진호 강사</p></li>
+										<li><p>서영학 강사</p></li>
+										<li><p>유병승 강사</p></li>
+										<li><p>유정훈 강사</p></li>
+										<li><p>이수진 강사</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">보안학부</p>
+									<ul>
+										<li><p>김영재 학과장</p></li>
+										<li><p class="last">이진호 강사</p></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="jojicUl jojicUl05 last">
+							<div><p class="top">당산지원</p></div>
+							<ul>
+								<li><p>이민호 부원장</p></li>
+								<li>
+									<p class="blue">컨텐츠연구소</p>
+									<ul>
+										<li><p>양성남 소장</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">UI팀</p>
+									<ul>
+										<li><p>서지화 팀장</p></li>
+										<li><p>김윤서 주임</p></li>
+										<li><p>박혜영 사원</p></li>
+										<li><p>하정훈 사원</p></li>
+										<li><p>홍유경 사원</p></li>
+									</ul>
+								</li>
+								<li><p class="blue">취업교육부</p></li>
+								<li>
+									<p class="gray">취업지원팀</p>
+									<ul>
+										<li><p>위은진 사원</p></li>
+										<li><p>장석이 사원</p></li>
+									</ul>
+								</li>
+								<li>
+									<p class="gray">자바학부</p>
+									<ul>
+										<li><p>노민수 학과장</p></li>
+										<li><p>김민수 강사</p></li>
+										<li><p>조성태 강사</p></li>
+									</ul>
+								</li>
+								<li><p class="gray">보안학부</p></li>
+								<li><p class="blue">입학상담실</p></li>
+								<li>
+									<p class="gray">운영지원팀</p>
+									<ul>
+										<li><p>이기원 대리</p></li>
+										<li><p class="last">최은지 주임</p></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!--class="jojibody-->
+				</div><!--class="subcontent jojicdoContent"-->
+			</div><!--class="jojicdoWrap"-->
+		</div><!--class="subcomWrap"-->
+	</section>
+	
+	<!-- 조직도 팝업 시작 -->
+	<div class="jojicPopup popup">
+		<div class="top">
+			<p class="nameK">홍유경 사원</p>
+			<p class="nameE">Hong Yu Kyeong</p>
+			<p class="sosok">당산지원 / 컨텐츠연구소 / UI팀</p>
+			<div class="img"></div>
+		</div><!--class="top"-->
+		<div class="mid">
+			<div class="midbox1">
+				<ul>
+					<li><p>인포텍<br /><span>소속</span></p></li>
+					<li class="line"></li>
+					<li><p>2017.10.10<br /><span>입사일</span></p></li>
+					<li class="line"></li>
+					<li><p>02.05(양)<br /><span>생일</span></p></li>
+				</ul>
+			</div><!--class="midbox1"-->
+			<div class="midbox2">
+				<ul>
+					<li><p>휴대전화&nbsp; : &nbsp;010-1234-5678</p></li>
+					<li><p>사내전화&nbsp; : &nbsp;-</p></li>
+					<li><p>사내메일&nbsp; : &nbsp;6young@iei.or.kr</p></li>
+					<li><p>네이트온&nbsp; : &nbsp;789456qq2@nate.com</p></li>
+					<li><p><span>아이디</span>: &nbsp;6young</p></li>
+					<li><p>주&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소&nbsp; : &nbsp;경기도 고양시 일산서구 대화동</p></li>
+				</ul>
+			</div><!--class="midbox2"-->
+		</div><!--class="mid"-->
+		<div class="bot">
+			<div class="botthumbBox">
+				<div class="num">
+					<p>6 / 6</p>
+				</div>
+				<div class="thumbWrap">
+					<ul>
+						<li></li>
+						<li></li>
+						<li class="on"><span></span></li>
+						<li></li>
+						<li class="last"></li>
+					</ul>
+				</div><!--class="thumbWrap"-->	
+			</div>
+			<div class="btncom">
+				<a href="">창닫기</a>
+			</div>
+		</div><!--class="bot"-->
+	</div><!--class="jojicPopup"-->
+	<!-- 조직도 팝업 끝 -->
+	
+	<!--팝업 bg 시작-->
+	<div class="popupBg"></div>
+	<!--팝업 bg 끝-->
+	
+	<!-- 우측 퀵메뉴 시작 -->
+	<div id="rightQuick">
+		<div class="qui_info myInfo">
+			<div class="mytxt">
+				<p class="name medium">홍유경 사원</p>
+				<p class="id">[6young]</p>
+				<p class="team light">당산지원<br>컨텐츠연구소 / UI팀</p>
+			</div><!--class="mytxt"-->
+			<div class="mybtn">
+				<ul class="cf">
+					<li><a href="">연차현황</a></li>
+					<li><p>|</p></li>
+					<li><a href="">근태현황</a></li>
+					<li><p>|</p></li>
+					<li><a href="">내정보수정</a></li>
+				</ul>
+			</div><!-- class="mybtn"-->
+		</div><!--class="qui_info-->
+		<div class="qui_todo">
+			<div class="todo_tit">
+				<p>To do list</p>
+			</div>
+			<div class="todo_list todoListDiv">
+				<ul>
+					<li>
+						<input type="checkbox" name="" id="" value="">
+						<label for="">10시 운영회의 - 5월 종로 오픈건<br />(김대리, 차팀장)
+							<img alt="리스트 삭제 버튼" src="${pageContext.request.contextPath}/resources/images/rad/main/todoList_x.png">
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="" id="" value="">
+						<label for="">홍실장님과 점심약속<br />11:50분에 인포에서 만나기로 했음</label>
+					</li>
+					<li>
+						<input type="checkbox" name="" id="" value="">
+						<label for="">OT 자료 정리하기</label>
+					</li>
+					<li class="line">
+						<input type="checkbox" name="nmnm" value="12345" checked onclick="return false;">
+						<label for="">재직증명서 신청하기</label>
+					</li>
+					<li class="line">
+						<input type="checkbox" name="nmnm" value="12345" checked onclick="return false;">
+						<label for="">홍영주 학생 이력서 첨삭</label>
+					</li>
+				</ul>
+			</div><!--class="todo_list-->
+			<div class="todo_add cf">
+				<div class="todoAdd_input">
+					<label for="todoAdd">To do list 추가하기</label>
+					<textarea type="text" id="todoAdd" name="todoAdd"></textarea>
+				</div>
+				<div class="todoAdd_btn"></div>
+			</div><!--class="todo_add-->
+		</div><!--class="qui_todo"-->
+		<div class="qui_myMenu">
+			<div class="todo_tit">
+				<p>즐겨찾기</p>
+			</div>
+			<div class="todoListDiv">
+				<ul>
+					<li>
+						<a href="">사이트관리 &nbsp; > &nbsp; 계정관리</a>
+					</li>
+					<li>
+						<a href="">취업관리 &nbsp; > &nbsp; 연계업체</a>
+					</li>
+				</ul>
+				<div class="bookmarkAdd">
+					<label for="bookmarkadd">현재 페이지를 즐겨찾기로 추가</label>
+					<input type="checkbox" id="bookmarkadd" name="bookmarkadd" value="">
+				</div>
+			</div>
+		</div><!--class="qui_myMenu"-->
+		<div class="qui_myList">
+			<div class="todo_tit">
+				<p>나의일정</p>
+			</div>
+			<ul class="todoListDiv">
+				<li>
+					<ul>
+						<li class="txt01 cf">
+							<span></span>
+							<p>09:00 오전 - 03:00 오후</p>
+						</li>
+						<li class="txt02">
+							<p class="txt021">자바(JAVA) 프레임워크 개발자 양성과정_<br>9회차_오전 개강 OT</p>
+							<p class="txt022">[강남] G 강의장</p>
+						</li>
+						<li class="txt03">
+							<p class="txt031">기간 : 2018. 02. 08 ~ 2018. 09. 05</p>
+							<p class="txt032">강사 : 김수연</p>
+							<p class="txt033">취업담임 : 최상진</p>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="txt01 cf">
+							<span></span>
+							<p>10:30 오전 - 03:30 오후</p>
+						</li>
+						<li class="txt02">
+							<p class="txt021">O오전 실전대비면접</p>
+							<p class="txt022">강남1관 2층 면접실1</p>
+						</li>
+						<li class="txt03">
+							<p class="txt033">취업담임 : 최상진</p>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li class="txt01 cf">
+							<span></span>
+							<p>03:00 오후 - 05:00 오후</p>
+						</li>
+						<li class="txt02">
+							<p class="txt021">S오전 취업상담</p>
+							<p class="txt022">강남1관 4층 상담실3</p>
+						</li>
+						<li class="txt03">
+							<p class="txt033">취업담임 : 최상진</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div><!--class="qui_myList"-->
+	</div><!--id="rightQuick"-->
+	<!-- 우측 퀵메뉴 끝 -->
+	
+	
+	<footer id="footer">
+		<div class="footerWrap">
+			<p>Copyright © 1998-2018 KH Information Educational Institute All Right Reserved</p>
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+.find_wrapper{}
+.find_wrapper .sub_find_box{padding: 4% 6%;text-align: center;}
+.find_wrapper .sub_find_box .sub_find_radio_box{text-align: center;}
+.find_wrapper .sub_find_box .sub_find_radio_box input[type=radio]{}
+.find_wrapper .sub_find_box .sub_find_radio_box label{display: inline-block;margin: -5.5% 5% 0 1%;}
+.find_wrapper .sub_find_box .sub_find_radio_box label:last-child{margin-right:0;}
+.find_wrapper .sub_find_box .sub_find_txt{margin-top:2%;color:#9797a7;}
+
+.find_wrapper .sub_find_data_box{margin-top: 2%;background:#fff;border:1px solid #e6e9ec;}
+.find_wrapper .sub_find_input_box{width: 100%;}
+.find_wrapper .sub_find_input_box>div{width: 100%;}
+.find_wrapper .sub_find_input_box input[type=text]{width: 94%;padding: 3%;border-top: 1px solid #e6e9ec;color:#999;}
+.find_wrapper .sub_find_input_box input[type=text]::placeholder{color:#999;line-height: 100%;}
+.find_wrapper .sub_find_input_box input:first-child{border:0;}
+.find_wrapper .sub_find_input_box .sub_find_input_id{}
+.find_wrapper .sub_find_input_box .sub_find_input_pw{}
+
+.find_wrapper .sub_find_box .btn_lg{}
+

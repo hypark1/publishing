@@ -1,0 +1,30 @@
+﻿ @charset "utf-8";
+ 
+ /* 메뉴스푼 */
+.spoon{position: absolute; top: 50%; margin-top: -7px; width: 36px; height: 11px;}
+.spoon_left{background: url(../images/spoon_left.png); left: 22%; display:none;}
+.spoon_right{background: url(../images/spoon_right.png); right: 22%; display:none;}
+
+
+/* sns버튼들 */
+.sns_box{}
+.sns_box ul{}
+.sns_box li{float: left; width: 35px; height: 35px; margin-right: 10px; cursor: pointer; transition: all 0.5s;}
+.sns_box li.f{background: url(../images/sns_f.png) no-repeat center;}
+.sns_box li.t{background: url(../images/sns_t.png) no-repeat center;}
+.sns_box li.b{background: url(../images/sns_b.png) no-repeat center;}
+.sns_box li.i{background: url(../images/sns_i.png) no-repeat center; margin:0;}
+.sns_box li.f:hover{background: url(../images/sns_f_on.png) no-repeat center;}
+.sns_box li.t:hover{background: url(../images/sns_t_on.png) no-repeat center;}
+.sns_box li.b:hover{background: url(../images/sns_b_on.png) no-repeat center;}
+.sns_box li.i:hover{background: url(../images/sns_i_on.png) no-repeat center; margin:0;}
+
+
+
+
+
+
+
+
+
+

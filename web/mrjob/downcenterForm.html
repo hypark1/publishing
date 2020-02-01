@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>미래잡</title>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/common.css" />
+<link rel="stylesheet" href="css/notice.css" />
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
+<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+<script>
+jQuery(function(){
+	fnMenuOn(3, 3);
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div class="header_main_wrap">
+			<div class="header_main cf">
+				<h1><a href="main.html"><img src="images/header_logo.png" alt="미래잡 로고"></a></h1>
+				<div id="nav">
+					<ul class="cf">
+						<li><a href="greeting.html" onmouseover="javascript:fnHeaderShow('01', this);">센터소개</a></li>
+						<li><a href="succpkg.html" onmouseover="javascript:fnHeaderShow('02', this);">취업성공패키지</a></li>
+						<li><a href="recruit.html" onmouseover="javascript:fnHeaderShow('03', this);">채용정보</a></li>
+						<li><a href="notice.html" onmouseover="javascript:fnHeaderShow('04', this);">고객센터</a></li>
+					</ul>
+				</div><!-- //nav -->
+			</div><!-- //header_main -->
+		</div><!-- //header_main_wrap -->
+		<div class="header_sub_wrap">
+			<div class="header_sub">
+				<ul class="cf">
+					<li><a href="greeting.html">인사말</a></li>
+					<li><a href="jojicdo.html">조직도</a></li>
+					<li><a href="contact.html">찾아오시는 길</a></li>
+				</ul>
+				<ul class="cf">
+					<li><a href="succpkg.html">취업성공패키지</a></li>
+					<li><a href="succpkgInfo.html">지원대상 및 내용</a></li>
+					<li><a href="succpkgPay.html">수당지급안내</a></li>
+					<li><a href="succpkgForm.html">신청하기</a></li>
+					<li><a href="succpkgConfirm.html">신청확인</a></li>
+				</ul>
+				<ul class="cf">
+					<li><a href="recruit.html">채용정보</a></li>
+					<li><a href="recruitForm.html">채용공고 등록</a></li>
+				</ul>
+				<ul class="cf">
+					<li><a href="notice.html">공지사항</a></li>
+					<li><a href="faq.html">자주 묻는 질문</a></li>
+					<li><a href="counseling.html">1:1 상담게시판</a></li>
+					<li><a href="downcenter.html">자료실</a></li>
+				</ul>
+			</div><!-- //header_sub -->
+		</div><!-- //header_sub_wrap -->
+	</div><!-- //header -->
+	
+	<div id="section_sub_wrap">
+		<div class="sub_visual sub_visual04">
+			<div class="sub_visual_txt">
+				<h2 class="sub_visual_txt1">고객센터</h2>
+				<h3 class="sub_visual_txt2">자료실</h3>
+			</div>
+		</div><!-- //sub_visual -->
+		<div class="sub_content sub_downcenterForm">
+			<div class="noticeForm_wrap">
+				<div class="noticeVF_title cf">
+					<p class="noticeVF_title_txt1">자료실 글 작성</p>
+				</div><!-- //noticeView_title -->
+				<div class="table_com contact_table">
+					<table cellpadding="0" cellspacing="0">
+						<caption>자료실 폼 테이블</caption>
+						<colgroup>
+						   <col width="150"> 
+						   <col width="">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>제목</th>
+								<td><input type="text" id="title" name="title" value="" style="width: 874px;"></td>
+							</tr>
+							<tr>
+								<th>첨부파일</th>
+								<td>
+									<div>
+										<div class="file_input">
+											<input type="text" id="filename1" disabled="disabled" value="" style="width: 760px;">
+										</div>
+										<span class="file_btn">
+											<a href="#">찾아보기</a>
+										</span>
+									</div>
+									<div style="margin-top: 9px;">
+										<div class="file_input">
+											<input type="text" id="filename2" disabled="disabled" value="" style="width: 760px;">
+										</div>
+										<span class="file_btn">
+											<a href="#">찾아보기</a>
+										</span>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<th>내용</th>
+								<td><img src="images/sub/notice/noticeForm_editor.png" style="width:100%;"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div><!-- //table_com -->
+				<div class="bot_btn_com">
+					<div class="bot_btn_com_green"><a href="#">등록</a></div>
+					<div class="bot_btn_com_dark"><a href="#">취소</a></div>
+				</div><!-- //bot_btn_com -->
+			</div><!-- //noticeForm_wrap -->
+		</div><!-- //sub_content -->
+	</div><!-- //section_wrap -->
+	
+	<div id="section_footer">
+		<div class="footer_menu_wrap">
+			<div class="footer_menu cf">
+				<div class="footer_menu_left">
+					<ul class="cf">
+						<li><a href="greeting.html">센터소개</a></li>
+						<li><a href="recruit.html">채용정보</a><span class="footer_menu_dot"></span></li>
+						<li><a href="downcenterViewAgree1.html">이용약관</a></li>
+						<li><a href="downcenterViewAgree2.html">개인정보처리방침</a></li>
+						<li><a href="sitemap.html">사이트맵</a></li>
+					</ul>
+				</div><!-- //footer_menu_left -->
+				<div class="footer_menu_right">
+					<ul class="cf">
+						<li><a href="contact.html">찾아오시는 길</a></li>
+						<li><a href="notice.html">고객센터</a></li>
+					</ul>
+				</div><!-- //footer_menu_right -->
+			</div><!-- //footer_menu -->
+		</div><!-- //footer_menu_wrap -->
+		<div class="footer_info cf">
+			<div class="footer_info_logo"><a href="main.html"><img src="images/footer_logo.png" alt="미래잡 로고"></a></div>
+			<div class="footer_info_copyright">
+				<p class="footer_info_copyright_txt1">직업의 미래를 창조하는 주식회사 미래잡 </p>
+				<p class="footer_info_copyright_txt2">상호 : 주식회사 미래잡<span>|</span>사업자등록번호 : 880-86-01068<span>|</span>주소 : 서울 강남구 테헤란로 130 호산빌딩 7층<span>|</span>전화 : 02-6952-0547~8<span>|</span>팩스 : 02-501-3687<span>|</span>이메일 : mrjob01@mrjob.co.kr</p>
+				<p class="footer_info_copyright_txt3">COPYRIGHT &copy; MIRAEJOB  ALL RIGHTS RESERVED.</p>
+			</div>
+		</div><!-- //footer_info -->
+	</div><!-- //section_footer -->
+</div><!-- //wrapper -->
+</body>
+</html>

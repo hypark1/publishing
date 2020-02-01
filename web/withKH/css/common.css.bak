@@ -1,0 +1,947 @@
+@CHARSET "UTF-8";
+
+
+/* iOS WebView 사용 시 header safe-view영역에 대한 버전별 솔루션 - https://ayogo.com/blog/ios11-viewport/ */
+.main_wrapper, .sub_wrapper, #menu_wrapper {
+	/* Status Bar Height on iOS 10.0 */
+	padding-top: 20px;
+	/* Status Bar Height on iOS 11.0 */
+	padding-top: constant(safe-area-inset-top);
+	/* Status Bar Height on iOS 11.0+ */
+	padding-top: env(safe-area-inset-top);
+}
+
+
+.main_top .menu, .sub_top .menu{position:absolute;top:38.5%;right:5%;width:5.2%;}
+.main_top .menu img, .sub_top .menu img{width:100%;}
+
+.footer{padding: 4% 0;border-top: 1px solid #e6e9ec;text-align:center;background: #fafbfc;}
+.footer p{font-family: 'RobotoL';font-size: 1.8em;color: #878788;}
+
+.sub_wrapper{width: 100%; overflow-x:hidden;}
+.sub_wrapper>div{background:#fafbfc;height: 100%}
+.sub_wrapper .sub_box{background:#fff;padding:4% 5%;margin-bottom:3%;border:solid #e6e9ec;border-width:1px 0;}
+.sub_wrapper .sub_box:nth-child(1){text-align: center;border-top: 0;}
+.sub_wrapper .sub_top{width: 90%;position: relative;margin-bottom:0;border-top:0;}
+.sub_wrapper .sub_top .back_btn{position: absolute;top: 38.5%;left: 5%;width: 4.5%;}
+.sub_wrapper .sub_top .back_btn img{width: 100%;}
+.sub_wrapper .sub_top .sub_title{text-align: center;font-weight: 500;}
+.sub_top .menu .bar{background:#3e3e3e;}
+.sub_content{width: 100%;}
+.sub_wrapper .sub_search_top{background:#f6f8fa;margin-bottom:0;}
+.sub_search_top .sub_notice_search{}
+.sub_search_top .sub_search_box {position: relative;}
+.sub_search_top .sub_search_box #searchBtn {width: 38px; height: 38px; position: absolute; right: 0px; top: 0px;}
+.sub_search_top .sub_search_box select{float:left;}
+.sub_search_top .sub_search_box input{float:right;background:#fff url(../images/sub/search_bg.png) no-repeat;background-position: 95% 50%;background-size: 8%;}
+
+.sub_wrapper .sub_myclass{text-align:center;}
+.sub_myclass .sub_myclass_name{font-weight: 600;}
+.sub_myclass .sub_myclass_curr{margin: 2% 0 1.5%;font-weight: 500;line-height: 100%;}
+.sub_myclass .sub_myclass_classroom{color:#9797a7;line-height: 130%;}
+.sub_myclass .sub_myclass_classroom span{display: inline-block;color: #9797a7;font-size: 0.7em;margin:-1.7% 1% 0;}
+
+.sub_wrapper .sub_modifybox{}
+.sub_modifybox .sub_modifybox_title{margin-bottom: 2%;text-align: center;font-size: 2.7em;font-weight: 500;letter-spacing: -3px;}
+.sub_modifybox .sub_modifybox_table table{width:100%;}
+.sub_modifybox .sub_modifybox_table table th{padding-right: 3%;text-align:right;}
+.sub_modifybox .sub_modifybox_table table td{text-align:left;border:1px solid #e6e9ec;background: #fff;}
+.sub_modifybox .sub_modifybox_table table td input[type="text"],
+.sub_modifybox .sub_modifybox_table table td input[type="password"]{width: 92%;border: 0;background: 0;padding: 3% 4% 4%;color: #3e3e3e;line-height: 150%;}
+.sub_modifybox .sub_modifybox_table table .td_disabled input{color:#3e3e3e;}
+.sub_modifybox .sub_modifybox_table table .td_disabled{background:#fafbfc;}
+.sub_modifybox .sub_modifybox_table table .modify_table_radio{padding: 2% 4%;}
+.sub_modifybox .sub_modifybox_table table .modify_table_radio input[type="radio"]{width: 10%;padding: 0 0 10% 0;vertical-align:middle;}
+.sub_modifybox .sub_modifybox_table table select{width:100%;padding:3.6% 4%;background: #fff url(../../images/sub/modify_select_bg.jpg) no-repeat;background-position: 100%;background-size: auto 100%;}
+.issuance_wrapper .sub_modifybox .sub_modifybox_table table select{padding:4.8% 4%;}
+
+.sub_com_list{width: 100%;background:#fff;}
+.sub_com_list_ul{width: 100%;}
+.sub_com_list_ul li{padding: 2.5% 5% 3.5%;border-bottom:1px solid #e6e9ec;}
+.sub_com_list_ul li:last-child{border-bottom:0;}
+.sub_com_list_ul li a{display: block;width: 100%;}
+.sub_com_list_ul li .sub_com_list_title{display: inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.sub_com_list_ul li .sub_com_list_txt{color:#9797a7;}
+.sub_com_list_ul li .sub_com_list_bar,
+.sub_comView_top .sub_comView_txt span{display: inline-block;margin: -1.5% 1.5% 0;font-size: 0.8em;color:#9797a7;}
+
+
+.sub_content_title{margin-bottom:4%;text-align: center;font-weight:500;}
+.sub_com_table{width:100%;}
+.sub_com_table table{width:100%;table-layout:fixed;}
+.sub_com_table table th{padding: 4% 0;background:#fafbfc;border:solid #e6e9ec;border-width:1px  0;font-weight: 500;}
+.sub_com_table table th span{display: inline-block;font-size:0.8em;font-weight: 400;color: #9797a5;line-height: 100%;}
+.sub_com_table table th span .bar{margin-top: -5%;}
+.sub_com_table table tbody tr{padding: 0 1%;}
+.sub_com_table table td{padding: 5% 1%;border-bottom:1px solid #e6e9ec;font-weight: 500;}
+.sub_com_table table td:first-child{padding-left:3%;text-align: left;}
+.sub_com_table table th:last-child,
+.sub_com_table table td:last-child{padding-right:3%;}
+.sub_com_table table td .sub_com_table_txt1,
+.sub_counseling_list ul li .sub_counseling_list_title1{display: inline-block;font-weight: 500;width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.sub_com_table table td .sub_com_table_txt2,
+.sub_counseling_list ul li .sub_counseling_list_title2,
+.sub_counseling_list_detail .sub_counseling_list_detail_day,
+.sub_com_table table td .sub_com_table_txt4,
+.sub_com_table table td .sub_com_table_txt5,
+.recruitView_wrapper .sub_recruitView_top_date{display: inline-block;margin-top:1%;color:#9797a7;font-weight:400;font-family: 'RobotoR';}
+.sub_com_table table td .btn_sm{font-weight: 400;padding: 8% 27%;}
+
+.sub_com_board_num{text-align: center;margin: 7% 0 0;}
+.sub_com_board_num a{display: inline-block;width: 12%;height: 0;padding-bottom: 12%;margin:0 1%;border:1px solid #e6e9ec;border-radius:50%;}
+.sub_com_board_num span{display: block;font-family: 'RobotoM';text-align: center;margin-top: 31%;}
+.sub_com_board_num .board_num_prev{margin-right: 3%;background: #fff url(../images/sub/board_num_prev.png) no-repeat;background-position: center;background-size: contain;}
+.sub_com_board_num .board_num_on span{color:#fff;}
+.sub_com_board_num .board_num_next{margin-left: 3%;background: #fff url(../images/sub/board_num_next.png) no-repeat;background-position: center;background-size: contain;}
+
+.sub_com_tap{width:100%;background: #fafbfc;}
+.sub_com_tap ul{}
+.sub_com_tap ul li{float:left;padding: 2.4% 0;text-align: center;font-weight: 400;color: #c8cedc;border: solid #e6e9ec;border-width:1px 1px 1px 0;box-sizing: border-box;}
+.sub_com_tap ul li:first-child{border-left:1px solid #e6e9ec;}
+.sub_com_tap ul li.on{font-weight: 500;color: #222;border:1px solid #a3adc8;background:#fff;}
+
+/* 서브 fixed */
+.counseling_wrapper .sub_counseling_table,
+.issuance_wrapper .sub_issuance_table,
+/* .recruit_wrapper .sub_recruit_table ,*/
+.notice_wrapper .sub_notice_list{border-bottom:0;padding-bottom: 19%;margin-bottom: 0;}
+.recruit_wrapper .sub_recruit_table{border-bottom:0;margin-bottom: 0;}
+.sub_fixed{position:fixed;left:0;bottom:0;width:100%;text-align:center;}
+.sub_fixed a{display:block;width:100%;padding:4.9% 0;background:#0c0451;color:#fff;}
+.sub_fixed .sub_fixed_icon{width: 5%;margin: -1.8% 0 0 1%;}
+
+.counselingForm_wrapper .sub_modifybox_table #content{height: 575px;}
+
+.btn_sm{display: inline-block;color: #fff;font-size: 0.8em;letter-spacing: -2px;padding:1.8% 5.9%;border-radius: 2em;}
+.btn_md{display: inline-block;color: #fff;font-size: 1.8em;letter-spacing: -2px;padding: 2.5% 6%;line-height: 100%;border-radius: 2em;}
+.btn_lg{display: inline-block;color: #fff;font-size: 2.5em;letter-spacing: -2px;padding: 3.5% 7%;line-height: 100%;border-radius: 2em;font-weight: 500;margin: 6% 0 2%;}
+.delete_btn{display:inline-block;width: 4%;padding-bottom: 4%;margin: -0.9% 0 0 1%;background:url(/app/images/sub/delete_btn.png) no-repeat;background-position:center;background-size:contain;}
+.sub_bot_btn{margin: 4% 5%;width: 90%;text-align: center;padding: 4.5% 0;border-radius: 4px;}
+.sub_bot_btn a{color: #fff;font-size: 2.5em;font-weight: 500;letter-spacing: -3px;line-height: 100%;}
+.list_new{display: inline-block;background: url(../images/sub/list_new.png) no-repeat;background-size: contain;width: 5%;padding-bottom: 5%;margin-left:1%;}
+
+.sub_myclass .sub_myclass_name,
+.sub_modifybox .sub_modifybox_title,
+.sub_setting_version_box .sub_setting_version_num p{color:#3b48c9;}
+
+.sub_eval_visual .sub_eval_visual_num{color:#5957ff;}
+
+.sub_com_visual_per1,.sub_com_visual_per3{color:#9797a7;}
+.sub_com_visual_per2{margin-top: 3%;font-family:'TahomaB';}
+
+.sub_fixed a,
+.issuanceForm_btn .cancel{background:#0c0451;}
+
+.sub_modifybox .sub_modifybox_table table .certificationCont td .btn_sm,
+.sub_setting_logout_box .btn_md,
+.sub_setting_cashdel_box .btn_md,
+.find_wrapper .sub_find_box .btn_lg,
+.sub_comView_bot .btn_lg,
+.sub_comFrom_btn .sub_comFrom_btn_confirm,
+.sub_com_table table td .btn_sm,
+.sub_com_board_num .board_num_on,
+.issuanceForm_btn .confirm,
+.recruitView_btn .support,
+.sub_comView_reply_txt_box .sub_comView_reply_txt_btn{background:#3b48c9;}
+
+.sub_bot_btn,
+.sub_setting_version_box .sub_setting_version_btn,
+.sub_comFrom_btn .sub_comFrom_btn_cancel{background:#070b6e;}
+
+.recruitView_btn .complete{background:#c8ceda;color:#fff;}
+
+#menu_wrapper .menu_box .menu_quick ul li span{font-weight: 500;}
+#menu_wrapper .menu_box .menu_list .menu_list_sub ul li a {font-weight: 500;}
+
+/* 85 */
+.sub_eval_visual .sub_eval_visual_num,
+.sub_currcal_visual .sub_currcal_visual_month{font-size: 6em;letter-spacing: -4px;}
+
+/* 55 */
+.sub_myclass .sub_myclass_name{font-size: 3.7em;letter-spacing: -5px;}
+
+/* 50 */
+#menu_wrapper .menu_box .menu_top .menu_top_name{font-size: 3.5em;letter-spacing: -4px;}
+
+/* 45 */
+.about_content .about_things .about_things_box .about_things_box_txt1,
+.sub_content_title,
+.sub_com_visual_per2,
+.sub_wrapper .sub_top .sub_title{font-size: 3.2em;letter-spacing: -4px;}
+
+/* 38 */
+.main_visual .main_menu .menu_list .menu_txt .txt01,
+.main_bot_menu .main_bot_menu_btn .bot_menu_txt,
+.sub_setting_txt01,
+.sub_com_list_ul li .sub_com_list_title,
+.sub_com_list_ul li .sub_com_list_num,
+.sub_comView_top .sub_comView_title,
+#menu_wrapper .menu_box .menu_list .menu_list_title p,
+.sub_currcal_calendar .sub_currcal_calendar_top ul li p,
+.sub_com_tap ul li,
+.sub_com_table table th,
+.sub_fixed a,
+.sub_myclass .sub_myclass_curr,
+.sub_issuance_visual_title,
+.sub_recruit_visual_title,
+.sub_com_table table td .sub_com_table_txt3,
+.recruitView_wrapper .sub_recruitView_top_title{font-size: 2.7em;font-weight: 500;letter-spacing: -3.5px;}
+
+/* 35 */
+.find_wrapper .sub_find_box .sub_find_radio_box label,
+.find_wrapper .sub_find_btn_box .sub_find_btn,
+.find_wrapper .sub_find_input_box input[type=text],
+.sub_comView_content pre,
+#menu_wrapper .menu_box .menu_top .menu_top_btn ul li a span,
+#menu_wrapper .menu_box .menu_list .menu_list_sub ul li a,
+.sub_com_table table td .sub_com_table_txt1,
+.sub_eval_visual .sub_eval_visual_txt,
+.sub_com_visual_per1,
+.sub_currcal_visual .sub_currcal_visual_select p,
+.sub_currcal_list_wrap .sub_currcal_list ul li p,
+.sub_com_board_num span,
+.sub_modifybox_table table th,
+.sub_modifybox_table table .certificationCont td, 
+.sub_modifybox_table table td input,
+.issuance_wrapper .sub_modifybox select,
+.issuance_wrapper .sub_modifybox label,
+.issuance_wrapper .sub_modifybox .modify_calbtn,
+.sub_counseling_list ul li .sub_counseling_list_title1,
+.counselingForm_wrapper .sub_counselingForm_txt,
+.recruitView_wrapper .sub_recruitView_top_company,
+.recruitView_wrapper .sub_recruitView_table td,
+.sub_comView_reply .sub_comView_reply_name,
+.sub_comView_content .sub_comView_content_name{font-size: 2.5em;line-height: 110%;letter-spacing:-3px;}
+
+/* 33 */
+.main_visual .main_menu .menu_list .menu_txt .txt02,
+.main_companyoffer .main_companyoffer_list .companyoffer_list_txt .co_title,
+.sub_setting_txt02,
+.sub_setting_box ul li p,
+.sub_setting_version_box .sub_setting_version_num p,
+.sub_setting_version_box .sub_setting_version_txt,
+.sub_com_list_ul li .sub_com_list_txt,
+.sub_push_list .sub_push_ul li .sub_push_ul_txt p,
+.sub_comView_top .sub_comView_txt,
+.sub_comView_reply_txt_box .sub_comView_reply_txt_btn,
+.about_content .about_things .about_things_box .about_things_box_txt2,
+.about_content .about_banner .about_banner_list li .about_banner_list_txt,
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li p,
+.sub_myclass .sub_myclass_classroom,
+.sub_counseling_list_detail .sub_counseling_list_detail_txt,
+.sub_com_visual_per3,
+.sub_com_table table td .sub_com_table_txt5,
+.recruitView_wrapper .sub_recruitView_top_date,
+.find_wrapper .sub_find_box .sub_find_txt{font-size: 2.2em;line-height: 120%;letter-spacing:-3px;}
+
+/* 30 */
+#menu_wrapper .menu_box .menu_quick ul li span,
+.sub_com_table table td .sub_com_table_txt2,
+#menu_wrapper .menu_box .menu_bot_btn ul li a,
+.sub_counseling_list ul li .sub_counseling_list_title2,
+.sub_counseling_list_detail .sub_counseling_list_detail_day,
+.sub_notice_list .sub_notice_total p,
+.sub_comView_reply .sub_comView_reply_txt,
+.sub_push_list .sub_push_list_top p,
+.sub_setting_clause_box .sub_setting_clause_txt{font-size: 2.1em;letter-spacing: -2.5px;}
+
+/* 28 */
+.sub_com_table table td .btn_sm,
+.sub_counseling_list_detail_btn .btn_sm,
+.sub_com_table table td .sub_com_table_txt4,
+.noticeForm_wrapper .sub_noticeForm_td_txt{font-size: 1.9em;letter-spacing: -2px;}
+
+/* 26 */
+#menu_wrapper .menu_box .menu_bot_btn ul li:nth-child(2){font-size: 1.7em;}
+
+
+
+
+/* 미디어쿼리 */
+@media all and (max-width:960px) {
+
+/* 85 */
+.sub_eval_visual .sub_eval_visual_num,
+.sub_currcal_visual .sub_currcal_visual_month{font-size: 5.5em;}
+
+/* 50 */
+#menu_wrapper .menu_box .menu_top .menu_top_name{font-size: 3.2em;}
+
+/* 45 */
+.about_content .about_things .about_things_box .about_things_box_txt1,
+.sub_content_title,
+.sub_com_visual_per2,
+.sub_wrapper .sub_top .sub_title{font-size: 3em;}
+
+/* 38 */
+.main_visual .main_menu .menu_list .menu_txt .txt01,
+.main_bot_menu .main_bot_menu_btn .bot_menu_txt,
+.sub_setting_txt01,
+.sub_com_list_ul li .sub_com_list_title,
+.sub_com_list_ul li .sub_com_list_num,
+.sub_comView_top .sub_comView_title,
+#menu_wrapper .menu_box .menu_list .menu_list_title p,
+.sub_currcal_calendar .sub_currcal_calendar_top ul li p,
+.sub_com_tap ul li,
+.sub_com_table table th,
+.sub_fixed a,
+.sub_myclass .sub_myclass_curr,
+.sub_issuance_visual_title,
+.sub_recruit_visual_title,
+.sub_com_table table td .sub_com_table_txt3,
+.recruitView_wrapper .sub_recruitView_top_title{font-size: 2.5em;}
+
+/* 35 */
+.find_wrapper .sub_find_box .sub_find_radio_box label,
+.find_wrapper .sub_find_btn_box .sub_find_btn,
+.find_wrapper .sub_find_input_box input[type=text],
+.sub_comView_content pre,
+#menu_wrapper .menu_box .menu_top .menu_top_btn ul li a span,
+#menu_wrapper .menu_box .menu_list .menu_list_sub ul li a,
+.sub_com_table table td .sub_com_table_txt1,
+.sub_eval_visual .sub_eval_visual_txt,
+.sub_com_visual_per1,
+.sub_currcal_visual .sub_currcal_visual_select p,
+.sub_currcal_list_wrap .sub_currcal_list ul li p,
+.sub_com_board_num span,
+.sub_modifybox_table table th,
+.sub_modifybox_table table .certificationCont td, 
+.sub_modifybox_table table td input,
+.sub_modifybox .sub_modifybox_table table select,
+.issuance_wrapper .sub_modifybox label,
+.issuance_wrapper .sub_modifybox .modify_calbtn,
+.sub_counseling_list ul li .sub_counseling_list_title1,
+.counselingForm_wrapper .sub_counselingForm_txt,
+.recruitView_wrapper .sub_recruitView_top_company,
+.recruitView_wrapper .sub_recruitView_table td,
+.sub_comView_reply .sub_comView_reply_name,
+.sub_comView_content .sub_comView_content_name{font-size: 2.3em;letter-spacing:-2.5px;}
+
+/* 33 */
+.main_visual .main_menu .menu_list .menu_txt .txt02,
+.main_companyoffer .main_companyoffer_list .companyoffer_list_txt .co_title,
+.sub_setting_txt02,
+.sub_setting_box ul li p,
+.sub_setting_version_box .sub_setting_version_num p,
+.sub_setting_version_box .sub_setting_version_txt,
+.sub_com_list_ul li .sub_com_list_txt,
+.sub_push_list .sub_push_ul li .sub_push_ul_txt p,
+.sub_comView_top .sub_comView_txt,
+.sub_comView_reply_txt_box .sub_comView_reply_txt_btn,
+.about_content .about_things .about_things_box .about_things_box_txt2,
+.about_content .about_banner .about_banner_list li .about_banner_list_txt,
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li p,
+.sub_myclass .sub_myclass_classroom,
+.sub_counseling_list_detail .sub_counseling_list_detail_txt,
+.sub_com_visual_per3,
+.sub_com_table table td .sub_com_table_txt5,
+.recruitView_wrapper .sub_recruitView_top_date,
+.find_wrapper .sub_find_box .sub_find_txt{font-size: 2em;}
+
+/* 30 */
+#menu_wrapper .menu_box .menu_quick ul li span,
+.sub_com_table table td .sub_com_table_txt2,
+#menu_wrapper .menu_box .menu_bot_btn ul li a,
+.sub_counseling_list ul li .sub_counseling_list_title2,
+.sub_counseling_list_detail .sub_counseling_list_detail_day,
+.sub_notice_list .sub_notice_total p,
+.sub_comView_reply .sub_comView_reply_txt,
+.sub_push_list .sub_push_list_top p,
+.sub_setting_clause_box .sub_setting_clause_txt{font-size: 2em;}
+
+/* 28 */
+.sub_com_table table td .btn_sm,
+.sub_counseling_list_detail_btn .btn_sm,
+.sub_com_table table td .sub_com_table_txt4,
+.noticeForm_wrapper .sub_noticeForm_td_txt{font-size: 1.8em;}
+
+}
+
+@media all and (max-width:800px) {
+
+/* 85 */
+.sub_eval_visual .sub_eval_visual_num,
+.sub_currcal_visual .sub_currcal_visual_month{font-size: 4.5em;letter-spacing: -3px;}
+
+/* 55 */
+.sub_myclass .sub_myclass_name {font-size: 2.9em;letter-spacing: -4px;}
+
+/* 50 */
+#menu_wrapper .menu_box .menu_top .menu_top_name{font-size: 3em;}
+
+/* 45 */
+.about_content .about_things .about_things_box .about_things_box_txt1,
+.sub_content_title,
+.sub_com_visual_per2,
+.sub_wrapper .sub_top .sub_title{font-size: 2.5em;letter-spacing: -3px;}
+
+/* 38 */
+.main_visual .main_menu .menu_list .menu_txt .txt01,
+.main_bot_menu .main_bot_menu_btn .bot_menu_txt,
+.sub_setting_txt01,
+.sub_com_list_ul li .sub_com_list_title,
+.sub_com_list_ul li .sub_com_list_num,
+.sub_comView_top .sub_comView_title,
+#menu_wrapper .menu_box .menu_list .menu_list_title p,
+.sub_currcal_calendar .sub_currcal_calendar_top ul li p,
+.sub_com_tap ul li,
+.sub_com_table table th,
+.sub_fixed a,
+.sub_myclass .sub_myclass_curr,
+.sub_issuance_visual_title,
+.sub_recruit_visual_title,
+.sub_com_table table td .sub_com_table_txt3,
+.recruitView_wrapper .sub_recruitView_top_title{font-size:2em;letter-spacing: -2px;}
+
+/* 35 */
+.find_wrapper .sub_find_box .sub_find_radio_box label,
+.find_wrapper .sub_find_btn_box .sub_find_btn,
+.find_wrapper .sub_find_input_box input[type=text],
+.sub_comView_content pre,
+#menu_wrapper .menu_box .menu_top .menu_top_btn ul li a span,
+#menu_wrapper .menu_box .menu_list .menu_list_sub ul li a,
+.sub_com_table table td .sub_com_table_txt1,
+.sub_eval_visual .sub_eval_visual_txt,
+.sub_com_visual_per1,
+.sub_currcal_visual .sub_currcal_visual_select p,
+.sub_currcal_list_wrap .sub_currcal_list ul li p,
+.sub_com_board_num span,
+.sub_modifybox_table table th,
+.sub_modifybox_table table .certificationCont td, 
+.sub_modifybox_table table td input,
+.sub_modifybox .sub_modifybox_table table select,
+.issuance_wrapper .sub_modifybox label,
+.issuance_wrapper .sub_modifybox .modify_calbtn,
+.sub_counseling_list ul li .sub_counseling_list_title1,
+.counselingForm_wrapper .sub_counselingForm_txt,
+.recruitView_wrapper .sub_recruitView_top_company,
+.recruitView_wrapper .sub_recruitView_table td,
+.sub_comView_reply .sub_comView_reply_name,
+.sub_comView_content .sub_comView_content_name{font-size:1.9em;letter-spacing:-2px;}
+
+/* 33 */
+.main_visual .main_menu .menu_list .menu_txt .txt02,
+.main_companyoffer .main_companyoffer_list .companyoffer_list_txt .co_title,
+.sub_setting_txt02,
+.sub_setting_box ul li p,
+.sub_setting_version_box .sub_setting_version_num p,
+.sub_setting_version_box .sub_setting_version_txt,
+.sub_com_list_ul li .sub_com_list_txt,
+.sub_push_list .sub_push_ul li .sub_push_ul_txt p,
+.sub_comView_top .sub_comView_txt,
+.sub_comView_reply_txt_box .sub_comView_reply_txt_btn,
+.about_content .about_things .about_things_box .about_things_box_txt2,
+.about_content .about_banner .about_banner_list li .about_banner_list_txt,
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li p,
+.sub_myclass .sub_myclass_classroom,
+.sub_counseling_list_detail .sub_counseling_list_detail_txt,
+.sub_com_visual_per3,
+.sub_com_table table td .sub_com_table_txt5,
+.recruitView_wrapper .sub_recruitView_top_date,
+.find_wrapper .sub_find_box .sub_find_txt{font-size: 1.8em;}
+
+/* 30 */
+#menu_wrapper .menu_box .menu_quick ul li span,
+.sub_com_table table td .sub_com_table_txt2,
+#menu_wrapper .menu_box .menu_bot_btn ul li a,
+.sub_counseling_list ul li .sub_counseling_list_title2,
+.sub_counseling_list_detail .sub_counseling_list_detail_day,
+.sub_notice_list .sub_notice_total p,
+.sub_comView_reply .sub_comView_reply_txt,
+.sub_push_list .sub_push_list_top p,
+.sub_setting_clause_box .sub_setting_clause_txt{font-size: 1.7em;letter-spacing: -2px;}
+
+/* 28 */
+.sub_com_table table td .btn_sm,
+.sub_counseling_list_detail_btn .btn_sm,
+.sub_com_table table td .sub_com_table_txt4,
+.noticeForm_wrapper .sub_noticeForm_td_txt{font-size: 1.6em;}
+
+/* 26 */
+#menu_wrapper .menu_box .menu_bot_btn ul li:nth-child(2){font-size: 1.3em;}
+
+
+.sub_modifybox .sub_modifybox_title{font-size: 2.5em;}
+
+.sub_com_list_ul li li .sub_com_list_bar{margin: -7px 1.5% 0;}
+
+.counselingForm_wrapper .sub_modifybox_table #content {height: 400px;}
+
+.sub_bot_btn a{font-size: 2.2em;letter-spacing: -0.5px;}
+.btn_md{font-size:1.6em;}
+.btn_lg{font-size:2em;}
+select, input{font-size:1.6em;}
+textarea,
+.sub_comView_reply .sub_comView_reply_txt_box .sub_comView_reply_txt_name{font-size: 1.4em;letter-spacing: -1px;}
+#menu_wrapper .menu_box .menu_quick ul li span{font-weight: 400;}
+#menu_wrapper .menu_box .menu_list .menu_list_sub ul li a {font-weight: 400;}
+.footer p{font-size: 1.2em;}
+
+}
+
+@media all and (max-width:700px) {
+
+/* 85 */
+.sub_eval_visual .sub_eval_visual_num,
+.sub_currcal_visual .sub_currcal_visual_month{font-size: 3.8em;}
+
+/* 55 */
+.sub_myclass .sub_myclass_name {font-size: 2.7em;}
+
+/* 50 */
+#menu_wrapper .menu_box .menu_top .menu_top_name{font-size: 2em;letter-spacing: -3px;}
+
+/* 45 */
+.about_content .about_things .about_things_box .about_things_box_txt1,
+.sub_content_title,
+.sub_com_visual_per2,
+.sub_wrapper .sub_top .sub_title{font-size: 2.2em;letter-spacing: -3px;}
+
+/* 38 */
+.main_visual .main_menu .menu_list .menu_txt .txt01,
+.main_bot_menu .main_bot_menu_btn .bot_menu_txt,
+.sub_setting_txt01,
+.sub_com_list_ul li .sub_com_list_title,
+.sub_com_list_ul li .sub_com_list_num,
+.sub_comView_top .sub_comView_title,
+#menu_wrapper .menu_box .menu_list .menu_list_title p,
+.sub_currcal_calendar .sub_currcal_calendar_top ul li p,
+.sub_com_tap ul li,
+.sub_fixed a,
+.sub_myclass .sub_myclass_curr,
+.sub_issuance_visual_title,
+.sub_recruit_visual_title,
+.sub_com_table table td .sub_com_table_txt3,
+.recruitView_wrapper .sub_recruitView_top_title{font-size: 1.9em;}
+
+/* 35 */
+.find_wrapper .sub_find_box .sub_find_radio_box label,
+.find_wrapper .sub_find_btn_box .sub_find_btn,
+.find_wrapper .sub_find_input_box input[type=text],
+.sub_comView_content pre,
+#menu_wrapper .menu_box .menu_top .menu_top_btn ul li a span,
+#menu_wrapper .menu_box .menu_list .menu_list_sub ul li a,
+.sub_com_table table td .sub_com_table_txt1,
+.sub_eval_visual .sub_eval_visual_txt,
+.sub_com_visual_per1,
+.sub_currcal_visual .sub_currcal_visual_select p,
+.sub_currcal_list_wrap .sub_currcal_list ul li p,
+.sub_com_board_num span,
+.sub_modifybox_table table th,
+.sub_modifybox_table table .certificationCont td, 
+.sub_modifybox_table table td input,
+.sub_modifybox .sub_modifybox_table table select,
+.issuance_wrapper .sub_modifybox label,
+.issuance_wrapper .sub_modifybox .modify_calbtn,
+.sub_counseling_list ul li .sub_counseling_list_title1,
+.counselingForm_wrapper .sub_counselingForm_txt,
+.recruitView_wrapper .sub_recruitView_top_company,
+.recruitView_wrapper .sub_recruitView_table td,
+.sub_comView_reply .sub_comView_reply_name,
+.sub_comView_content .sub_comView_content_name{font-size: 1.7em;}
+
+/* 33 */
+.main_visual .main_menu .menu_list .menu_txt .txt02,
+.main_companyoffer .main_companyoffer_list .companyoffer_list_txt .co_title,
+.sub_setting_txt02,
+.sub_setting_box ul li p,
+.sub_setting_version_box .sub_setting_version_num p,
+.sub_setting_version_box .sub_setting_version_txt,
+.sub_com_list_ul li .sub_com_list_txt,
+.sub_push_list .sub_push_ul li .sub_push_ul_txt p,
+.sub_comView_top .sub_comView_txt,
+.sub_comView_reply_txt_box .sub_comView_reply_txt_btn,
+.about_content .about_things .about_things_box .about_things_box_txt2,
+.about_content .about_banner .about_banner_list li .about_banner_list_txt,
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li p,
+.sub_myclass .sub_myclass_classroom,
+.sub_counseling_list_detail .sub_counseling_list_detail_txt,
+.sub_com_visual_per3,
+.sub_com_table table td .sub_com_table_txt5,
+.recruitView_wrapper .sub_recruitView_top_date,
+.find_wrapper .sub_find_box .sub_find_txt{font-size: 1.6em;}
+
+/* 30 */
+#menu_wrapper .menu_box .menu_quick ul li span,
+.sub_com_table table td .sub_com_table_txt2,
+#menu_wrapper .menu_box .menu_bot_btn ul li a,
+.sub_counseling_list ul li .sub_counseling_list_title2,
+.sub_counseling_list_detail .sub_counseling_list_detail_day,
+.sub_notice_list .sub_notice_total p,
+.sub_comView_reply .sub_comView_reply_txt,
+.sub_push_list .sub_push_list_top p,
+.sub_setting_clause_box .sub_setting_clause_txt{font-size: 1.5em;letter-spacing: -1.5px;}
+
+/* 28 */
+.sub_com_table table td .btn_sm,
+.sub_counseling_list_detail_btn .btn_sm,
+.sub_com_table table td .sub_com_table_txt4,
+.noticeForm_wrapper .sub_noticeForm_td_txt{font-size: 1.4em;letter-spacing: -1.5px;}
+
+}
+
+@media all and (max-width:560px) {
+	
+/* 85 */
+.sub_eval_visual .sub_eval_visual_num,
+.sub_currcal_visual .sub_currcal_visual_month{font-size: 3em;letter-spacing: -2px;}
+
+/* 55 */
+.sub_myclass .sub_myclass_name {font-size: 2.1em;letter-spacing: -3px;}
+
+/* 50 */
+#menu_wrapper .menu_box .menu_top .menu_top_name{font-size: 1.7em;letter-spacing: -2.5px;}
+
+/* 45 */
+.about_content .about_things .about_things_box .about_things_box_txt1,
+.sub_content_title,
+.sub_com_visual_per2,
+.sub_wrapper .sub_top .sub_title{font-size: 1.8em;letter-spacing: -2px;}
+
+/* 38 */
+.main_visual .main_menu .menu_list .menu_txt .txt01,
+.main_bot_menu .main_bot_menu_btn .bot_menu_txt,
+.sub_setting_txt01,
+.sub_com_list_ul li .sub_com_list_title,
+.sub_com_list_ul li .sub_com_list_num,
+.sub_comView_top .sub_comView_title,
+#menu_wrapper .menu_box .menu_list .menu_list_title p,
+.sub_currcal_calendar .sub_currcal_calendar_top ul li p,
+.sub_com_tap ul li,
+.sub_fixed a,
+.sub_myclass .sub_myclass_curr,
+.sub_issuance_visual_title,
+.sub_recruit_visual_title,
+.sub_com_table table td .sub_com_table_txt3,
+.recruitView_wrapper .sub_recruitView_top_title{font-size: 1.5em;}
+
+/* 35 */
+.find_wrapper .sub_find_box .sub_find_radio_box label,
+.find_wrapper .sub_find_btn_box .sub_find_btn,
+.find_wrapper .sub_find_input_box input[type=text],
+.sub_comView_content pre,
+#menu_wrapper .menu_box .menu_top .menu_top_btn ul li a span,
+#menu_wrapper .menu_box .menu_list .menu_list_sub ul li a,
+.sub_com_table table td .sub_com_table_txt1,
+.sub_eval_visual .sub_eval_visual_txt,
+.sub_com_visual_per1,
+.sub_currcal_visual .sub_currcal_visual_select p,
+.sub_currcal_list_wrap .sub_currcal_list ul li p,
+.sub_com_board_num span,
+.sub_modifybox_table table th,
+.sub_modifybox_table table .certificationCont td, 
+.sub_modifybox_table table td input,
+.sub_modifybox .sub_modifybox_table table select,
+.issuance_wrapper .sub_modifybox label,
+.issuance_wrapper .sub_modifybox .modify_calbtn,
+.sub_counseling_list ul li .sub_counseling_list_title1,
+.counselingForm_wrapper .sub_counselingForm_txt,
+.recruitView_wrapper .sub_recruitView_top_company,
+.recruitView_wrapper .sub_recruitView_table td,
+.sub_comView_reply .sub_comView_reply_name,
+.sub_comView_content .sub_comView_content_name{font-size: 1.4em;letter-spacing:-1.5px;}
+
+/* 33 */
+.main_visual .main_menu .menu_list .menu_txt .txt02,
+.main_companyoffer .main_companyoffer_list .companyoffer_list_txt .co_title,
+.sub_setting_txt02,
+.sub_setting_box ul li p,
+.sub_setting_version_box .sub_setting_version_num p,
+.sub_setting_version_box .sub_setting_version_txt,
+.sub_com_list_ul li .sub_com_list_txt,
+.sub_push_list .sub_push_ul li .sub_push_ul_txt p,
+.sub_comView_top .sub_comView_txt,
+.sub_comView_reply_txt_box .sub_comView_reply_txt_btn,
+.about_content .about_things .about_things_box .about_things_box_txt2,
+.about_content .about_banner .about_banner_list li .about_banner_list_txt,
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li p,
+.sub_myclass .sub_myclass_classroom,
+.sub_counseling_list_detail .sub_counseling_list_detail_txt,
+.sub_com_visual_per3,
+.sub_com_table table td .sub_com_table_txt5,
+.recruitView_wrapper .sub_recruitView_top_date,
+.find_wrapper .sub_find_box .sub_find_txt{font-size: 1.3em;letter-spacing:-1.5px;}
+
+/* 30 */
+#menu_wrapper .menu_box .menu_quick ul li span,
+.sub_com_table table td .sub_com_table_txt2,
+#menu_wrapper .menu_box .menu_bot_btn ul li a,
+.sub_counseling_list ul li .sub_counseling_list_title2,
+.sub_counseling_list_detail .sub_counseling_list_detail_day,
+.sub_notice_list .sub_notice_total p,
+.sub_comView_reply .sub_comView_reply_txt,
+.sub_push_list .sub_push_list_top p,
+.sub_setting_clause_box .sub_setting_clause_txt{font-size: 1.2em;}
+
+/* 28 */
+.sub_com_table table td .btn_sm,
+.sub_counseling_list_detail_btn .btn_sm,
+.sub_com_table table td .sub_com_table_txt4,
+.noticeForm_wrapper .sub_noticeForm_td_txt{font-size: 1.2em;letter-spacing: -1px;}
+
+}
+
+@media all and (max-width:414px) {
+		
+/* 85 */
+.sub_eval_visual .sub_eval_visual_num,
+.sub_currcal_visual .sub_currcal_visual_month{font-size: 2.4em;letter-spacing: -1.5px;}
+
+/* 55 */
+.sub_myclass .sub_myclass_name {font-size: 1.6em;letter-spacing: -2.5px;}
+
+/* 50 */
+#menu_wrapper .menu_box .menu_top .menu_top_name{font-size: 1.5em;letter-spacing: -2px;}
+
+/* 45 */
+.about_content .about_things .about_things_box .about_things_box_txt1,
+.sub_content_title,
+.sub_com_visual_per2,
+.sub_wrapper .sub_top .sub_title{font-size: 1.3em;}
+
+/* 38 */
+.main_visual .main_menu .menu_list .menu_txt .txt01,
+.main_bot_menu .main_bot_menu_btn .bot_menu_txt,
+.sub_setting_txt01,
+.sub_com_list_ul li .sub_com_list_title,
+.sub_com_list_ul li .sub_com_list_num,
+.sub_comView_top .sub_comView_title,
+#menu_wrapper .menu_box .menu_list .menu_list_title p,
+.sub_currcal_calendar .sub_currcal_calendar_top ul li p,
+.sub_com_tap ul li,
+.sub_com_table table th,
+.sub_fixed a,
+.sub_myclass .sub_myclass_curr,
+.sub_issuance_visual_title,
+.sub_recruit_visual_title,
+.sub_com_table table td .sub_com_table_txt3,
+.recruitView_wrapper .sub_recruitView_top_title{font-size:1.1em;letter-spacing: -1px;}
+
+/* 35 */
+.find_wrapper .sub_find_box .sub_find_radio_box label,
+.find_wrapper .sub_find_btn_box .sub_find_btn,
+.find_wrapper .sub_find_input_box input[type=text],
+.sub_comView_content pre,
+#menu_wrapper .menu_box .menu_top .menu_top_btn ul li a span,
+#menu_wrapper .menu_box .menu_list .menu_list_sub ul li a,
+.sub_com_table table td .sub_com_table_txt1,
+.sub_eval_visual .sub_eval_visual_txt,
+.sub_com_visual_per1,
+.sub_currcal_visual .sub_currcal_visual_select p,
+.sub_currcal_list_wrap .sub_currcal_list ul li p,
+.sub_com_board_num span,
+.sub_modifybox_table table th,
+.sub_modifybox_table table .certificationCont td, 
+.sub_modifybox_table table td input,
+.sub_modifybox .sub_modifybox_table table select,
+.issuance_wrapper .sub_modifybox label,
+.issuance_wrapper .sub_modifybox .modify_calbtn,
+.sub_counseling_list ul li .sub_counseling_list_title1,
+.counselingForm_wrapper .sub_counselingForm_txt,
+.recruitView_wrapper .sub_recruitView_top_company,
+.recruitView_wrapper .sub_recruitView_table td,
+.sub_comView_reply .sub_comView_reply_name,
+.sub_comView_content .sub_comView_content_name{font-size: 1em;letter-spacing:-1px;}
+
+/* 33 */
+.main_visual .main_menu .menu_list .menu_txt .txt02,
+.sub_setting_txt02,
+.sub_setting_box ul li p,
+.sub_setting_version_box .sub_setting_version_num p,
+.sub_setting_version_box .sub_setting_version_txt,
+.sub_com_list_ul li .sub_com_list_txt,
+.sub_push_list .sub_push_ul li .sub_push_ul_txt p,
+.sub_comView_top .sub_comView_txt,
+.sub_comView_reply_txt_box .sub_comView_reply_txt_btn,
+.about_content .about_things .about_things_box .about_things_box_txt2,
+.about_content .about_banner .about_banner_list li .about_banner_list_txt,
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li p,
+.sub_myclass .sub_myclass_classroom,
+.sub_counseling_list_detail .sub_counseling_list_detail_txt,
+.sub_com_visual_per3,
+.sub_com_table table td .sub_com_table_txt5,
+.recruitView_wrapper .sub_recruitView_top_date,
+.find_wrapper .sub_find_box .sub_find_txt{font-size:1em;letter-spacing: -1px;}
+
+
+/* 30 */
+#menu_wrapper .menu_box .menu_quick ul li span,
+.sub_com_table table td .sub_com_table_txt2,
+#menu_wrapper .menu_box .menu_bot_btn ul li a,
+.sub_counseling_list ul li .sub_counseling_list_title2,
+.sub_counseling_list_detail .sub_counseling_list_detail_day,
+.sub_notice_list .sub_notice_total p,
+.sub_comView_reply .sub_comView_reply_txt,
+.sub_push_list .sub_push_list_top p,
+.sub_setting_clause_box .sub_setting_clause_txt{font-size: 1em;letter-spacing: -1px;}
+
+/* 28 */
+.sub_com_table table td .btn_sm,
+.sub_counseling_list_detail_btn .btn_sm,
+.sub_com_table table td .sub_com_table_txt4,
+.noticeForm_wrapper .sub_noticeForm_td_txt{font-size: 1em;letter-spacing: -0.5px;}
+
+/* 26 */
+#menu_wrapper .menu_box .menu_bot_btn ul li:nth-child(2){font-size: 0.8em;}
+#menu_wrapper .menu_box .menu_list .menu_list_sub{margin-top: -3%;}
+
+.sub_myclass .sub_myclass_curr{margin-bottom: 1%;}
+.sub_myclass .sub_myclass_classroom span{font-size: 0.7em;margin: -5px 6px 0;}
+.sub_modifybox .sub_modifybox_title{font-size: 1.5em;letter-spacing:-2px;}
+.sub_modifybox .sub_modifybox_table table td input,
+.sub_modifybox .sub_modifybox_table table td input[type="text"]:disabled,
+.sub_modifybox .sub_modifybox_table table .certificationCont td{letter-spacing: -1px;}
+
+.counselingForm_wrapper .sub_modifybox_table #content {height: 200px;}
+.sub_modifybox .sub_modifybox_table table select {padding: 3.5% 4%;}
+.sub_com_list_ul li .sub_com_list_bar{margin: -4px 1.5% 0;}
+.btn_sm{letter-spacing: -1px;}
+.btn_md{font-size:0.9em;letter-spacing: -1px;}
+.btn_lg{font-size:1.1em;letter-spacing: -1px;}
+.sub_bot_btn a{font-size: 1.2em;letter-spacing: -1.5px;}
+select, input, textarea,
+.sub_comView_reply .sub_comView_reply_txt_box .sub_comView_reply_txt_name{font-size:1em;}
+.footer p{font-size: 0.8em;letter-spacing:-0.3px;}
+
+}
+
+@media all and (max-width:375px) {
+			
+/* 85 */
+.sub_eval_visual .sub_eval_visual_num,
+.sub_currcal_visual .sub_currcal_visual_month{font-size: 2.2em;}
+	
+/* 55 */
+.sub_myclass .sub_myclass_name {font-size: 1.4em;letter-spacing: -2px;}
+	
+/* 50 */
+#menu_wrapper .menu_box .menu_top .menu_top_name{font-size: 1.3em;letter-spacing: -1px;}
+
+/* 45 */
+.about_content .about_things .about_things_box .about_things_box_txt1,
+.sub_content_title,
+.sub_com_visual_per2,
+.sub_wrapper .sub_top .sub_title{font-size: 1.2em;letter-spacing: -1px;}
+
+/* 38 */
+.main_visual .main_menu .menu_list .menu_txt .txt01,
+.main_bot_menu .main_bot_menu_btn .bot_menu_txt,
+.sub_setting_txt01,
+.sub_com_list_ul li .sub_com_list_title,
+.sub_com_list_ul li .sub_com_list_num,
+.sub_comView_top .sub_comView_title,
+#menu_wrapper .menu_box .menu_list .menu_list_title p,
+.sub_currcal_calendar .sub_currcal_calendar_top ul li p,
+.sub_com_tap ul li,
+.sub_com_table table th,
+.sub_fixed a,
+.sub_myclass .sub_myclass_curr,
+.sub_issuance_visual_title,
+.sub_recruit_visual_title,
+.sub_com_table table td .sub_com_table_txt3,
+.recruitView_wrapper .sub_recruitView_top_title{font-size:1em;letter-spacing: -1px;}
+
+/* 35 */
+.find_wrapper .sub_find_box .sub_find_radio_box label,
+.find_wrapper .sub_find_btn_box .sub_find_btn,
+.find_wrapper .sub_find_input_box input[type=text],
+.sub_comView_content pre,
+#menu_wrapper .menu_box .menu_top .menu_top_btn ul li a span,
+#menu_wrapper .menu_box .menu_list .menu_list_sub ul li a,
+.sub_com_table table td .sub_com_table_txt1,
+.sub_eval_visual .sub_eval_visual_txt,
+.sub_com_visual_per1,
+.sub_currcal_visual .sub_currcal_visual_select p,
+.sub_currcal_list_wrap .sub_currcal_list ul li p,
+.sub_com_board_num span,
+.sub_modifybox_table table th,
+.sub_modifybox_table table .certificationCont td, 
+.sub_modifybox_table table td input,
+.sub_modifybox .sub_modifybox_table table select,
+.issuance_wrapper .sub_modifybox label,
+.issuance_wrapper .sub_modifybox .modify_calbtn,
+.sub_counseling_list ul li .sub_counseling_list_title1,
+.counselingForm_wrapper .sub_counselingForm_txt,
+.recruitView_wrapper .sub_recruitView_top_company,
+.recruitView_wrapper .sub_recruitView_table td,
+.sub_comView_reply .sub_comView_reply_name,
+.sub_comView_content .sub_comView_content_name{font-size: 0.9em;}
+
+/* 33 */
+.main_visual .main_menu .menu_list .menu_txt .txt02,
+.main_companyoffer .main_companyoffer_list .companyoffer_list_txt .co_title,
+.sub_setting_txt02,
+.sub_setting_box ul li p,
+.sub_setting_version_box .sub_setting_version_num p,
+.sub_setting_version_box .sub_setting_version_txt,
+.sub_com_list_ul li .sub_com_list_txt,
+.sub_push_list .sub_push_ul li .sub_push_ul_txt p,
+.sub_comView_top .sub_comView_txt,
+.sub_comView_reply_txt_box .sub_comView_reply_txt_btn,
+.about_content .about_banner .about_banner_list li .about_banner_list_txt,
+.sub_currcal_calendar .sub_currcal_calendar_mid ul li p,
+.sub_myclass .sub_myclass_classroom,
+.sub_counseling_list_detail .sub_counseling_list_detail_txt,
+.sub_com_visual_per3,
+.sub_com_table table td .sub_com_table_txt5,
+.recruitView_wrapper .sub_recruitView_top_date,
+.find_wrapper .sub_find_box .sub_find_txt{font-size:0.85em;letter-spacing:-0.5px;}
+
+/* 30 */
+#menu_wrapper .menu_box .menu_quick ul li span,
+.sub_com_table table td .sub_com_table_txt2,
+#menu_wrapper .menu_box .menu_bot_btn ul li a,
+.sub_counseling_list ul li .sub_counseling_list_title2,
+.sub_counseling_list_detail .sub_counseling_list_detail_day,
+.sub_notice_list .sub_notice_total p,
+.sub_comView_reply .sub_comView_reply_txt,
+.sub_push_list .sub_push_list_top p,
+.sub_setting_clause_box .sub_setting_clause_txt{font-size: 0.8em;}
+
+/* 28 */
+.sub_com_table table td .btn_sm,
+.sub_counseling_list_detail_btn .btn_sm,
+.sub_com_table table td .sub_com_table_txt4,
+.noticeForm_wrapper .sub_noticeForm_td_txt{font-size: 0.8em;letter-spacing: -0.3px;}
+
+/* 26 */
+#menu_wrapper .menu_box .menu_bot_btn ul li:nth-child(2){font-size: 0.7em;}
+
+
+.sub_myclass .sub_myclass_classroom span{font-size: 0.7em;margin: -5px 5px 0;}
+.sub_modifybox .sub_modifybox_title{font-size: 1.2em;letter-spacing:-1.5px;}
+.sub_modifybox .sub_modifybox_table table td input, 
+.sub_modifybox .sub_modifybox_table table td input[type="text"]:disabled, 
+.sub_modifybox .sub_modifybox_table table .certificationCont td{letter-spacing: -0.5px;}
+
+.counselingForm_wrapper .sub_modifybox_table #content {height: 150px;}
+
+.btn_sm{font-size: 0.9em;letter-spacing: -0.5px;}
+.btn_md{font-size:0.8em;}
+.btn_lg{font-size:1em;}
+.sub_bot_btn a {font-size: 1em;letter-spacing: -1px;}
+select, input, textarea,
+.sub_comView_reply .sub_comView_reply_txt_box .sub_comView_reply_txt_name{font-size:0.9em;}
+
+.footer p{font-size: 0.7em;}
+}
+
+@media all and (max-width:320px) {
+			
+/* 85 */
+.sub_eval_visual .sub_eval_visual_num,
+.sub_currcal_visual .sub_currcal_visual_month{font-size: 1.9em;letter-spacing: -1px;}
+	
+/* 45 */
+.about_content .about_things .about_things_box .about_things_box_txt1,
+.sub_content_title{font-size: 1em;letter-spacing: -1px;}
+
+.sub_myclass .sub_myclass_classroom span{font-size: 0.7em;margin: -5px 5px 0;}
+
+.counselingForm_wrapper .sub_modifybox_table #content {height: 100px;}
+
+.btn_md{font-size:0.8em;}
+.main_footer p{font-size: 0.6em;}
+}
+
+

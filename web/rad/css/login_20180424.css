@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/* 로그인 페이지 */
+
+.loginWrap{width: 100%; background: #ffffff; text-align:center;}
+.login_content{padding: 259px;}
+.login_content .logo{margin-bottom: 90px;}
+.login_content .login_form{width: 100%; margin-bottom: 40px;}
+.login_content .login_form>ul{width: 260px; height: 36px; margin: 0 auto; border-bottom: 1px solid #f3f5f7; padding: 0 20px; margin-bottom: 20px;}
+.login_content .login_form>ul>li{float: left; position:relative;}
+.login_content .login_form>ul>li>img{margin-right: 30px; margin-top: 3px;}
+.login_content .login_form>ul>li>input{width: 160px; height: 25px; padding:0; text-align: center; line-height: 25px; font-size: 13px; font-weight: 300; color: #7a7a7a; font-family: inherit; border:0;  border-radius: 0; outline-style: none; -webkit-appearance: none;}
+.login_content .login_form>ul>li>input[type=password]{letter-spacing:1px;}
+.login_content .login_form>ul>li>label{position:absolute; top:0; left:0; width: 160px; height: 25px; text-align: center; line-height: 25px; font-size: 13px; font-weight: 300; letter-spacing: -0.3px; color: #7a7a7a; font-family: inherit; border:0;  border-radius: 0; cursor:text; outline-style: none; -webkit-appearance: none;}
+.login_content .login_btn{}
+.login_content .login_btn>.btnMd{margin-bottom: 20px;}
+.login_content .login_btn>.btnMd>a{font-weight: 300; letter-spacing: 0.2px; padding: 0; width: 300px; line-height: 39px;background:#3b84ff;}
+.login_content .login_btn .login_check{}
+.login_content .login_btn .login_check label{cursor: pointer; letter-spacing: -0.5px;}
+.login_content .login_btn .login_check input[type=checkbox]{margin-left:3px;}
+
+
+#footer{background: #ffffff;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

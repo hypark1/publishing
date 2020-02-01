@@ -1,0 +1,68 @@
+﻿@font-face {
+    font-family: 'Gotham_BK';
+    src: url('font/Gotham-Black.eot'),
+			url('font/Gotham-Black.woff') format('woff'),
+			url('font/Gotham-Black.ttf') format('truetype'),
+			url('font/Gotham-Black.otf') format('opentype');
+	}
+	
+	
+@font-face {
+    font-family: 'Gotham_Bo';
+    src: url('font/Gotham-Bold.eot'),
+			url('font/Gotham-Bold.woff') format('woff'),
+			url('font/Gotham-Bold.ttf') format('truetype'),
+			url('font/Gotham-Bold.otf') format('opentype');
+	}
+	
+	
+@font-face {
+    font-family: 'Gotham_Md';
+    src: url('font/Gotham-Medium.eot'),
+			url('font/Gotham-Medium.woff') format('woff'),
+			url('font/Gotham-Medium.ttf') format('truetype'),
+			url('font/Gotham-Medium.otf') format('opentype');
+	}
+	
+
+@font-face {
+    font-family: 'NSR_L';
+    src: url('font/NanumSquareL.eot'),
+			url('font/NanumSquareL.woff') format('woff'),
+			url('font/NanumSquareL.ttf') format('truetype'),
+			url('font/NanumSquareL.otf') format('opentype');
+	}
+	
+@font-face {
+    font-family: 'NSR_R';
+    src: url('font/NanumSquareR.eot'),
+			url('font/NanumSquareR.woff') format('woff'),
+			url('font/NanumSquareR.ttf') format('truetype'),
+			url('font/NanumSquareR.otf') format('opentype');
+	}
+	
+@font-face {
+    font-family: 'NSR_B';
+    src: url('font/NanumSquareB.eot'),
+			url('font/NanumSquareB.woff') format('woff'),
+			url('font/NanumSquareB.ttf') format('truetype'),
+			url('font/NanumSquareB.otf') format('opentype');
+	}
+	
+@font-face {
+    font-family: 'NSR_EB';
+    src: url('font/NanumSquareEB.eot'),
+			url('font/NanumSquareEB.woff') format('woff'),
+			url('font/NanumSquareEB.ttf') format('truetype'),
+			url('font/NanumSquareEB.otf') format('opentype');
+	}
+	
+@font-face {
+    font-family: 'CoreGothic2';
+    src: url('font/CoreGothic2.eot'),
+			url('font/CoreGothic2.woff') format('woff'),
+			url('font/CoreGothic2.ttf') format('truetype'),
+			url('font/CoreGothic2.otf') format('opentype');
+	}
+
+	
