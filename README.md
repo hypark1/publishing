@@ -1,7 +1,7 @@
 # publishing
 
 ### Publishing Files
- - 2017.03 ~ 2019.01 퍼블리싱 포트폴리오 파일
+ - 2017.03 ~ 2019.01 포트폴리오 파일
 
 ### 구성
  - common groung page (반응형)
